@@ -1,5 +1,8 @@
 var gulp = require('gulp');
 var os = require('os');
+var sass = require('gulp-sass');
+var pug = require('gulp-pug');
+var gutil = require('gulp-util');
 
 var EXPRESS_PORT = 4001;
 var EXPRESS_ROOT = __dirname;
@@ -49,6 +52,25 @@ function notifyLivereload(event){
     }
     })
 }
+
+gulp.task('pug', function(){
+    gulp.src('./pug/*.pug')
+    .pipe(pug({
+       pretty: true
+    }).on('error', gutil.log))
+    .pipe(gulp.dest('./'))
+});
+
+gulp.task('watch', function(){
+    gulp.watch('./sass/**/*', ['sass']);
+    gulp.watch('./pug/**/*', ['pug']);
+});
+
+gulp.task('sass', function(){
+    return gulp.src(['sass/app.scss'])
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('css/app.css'))
+});
 
 gulp.task('default', function()
 {
