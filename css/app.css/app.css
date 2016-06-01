@@ -1,3 +1,15 @@
+.btn-learn {
+  background: #140e0e;
+  color: white;
+  border-radius: 2px;
+  line-height: 30px;
+  width: 150px;
+  transtion: fade-out 0.5s; }
+  .btn-learn:hover {
+    transtion: fade-in 0.5s;
+    background: white;
+    color: #140e0e; }
+
 .introduction .container {
   background: #211d1e;
   padding-top: 20px; }
@@ -23,7 +35,6 @@
         height: 500px;
         background-size: cover; } }
   .introduction-row-middle-brand {
-    padding-top: 20px;
     background-image: url(../../images/logo.png);
     background-repeat: no-repeat;
     height: 100px;
@@ -37,6 +48,9 @@
 .brand-container {
   background: #140e0e;
   position: relative;
+  margin-top: -20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-left: -60px;
   margin-right: -50px;
   z-index: 1000;
@@ -51,3 +65,68 @@
   margin-right: -50px;
   z-index: 1000;
   border-radius: 0px 0px 5px 5px; }
+
+.gallery-divider .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #140e0e;
+  color: white; }
+
+.gallery-body .container {
+  background: #211d1e; }
+
+.gallery-body-row {
+  text-align: center;
+  min-height: 500px; }
+  .gallery-body-row-left, .gallery-body-row-right {
+    text-align: center; }
+  @media screen and (min-width: 768px) {
+    .gallery-body-row-left {
+      background-image: url(../../images/gallery4.jpg);
+      background-repeat: no-repeat;
+      height: 500px;
+      background-size: cover; } }
+  .gallery-body-row-right {
+    text-align: right; }
+    @media screen and (min-width: 768px) {
+      .gallery-body-row-right {
+        background-image: url(../../images/gallery3.jpg);
+        background-repeat: no-repeat;
+        height: 500px;
+        background-size: cover; } }
+  .gallery-body-row-middle-brand {
+    background-image: url(../../images/logo.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 150px;
+    margin-left: 160px;
+    background-size: cover; }
+  .gallery-body-row-middle-text {
+    color: #b0b0b0;
+    text-align: justify; }
+
+.brand-container {
+  background: #140e0e;
+  position: relative;
+  margin-top: -20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: -60px;
+  margin-right: -50px;
+  z-index: 1000;
+  border-radius: 5px 5px 0px 0px; }
+
+.text-container {
+  background: rgba(20, 14, 14, 0.5);
+  margin-top: 50px;
+  position: relative;
+  margin-left: -60px;
+  margin-right: -50px;
+  z-index: 1000;
+  border-radius: 0px 0px 5px 5px; }
+
+.about-divider .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #140e0e;
+  color: white; }

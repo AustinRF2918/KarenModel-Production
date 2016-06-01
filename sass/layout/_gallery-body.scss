@@ -1,21 +1,19 @@
-.introduction
+.gallery-body
 {
     .container
     {
 	//Add to base.
 	background: rgb(33, 29, 30);
-	padding-top: 20px;
     }
 }
 
-.introduction-row
+.gallery-body-row
 {
 
     text-align: center;
 
     &-left, &-right
     {
-	margin-top: 50px;
 	text-align: center;
     }
 
@@ -89,7 +87,6 @@
     //REFACTOR
     background: rgba(20, 14, 14, .5);
     margin-top: 50px;
-    padding: 20px;
     position: relative;
     margin-left: -60px;
     margin-right: -50px;

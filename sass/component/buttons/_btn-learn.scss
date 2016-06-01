@@ -1,0 +1,19 @@
+.btn-learn
+{
+    background: #140e0e;
+    color: white;
+
+    //REFACTOR
+    border-radius: 2px;
+    line-height: 30px;
+    width: 150px;
+
+    transtion: fade-out 0.5s;
+    //Add transitioning
+    &:hover
+    {
+	transtion: fade-in 0.5s;
+	background: white;
+	color: #140e0e;
+    }
+}
