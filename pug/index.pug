@@ -1,5 +1,7 @@
-doctype html
-html
-  head
-  body
-    h1 baaaa
+extends ./layout/_index.pug
+
+block headSubcomponent
+  include utility/head/_index.pug
+
+block bodySubcomponent
+  include layout/sections/_index.pug

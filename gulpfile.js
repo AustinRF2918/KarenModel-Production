@@ -63,7 +63,7 @@ gulp.task('pug', function(){
 
 gulp.task('watch', function(){
     gulp.watch('./sass/**/*', ['sass']);
-    gulp.watch('./pug/**/*', ['pug']);
+    gulp.watch(['./pug/**/*', './pug/*', './pug/**/**/*'], ['pug']);
 });
 
 gulp.task('sass', function(){
