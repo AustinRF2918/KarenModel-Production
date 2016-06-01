@@ -1,0 +1,97 @@
+.introduction
+{
+    .container
+    {
+	//Add to base.
+	background: rgb(33, 29, 30);
+	padding-top: 20px;
+    }
+}
+
+.introduction-row
+{
+
+    text-align: center;
+
+    &-left, &-right
+    {
+	margin-top: 50px;
+	text-align: center;
+    }
+
+    &-left
+    {
+	@media screen and (min-width: 768px)
+	{
+	    //REFACTOR
+	    background-image: url(../../images/gallery4.jpg);
+	    background-repeat: no-repeat;
+	    height: 500px;
+	    background-size: cover;
+	}
+    }
+
+    &-right
+    {
+	text-align: right;
+	@media screen and (min-width: 768px)
+	{
+	    //REFACTOR
+	    background-image: url(../../images/gallery3.jpg);
+	    background-repeat: no-repeat;
+	    height: 500px;
+	    background-size: cover;
+	}
+    }
+
+    &-middle
+    {
+	&-brand
+	{
+	    //Add to base.
+	    padding-top: 20px;
+	    //REFACTOR
+	    background-image: url(../../images/logo.png);
+	    background-repeat: no-repeat;
+	    height: 100px;
+	    width: 150px;
+	    margin-left: 160px;
+	    background-size: cover;
+	}
+
+	&-text
+	{
+	    //REFACTOR
+	    color: #b0b0b0;
+	    text-align: justify;
+	}
+    }
+    min-height: 500px;
+}
+
+.brand-container
+{
+
+    //REFACTOR
+    background: rgb(20, 14, 14);
+    position: relative;
+    margin-left: -60px;
+    margin-right: -50px;
+    z-index: 1000;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.text-container
+{
+
+    //REFACTOR
+    background: rgba(20, 14, 14, .5);
+    margin-top: 50px;
+    padding: 20px;
+    position: relative;
+    margin-left: -60px;
+    margin-right: -50px;
+    z-index: 1000;
+    border-radius: 0px 0px 5px 5px;
+    //REFACTOR
+}

@@ -1,0 +1,53 @@
+.introduction .container {
+  background: #211d1e;
+  padding-top: 20px; }
+
+.introduction-row {
+  text-align: center;
+  min-height: 500px; }
+  .introduction-row-left, .introduction-row-right {
+    margin-top: 50px;
+    text-align: center; }
+  @media screen and (min-width: 768px) {
+    .introduction-row-left {
+      background-image: url(../../images/gallery4.jpg);
+      background-repeat: no-repeat;
+      height: 500px;
+      background-size: cover; } }
+  .introduction-row-right {
+    text-align: right; }
+    @media screen and (min-width: 768px) {
+      .introduction-row-right {
+        background-image: url(../../images/gallery3.jpg);
+        background-repeat: no-repeat;
+        height: 500px;
+        background-size: cover; } }
+  .introduction-row-middle-brand {
+    padding-top: 20px;
+    background-image: url(../../images/logo.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 150px;
+    margin-left: 160px;
+    background-size: cover; }
+  .introduction-row-middle-text {
+    color: #b0b0b0;
+    text-align: justify; }
+
+.brand-container {
+  background: #140e0e;
+  position: relative;
+  margin-left: -60px;
+  margin-right: -50px;
+  z-index: 1000;
+  border-radius: 5px 5px 0px 0px; }
+
+.text-container {
+  background: rgba(20, 14, 14, 0.5);
+  margin-top: 50px;
+  padding: 20px;
+  position: relative;
+  margin-left: -60px;
+  margin-right: -50px;
+  z-index: 1000;
+  border-radius: 0px 0px 5px 5px; }

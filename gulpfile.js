@@ -78,5 +78,5 @@ gulp.task('default', function()
     console.log(getNetworkInformation());
     startExpress();
     startLiveReload();
-    gulp.watch(['*.html', 'css/*.css', 'js/**/*'], notifyLivereload);
+    gulp.watch(['*.html', 'css/**/*.css', 'js/**/*'], notifyLivereload);
 })
