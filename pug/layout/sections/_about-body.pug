@@ -1,0 +1,19 @@
+include ../../utility/bootstrap/_index.pug  
+
++generateSection("about-body")
+  +generateRow("about-body")
+    +generateColumn(12, "facts", "about-body")
+      .m-t-3
+        h4 Fast Facts
+      .m-t-1
+        ul
+          li Height: 5'9"
+          li Shoe size: 9.5 
+          li Measurements: 34-25-36 
+          li Hair color: Brown
+          li Hair length: Long 
+          li Eye color: Hazel
+          li Ethicity: Caucasian
+          li Skin color: Fair
+      .m-t-1
+        button(class=["btn", "btn-read"])= "Read More"
