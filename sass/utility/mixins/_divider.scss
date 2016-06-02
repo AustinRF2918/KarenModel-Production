@@ -1,0 +1,9 @@
+@mixin generateDivider($symetric-padding, $background-color, $text-color)
+{
+    .container{
+    padding-top: $symetric-padding/2;
+    padding-bottom: $symetric-padding/2;
+    background: $background-color;
+    color: $text-color
+    }
+}

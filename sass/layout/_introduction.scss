@@ -2,8 +2,7 @@
 {
     .container
     {
-	//Add to base.
-	background: rgb(33, 29, 30);
+	background: $introduction-container-background;
 	padding-top: 20px;
     }
 }
@@ -23,7 +22,6 @@
     {
 	@media screen and (min-width: 768px)
 	{
-	    //REFACTOR
 	    background-image: url(../../images/gallery4.jpg);
 	    background-repeat: no-repeat;
 	    height: 500px;
@@ -36,7 +34,6 @@
 	text-align: right;
 	@media screen and (min-width: 768px)
 	{
-	    //REFACTOR
 	    background-image: url(../../images/gallery3.jpg);
 	    background-repeat: no-repeat;
 	    height: 500px;
@@ -48,8 +45,6 @@
     {
 	&-brand
 	{
-	    //Add to base.
-	    //REFACTOR
 	    background-image: url(../../images/logo.png);
 	    background-repeat: no-repeat;
 	    height: 100px;
@@ -60,8 +55,7 @@
 
 	&-text
 	{
-	    //REFACTOR
-	    color: #b0b0b0;
+	    color: $about-row-middle-text-color;
 	    text-align: justify;
 	}
     }
@@ -72,7 +66,7 @@
 {
 
     //REFACTOR
-    background: rgb(20, 14, 14);
+    background: $brand-container-background;
     position: relative;
     margin-top: -20px;
     padding-top: 10px;
@@ -85,9 +79,7 @@
 
 .text-container
 {
-
-    //REFACTOR
-    background: rgba(20, 14, 14, .5);
+    background: $text-container-background;
     margin-top: 50px;
     padding: 20px;
     position: relative;
@@ -95,5 +87,4 @@
     margin-right: -50px;
     z-index: 1000;
     border-radius: 0px 0px 5px 5px;
-    //REFACTOR
 }

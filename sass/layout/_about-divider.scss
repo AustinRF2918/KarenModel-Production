@@ -1,10 +1,4 @@
 .about-divider
 {
-    .container
-    {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background: rgb(20, 14, 14);
-	color: white;
-    }
+    @include generateDivider(100px, $about-divider-background, white);
 }
