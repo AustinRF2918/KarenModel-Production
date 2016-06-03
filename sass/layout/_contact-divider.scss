@@ -1,0 +1,4 @@
+.contact-divider
+{
+    @include generateDivider(100px, $contact-divider-background, white);
+}

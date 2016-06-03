@@ -146,7 +146,7 @@
 
 .about-body .container {
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 100px; }
 
 .about-body .remove-sides {
   list-style: none;
@@ -157,3 +157,9 @@
     line-height: 30px; }
   .about-body .remove-sides .model-attribute {
     color: #211d1e; }
+
+.contact-divider .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #140e0e;
+  color: white; }
