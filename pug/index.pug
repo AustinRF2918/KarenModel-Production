@@ -1,7 +1,9 @@
-extends ./layout/_index.pug
+include ./component/_index.pug
+include ./layout/_index.pug
 
 block headSubcomponent
   include utility/head/_index.pug
 
 block bodySubcomponent
   include layout/sections/_index.pug
+  //

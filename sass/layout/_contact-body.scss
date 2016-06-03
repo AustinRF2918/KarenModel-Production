@@ -1,0 +1,32 @@
+.contact-body
+{
+
+    .container
+    {
+	padding-top: 50px;
+	padding-bottom: 100px;
+    }
+
+    .remove-sides
+    {
+	li
+	{
+	    color: $contact-body-text-faded;
+	    line-height: 30px;
+	}
+
+	.model-attribute
+	{
+	    color: $contact-body-text;
+	}
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+    }
+}
+
+.contact-information
+{
+    letter-spacing: .1em;
+    font-weight: 800;
+}

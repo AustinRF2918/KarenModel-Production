@@ -1,13 +1,19 @@
 include ../../utility/bootstrap/_index.pug  
 
-+generateSection("about-body")
-  +generateRow("about-body")
-    +generateColumn(12, "facts", "about-body")
++generateSection("contact-body")
+  +generateRow("contact-body")
+    +generateColumn(12, "contact-info", "contact-body")
       .m-t-3
-        .row
-           ul.text-xs-center.m-t-2.remove-sides
-            p 1859 Buno Road, 
-            p Milford Michigan 
-            p MI 48381 
         .row.text-xs-center
+          .contact-information
+            p 1859 Buno Road, 
+            p Milford Michigan,
+            p MI 48381 
+        .row.text-xs-center.m-t-2
           p Buttons go here.
+          .col-md-4.col-md-offset-4
+          +facebook-icon
+          +google-icon
+          +pintrest-icon
+          +twitter-icon
+          +wifi-icon
