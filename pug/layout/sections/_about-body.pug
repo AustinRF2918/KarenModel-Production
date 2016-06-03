@@ -4,16 +4,19 @@ include ../../utility/bootstrap/_index.pug
   +generateRow("about-body")
     +generateColumn(12, "facts", "about-body")
       .m-t-3
-        h4 Fast Facts
+        h2.text-xs-center Fast Facts
       .m-t-1
-        ul
-          li Height: 5'9"
-          li Shoe size: 9.5 
-          li Measurements: 34-25-36 
-          li Hair color: Brown
-          li Hair length: Long 
-          li Eye color: Hazel
-          li Ethicity: Caucasian
-          li Skin color: Fair
-      .m-t-1
-        button(class=["btn", "btn-read"])= "Read More"
+        .row
+           ul.text-xs-left.m-t-2.remove-sides
+            .col-md-5.col-md-offset-5
+                li Height: <span class="model-attribute">5'9</span>
+                li Shoe size: <span class="model-attribute">9.5</span>
+                li Measurements: <span class="model-attribute">34-25-36</span>
+                li Hair color: <span class="model-attribute">Brown</span>
+                li Hair length: <span class="model-attribute">Long</span>
+                li Eye color: <span class="model-attribute">Hazel</span>
+                li Ethicity: <span class="model-attribute">Caucasian</span>
+                li Skin color: <span class="model-attribute">Fair</span>
+        .row
+          .m-t-3.text-xs-center
+             button(class=["btn", "btn-learn"])= "Read More"

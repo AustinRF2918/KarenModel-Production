@@ -1,0 +1,25 @@
+.about-body
+{
+    .container
+    {
+	padding-top: 50px;
+	padding-bottom: 50px;
+    }
+
+    .remove-sides
+    {
+	li
+	{
+	    color: $about-body-text-faded;
+	    line-height: 30px;
+	}
+
+	.model-attribute
+	{
+	    color: $about-body-text;
+	}
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+    }
+}

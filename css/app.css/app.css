@@ -22,7 +22,7 @@
   border-radius: 5px 5px 0px 0px; }
 
 .text-container {
-  background: rgba(20, 14, 14, 0.5);
+  background: #140e0e;
   margin-top: 50px;
   position: relative;
   margin-left: -60px;
@@ -41,7 +41,7 @@
     margin-left: 45%; }
 
 .introduction .container {
-  background: #140e0e;
+  background: #211d1e;
   padding-top: 20px; }
 
 .introduction-row {
@@ -87,7 +87,7 @@
   border-radius: 5px 5px 0px 0px; }
 
 .text-container {
-  background: rgba(20, 14, 14, 0.5);
+  background: #140e0e;
   margin-top: 50px;
   padding: 20px;
   position: relative;
@@ -143,3 +143,17 @@
   padding-bottom: 50px;
   background: #140e0e;
   color: white; }
+
+.about-body .container {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.about-body .remove-sides {
+  list-style: none;
+  padding: 0px;
+  margin: 0px; }
+  .about-body .remove-sides li {
+    color: #b0b0b0;
+    line-height: 30px; }
+  .about-body .remove-sides .model-attribute {
+    color: #211d1e; }

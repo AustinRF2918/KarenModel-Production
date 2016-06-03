@@ -41,14 +41,24 @@ $palette-7: $idontevenknow-black;
 	//Row
 	    $gallery-body-row-color: $palette-5;
 	    $gallery-body-row-middle-text-color: $palette-6;
+
    //Gallery-divider.
 	$gallery-divider-background: $palette-1;
-    //About-divider.
+
+   //About-divider.
 	$about-divider-background: $palette-1;
-	    $about-row-middle-text-color: $palette-6;
+	$about-row-middle-text-color: $palette-6;
+
+   //About-Body
+	$about-body-text: $palette-7;
+	$about-body-text-faded : $palette-6;
+
+	  
 
 //Containers
     //Containers
 	$brand-container-background: $palette-1;
-	$text-container-background: $palette-2;
+	$text-container-background: $palette-1;
+	$introduction-container-background: $palette-7;
+	//
 	    
