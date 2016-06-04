@@ -1,8 +1,9 @@
 .gallery-body
 {
-    .container
+    @include generateContainer($gallery-body-container-background, 0px, 0px)
     {
-	background: $gallery-body-container-background;
+	//Refactor at later date.
+	@include generateSideBorders(50px, solid, black);
     }
 }
 

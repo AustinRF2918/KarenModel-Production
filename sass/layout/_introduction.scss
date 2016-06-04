@@ -1,10 +1,6 @@
 .introduction
 {
-    .container
-    {
-	background: $introduction-container-background;
-	padding-top: 20px;
-    }
+    @include generateContainer($introduction-container-background, 20px, 0px)
 }
 
 .introduction-row

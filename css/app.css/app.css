@@ -40,9 +40,19 @@
   .text-overlay-right {
     margin-left: 45%; }
 
+.general-icon svg {
+  width: 36px;
+  height: 36px;
+  padding: 3px;
+  border-radius: 50%;
+  fill: black;
+  background: white;
+  border: 1px solid black; }
+
 .introduction .container {
   background: #211d1e;
-  padding-top: 20px; }
+  padding-top: 20px;
+  padding-bottom: 0px; }
 
 .introduction-row {
   text-align: center;
@@ -97,13 +107,17 @@
   border-radius: 0px 0px 5px 5px; }
 
 .gallery-divider .container {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  color: white;
   background: #140e0e;
-  color: white; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .gallery-body .container {
-  background: #211d1e; }
+  border-left: 50px solid black;
+  border-right: 50px solid black;
+  background: #211d1e;
+  padding-top: 0px;
+  padding-bottom: 0px; }
 
 .gallery-body-row {
   min-height: 500px; }
@@ -139,12 +153,15 @@
     text-align: justify; }
 
 .about-divider .container {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  color: white;
   background: #140e0e;
-  color: white; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .about-body .container {
+  border-left: 50px solid black;
+  border-right: 50px solid black;
+  background: inherit;
   padding-top: 50px;
   padding-bottom: 100px; }
 
@@ -159,12 +176,15 @@
     color: #211d1e; }
 
 .contact-divider .container {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  color: white;
   background: #140e0e;
-  color: white; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .contact-body .container {
+  border-left: 50px solid black;
+  border-right: 50px solid black;
+  background: inherit;
   padding-top: 50px;
   padding-bottom: 100px; }
 
