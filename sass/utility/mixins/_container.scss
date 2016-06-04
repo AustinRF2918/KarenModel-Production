@@ -2,7 +2,7 @@
 {
     .container
     {
-	@content
+	@content;
 	background: $background;
 	padding-top: $paddingTop;
 	padding-bottom: $paddingBottom;

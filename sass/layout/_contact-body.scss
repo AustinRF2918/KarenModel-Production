@@ -5,6 +5,7 @@
     @include generateContainer(inherit, 50px, 100px)
     {
 	@include generateSideBorders(50px, solid, black);
+	border-bottom: 50px solid black;
     }
 
     .remove-sides

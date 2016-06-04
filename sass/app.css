@@ -159,10 +159,11 @@
   padding-bottom: 50px; }
 
 .about-body .container {
+  border-left: 50px solid black;
+  border-right: 50px solid black;
   background: inherit;
   padding-top: 50px;
   padding-bottom: 100px; }
-
 .about-body .remove-sides {
   list-style: none;
   padding: 0px;
@@ -182,11 +183,9 @@
 .contact-body .container {
   border-left: 50px solid black;
   border-right: 50px solid black;
-  border-bottom: 50px solid black;
   background: inherit;
   padding-top: 50px;
   padding-bottom: 100px; }
-
 .contact-body .remove-sides {
   list-style: none;
   padding: 0px;
@@ -200,3 +199,5 @@
 .contact-information {
   letter-spacing: .1em;
   font-weight: 800; }
+
+/*# sourceMappingURL=app.css.map */

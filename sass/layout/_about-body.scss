@@ -1,9 +1,6 @@
 .about-body
 {
-    @include generateContainer(inherit, 50px, 100px)
-    {
-	@include generateSideBorders(50px, solid, black);
-    }
+    @include generateContainer(inherit, 50px, 100px);
 
     .remove-sides
     {
