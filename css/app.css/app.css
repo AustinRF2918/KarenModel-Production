@@ -187,18 +187,20 @@ p, li {
     color: #211d1e; }
 
 .contact-divider .container {
-  color: white;
-  background: #140e0e;
+  color: black;
+  background: white;
   padding-top: 50px;
   padding-bottom: 50px; }
 
 .contact-body .container {
-  border-left: 50px solid black;
-  border-right: 50px solid black;
-  border-bottom: 50px solid black;
   background: inherit;
-  padding-top: 50px;
+  padding-top: 0px;
   padding-bottom: 100px; }
+
+.contact-body .boxed-in {
+  border-radius: 8px;
+  border: 1px solid black;
+  padding-bottom: 15px; }
 
 .contact-body .remove-sides {
   list-style: none;

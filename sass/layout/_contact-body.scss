@@ -2,10 +2,15 @@
 {
 
     //Refactor all these types at a later date.
-    @include generateContainer(inherit, 50px, 100px)
+    @include generateContainer(inherit, 0px, 100px)
     {
-	@include generateSideBorders(50px, solid, black);
-	border-bottom: 50px solid black;
+    }
+
+    .boxed-in
+    {
+	border-radius: 8px;
+	border: 1px solid black;
+	padding-bottom: 15px;
     }
 
     .remove-sides
