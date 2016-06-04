@@ -1,0 +1,27 @@
+mixin generateMargin(input)
+  if input == "low"
+    .m-t-1
+      block
+  if input == "medium"
+    .m-t-2
+      block
+  if input == "large"
+    .m-t-3
+      block
+  else
+    .m-t-2
+      block
+
+mixin generatePadding(input)
+  if input == "low"
+    .p-t-1
+      block
+  if input == "medium"
+    .p-t-2
+      block
+  if input == "large"
+    .p-t-3
+      block
+  else
+    .p-t-2
+      block

@@ -3,11 +3,11 @@ include ../../utility/bootstrap/_index.pug
 +generateSection("about-body")
   +generateRow("about-body")
     +generateColumn(12, "facts", "about-body")
-      .m-t-3
+      +generateMargin()
         h2.text-xs-center Fast Facts
-      .m-t-1
         .row
-           ul.text-xs-left.m-t-2.remove-sides
+           +generateMargin()
+           ul.text-xs-left.remove-sides
             .col-md-5.col-md-offset-5
                 li Height: <span class="model-attribute">5'9</span>
                 li Shoe size: <span class="model-attribute">9.5</span>
@@ -18,5 +18,6 @@ include ../../utility/bootstrap/_index.pug
                 li Ethicity: <span class="model-attribute">Caucasian</span>
                 li Skin color: <span class="model-attribute">Fair</span>
         .row
-          .m-t-3.text-xs-center
-             button(class=["btn", "btn-learn"])= "Read More"
+           +generateMargin("large")
+            .text-xs-center
+                button(class=["btn", "btn-learn"])= "Read More"

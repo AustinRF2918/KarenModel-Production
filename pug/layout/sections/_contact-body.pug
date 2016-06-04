@@ -3,17 +3,19 @@ include ../../utility/bootstrap/_index.pug
 +generateSection("contact-body")
   +generateRow("contact-body")
     +generateColumn(12, "contact-info", "contact-body")
-      .m-t-3
+      +generateMargin("large") 
         .row.text-xs-center
           .contact-information
             p 1859 Buno Road, 
             p Milford Michigan,
             p MI 48381 
-        .row.text-xs-center.m-t-2
-            p polzink@yahoo.com
-        .row.text-xs-center.m-t-2
-          +facebook-icon
-          +google-icon
-          +pintrest-icon
-          +twitter-icon
-          +wifi-icon
+        generateMargin()
+            .row.text-xs-center
+                p polzink@yahoo.com
+        generateMargin()
+            .row.text-xs-center
+                +facebook-icon
+                +google-icon
+                +pintrest-icon
+                +twitter-icon
+                +wifi-icon
