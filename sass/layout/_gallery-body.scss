@@ -3,7 +3,7 @@
     @include generateContainer($gallery-body-container-background, 0px, 0px)
     {
 	//Refactor at later date.
-	@include generateSideBorders(50px, solid, black);
+	@include generateSideBorders(0px, solid, black);
     }
 }
 
@@ -21,8 +21,9 @@
 	    color: $gallery-body-row-color;
 
 	    h1{
-		margin-top: 20%;
-		padding-top: 9%;
+		font-weight: bold;
+		margin-top: 75%;
+		padding: 10%;
 	    }
 	}
     }
@@ -38,8 +39,9 @@
 	    color: $gallery-body-row-color;
 
 	    h1{
-		padding-top: 9%;
-		margin-top: 120%;
+		font-weight: bold;
+		margin-top: 75%;
+		padding: 10%;
 	    }
 	}
     }

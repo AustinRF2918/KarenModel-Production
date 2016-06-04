@@ -5,7 +5,6 @@
 
 .introduction-row
 {
-
     text-align: center;
 
     &-left, &-right
@@ -21,6 +20,7 @@
     {
 	@media screen and (min-width: 768px)
 	{
+	    border-radius: 5px 5px 5px 5px;
 	    background-image: url(../../images/gallery4.jpg);
 	}
     }
