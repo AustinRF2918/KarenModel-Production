@@ -7,7 +7,7 @@ p {
 .btn-learn {
   background: #140e0e;
   color: white;
-  border-radius: 2px;
+  border-radius: 8px;
   line-height: 30px;
   width: 150px;
   transtion: fade-out 0.5s; }
@@ -64,28 +64,25 @@ p {
   text-align: center;
   min-height: 500px; }
   .introduction-row-left, .introduction-row-right {
-    margin-top: 50px;
-    text-align: center; }
+    margin-top: -20px;
+    text-align: center;
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover; }
   @media screen and (min-width: 768px) {
     .introduction-row-left {
-      background-image: url(../../images/gallery4.jpg);
-      background-repeat: no-repeat;
-      height: 500px;
-      background-size: cover; } }
+      background-image: url(../../images/gallery4.jpg); } }
   .introduction-row-right {
     text-align: right; }
     @media screen and (min-width: 768px) {
       .introduction-row-right {
-        background-image: url(../../images/gallery3.jpg);
-        background-repeat: no-repeat;
-        height: 500px;
-        background-size: cover; } }
+        background-image: url(../../images/gallery3.jpg); } }
   .introduction-row-middle-brand {
     background-image: url(../../images/logo.png);
     background-repeat: no-repeat;
     height: 100px;
     width: 150px;
-    margin-left: 160px;
+    margin-left: 120px;
     background-size: cover; }
   .introduction-row-middle-text {
     color: #b0b0b0;
@@ -94,23 +91,23 @@ p {
 .brand-container {
   background: #140e0e;
   position: relative;
-  margin-top: -20px;
-  padding-top: 10px;
+  padding-top: 30px;
   padding-bottom: 10px;
-  margin-left: -60px;
-  margin-right: -50px;
+  margin-top: -20px;
+  margin-left: -17px;
+  margin-right: -17px;
   z-index: 1000;
-  border-radius: 5px 5px 0px 0px; }
+  border-radius: 8px 8px 8px 8px; }
 
 .text-container {
   background: #140e0e;
-  margin-top: 50px;
   padding: 20px;
   position: relative;
-  margin-left: -60px;
-  margin-right: -50px;
+  margin-top: 100px;
+  margin-left: -45px;
+  margin-right: -45px;
   z-index: 1000;
-  border-radius: 0px 0px 5px 5px; }
+  border-radius: 8px 8px 8px 8px; }
 
 .gallery-divider .container {
   color: white;
