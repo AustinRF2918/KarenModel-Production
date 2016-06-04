@@ -1,3 +1,9 @@
+h1, h2, h3, h4, h5 {
+  font-family: "Lato", sans-serif; }
+
+p {
+  font-family: "Roboto", sans-serif; }
+
 .btn-learn {
   background: #140e0e;
   color: white;
@@ -153,15 +159,25 @@
     text-align: justify; }
 
 .about-divider .container {
-  color: white;
-  background: #140e0e;
+  color: #140e0e;
+  background: white;
   padding-top: 50px;
   padding-bottom: 50px; }
 
 .about-body .container {
   background: inherit;
-  padding-top: 50px;
+  padding-top: 0px;
   padding-bottom: 100px; }
+
+.about-body-beautifulBoxTop {
+  border-radius: 8px 8px 0px 0px;
+  background: black;
+  color: white; }
+
+.about-body-beautifulBoxBottom {
+  border-radius: 0px 0px 8px 8px;
+  background: white;
+  border: 1px solid black; }
 
 .about-body .remove-sides {
   list-style: none;

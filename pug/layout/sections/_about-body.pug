@@ -3,20 +3,22 @@ include ../../utility/bootstrap/_index.pug
 +generateSection("about-body")
   +generateRow("about-body")
     +generateColumn(12, "facts", "about-body")
-      +generateMargin()
-        h2.text-xs-center Fast Facts
+      +generateMargin("small")
+        .about-body-beautifulBoxTop.col-md-4.col-md-offset-4.p-y-2.p-x-2
+          h2.text-xs-center <strong>Fast Facts</strong>
         .row
-           +generateMargin()
-           ul.text-xs-left.remove-sides
-            .col-md-5.col-md-offset-5
-                li Height: <span class="model-attribute">5'9</span>
-                li Shoe size: <span class="model-attribute">9.5</span>
-                li Measurements: <span class="model-attribute">34-25-36</span>
-                li Hair color: <span class="model-attribute">Brown</span>
-                li Hair length: <span class="model-attribute">Long</span>
-                li Eye color: <span class="model-attribute">Hazel</span>
-                li Ethicity: <span class="model-attribute">Caucasian</span>
-                li Skin color: <span class="model-attribute">Fair</span>
+            ul.text-xs-left.remove-sides
+              .col-md-12
+                .col-md-4.col-md-offset-4.about-body-beautifulBoxBottom.p-y-2
+                  .col-md-8.col-md-offset-2
+                    li Height: <span class="model-attribute">5'9</span>
+                    li Shoe size: <span class="model-attribute">9.5</span>
+                    li Measurements: <span class="model-attribute">34-25-36</span>
+                    li Hair color: <span class="model-attribute">Brown</span>
+                    li Hair length: <span class="model-attribute">Long</span>
+                    li Eye color: <span class="model-attribute">Hazel</span>
+                    li Ethicity: <span class="model-attribute">Caucasian</span>
+                    li Skin color: <span class="model-attribute">Fair</span>
         .row
            +generateMargin("large")
             .text-xs-center

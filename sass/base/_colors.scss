@@ -36,6 +36,16 @@ $palette-7: $idontevenknow-black;
    //Introduction
 	$introduction-container-background: $palette-1;
 
+    //About-divider.
+	$about-divider-background: $palette-5;
+	$about-divider-color: $palette-1;
+	$about-row-middle-text-color: $palette-6;
+
+   //About-Body
+	$about-body-text: $palette-7;
+	$about-body-text-faded : $palette-6;
+
+
    //Gallery-body
 	$gallery-body-container-background: $palette-7;
 	//Row
@@ -45,15 +55,7 @@ $palette-7: $idontevenknow-black;
    //Gallery-divider.
 	$gallery-divider-background: $palette-1;
 
-   //About-divider.
-	$about-divider-background: $palette-1;
-	$about-row-middle-text-color: $palette-6;
-
-   //About-Body
-	$about-body-text: $palette-7;
-	$about-body-text-faded : $palette-6;
-
-    //Contact-Divider
+       //Contact-Divider
 	$contact-divider-background: $palette-1;
 	$contact-row-middle-text-color: $palette-6;
 

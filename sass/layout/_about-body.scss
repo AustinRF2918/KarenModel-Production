@@ -1,6 +1,23 @@
 .about-body
 {
-    @include generateContainer(inherit, 50px, 100px);
+    @include generateContainer(inherit, 0px, 100px);
+
+    &-beautifulBox
+    {
+	&Top
+	{
+	    border-radius: 8px 8px 0px 0px;
+	    background: black;
+	    color: white;
+	}
+
+	&Bottom
+	{
+	    border-radius: 0px 0px 8px 8px;
+	    background: white;
+	    border: 1px solid black;
+	}
+    }
 
     .remove-sides
     {
