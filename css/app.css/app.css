@@ -10,11 +10,25 @@ p, li {
   border-radius: 8px;
   line-height: 30px;
   width: 150px;
-  transtion: fade-out 0.5s; }
+  transition: background-color .25s, transform .25s ease-out; }
   .btn-learn:hover {
-    transtion: fade-in 0.5s;
     background: white;
-    color: #140e0e; }
+    color: #140e0e;
+    transform: scale(1.25);
+    transition: background-color .25s, transform .25s ease-out; }
+
+.btn-read {
+  background: #140e0e;
+  color: white;
+  border-radius: 8px;
+  line-height: 50px;
+  width: 250px;
+  transition: background-color .25s, transform .25s ease-out; }
+  .btn-read:hover {
+    background: rgba(20, 14, 14, 0.5);
+    color: white;
+    transform: scale(1.25);
+    transition: background-color .25s, transform .25s ease-out; }
 
 .brand-container {
   background: #140e0e;

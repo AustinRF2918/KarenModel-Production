@@ -16,11 +16,20 @@ $palette-6: $drab-grey;
 $palette-7: $idontevenknow-black;
 
 //Button Colors.
-    //Btn-learn
+    //Btn-Learn
+      //In component/buttons/_btn-learn
 	$btn-learn-background: $palette-4;
 	$btn-learn-color: $palette-5;
 	$btn-learn-background-hover: $palette-5;
 	$btn-learn-color-hover: $palette-4;
+
+    //Btn-Read
+      //In component/buttons/_btn-read
+	$btn-read-background: $palette-4;
+	$btn-read-color: $palette-5;
+	$btn-read-background-hover: $palette-2;
+	$btn-read-color-hover: $palette-5;
+
 
 //Containers
     //brand

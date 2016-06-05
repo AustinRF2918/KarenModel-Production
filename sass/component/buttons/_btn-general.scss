@@ -9,7 +9,7 @@
     width: $width;
 
     //Refactor to be generalizable from interface.
-    transition: fade-out 0.5s;
+    transition: background-color .25s, transform .25s ease-out;
 
     &:hover
     {
@@ -17,7 +17,8 @@
 	color: $colorHover;
 
 	//Refactor to be generalizable from interface.
-	transition: fade-in 0.5s;
+	transform: scale(1.25);
+	transition: background-color .25s, transform .25s ease-out;
     }
 }
     

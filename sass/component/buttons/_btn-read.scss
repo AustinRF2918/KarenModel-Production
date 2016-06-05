@@ -1,0 +1,4 @@
+.btn-read
+{
+    @include generateButton($btn-read-color, $btn-read-background, $btn-read-color-hover, $btn-read-background-hover, 50px, 250px, 8px);
+}
