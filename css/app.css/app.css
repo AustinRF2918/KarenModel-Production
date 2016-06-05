@@ -43,14 +43,21 @@ p, li {
   width: 50%;
   background: rgba(0, 0, 0, 0.6); }
 
+.general-icon:hover {
+  color: transparent; }
+
 .general-icon svg {
   width: 36px;
   height: 36px;
-  padding: 3px;
-  border-radius: 50%;
+  border-radius: 100%;
   fill: black;
   background: white;
-  border: 1px solid black; }
+  border: 1px solid black;
+  transition: background-color .25s, transform .25s ease-out; }
+  .general-icon svg:hover {
+    border-radius: 100%;
+    transform: scale(1.25);
+    transition: background-color .25s, transform .25s ease-out; }
 
 .introduction .container {
   background: #211d1e;
@@ -98,8 +105,8 @@ p, li {
   border-radius: 8px 8px 8px 8px; }
 
 .text-container {
-  background: #140e0e;
-  padding: 20px;
+  background: transparent;
+  padding: 45px;
   position: relative;
   margin-top: 100px;
   margin-left: -45px;

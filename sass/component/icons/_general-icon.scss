@@ -1,12 +1,25 @@
 .general-icon
 {
+    &:hover
+    {
+	color: transparent;
+    }
     svg{
        width: 36px;
        height: 36px;
-       padding: 3px;
-       border-radius: 50%;
+       border-radius: 100%;
        fill: black;
        background: white;
        border: 1px solid black;
+       transition: background-color .25s, transform .25s ease-out;
+
+       &:hover
+       {
+	border-radius: 100%;
+	transform: scale(1.25);
+	transition: background-color .25s, transform .25s ease-out;
+       }
     }
 }
+
+
