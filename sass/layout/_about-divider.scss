@@ -1,4 +1,4 @@
 .about-divider
 {
-    @include generateDivider(100px, $about-divider-background, $about-divider-color);
+    @include generateDivider($about-divider-container-padding-top + $about-divider-container-padding-bottom, $about-divider-background, $about-divider-color);
 }

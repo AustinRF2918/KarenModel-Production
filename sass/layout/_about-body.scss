@@ -1,6 +1,6 @@
 .about-body
 {
-    @include generateContainer(inherit, 0px, 100px);
+    @include generateContainer(inherit, $about-body-container-padding-top, $about-body-container-padding-bottom);
 
     &-beautifulBox
     {

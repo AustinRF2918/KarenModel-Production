@@ -1,6 +1,6 @@
 .gallery-body
 {
-    @include generateContainer($gallery-body-container-background, 0px, 0px)
+    @include generateContainer($gallery-body-container-background, $gallery-body-container-padding-top, $gallery-body-container-padding-bottom)
     {
 	//Refactor at later date.
 	@include generateSideBorders(0px, solid, black);

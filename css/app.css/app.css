@@ -258,7 +258,7 @@ p, li {
 .contact-body .container {
   background: inherit;
   padding-top: 0px;
-  padding-bottom: 100px; }
+  padding-bottom: 0px; }
 
 .contact-body .boxed-in {
   border-radius: 8px;

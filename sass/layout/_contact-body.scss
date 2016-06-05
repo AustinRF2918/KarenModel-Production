@@ -2,9 +2,7 @@
 {
 
     //Refactor all these types at a later date.
-    @include generateContainer(inherit, 0px, 100px)
-    {
-    }
+    @include generateContainer(inherit, $contact-body-container-padding-top, $contact-body-container-padding-bottom);
 
     .boxed-in
     {
