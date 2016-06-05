@@ -2,6 +2,7 @@
 $almost-black: rgb(20, 14, 14);
 $almost-black-transparent: rgba(20, 14, 14, .5);
 $almost-black-more-transparent: rgba(0, 0, 0, 0.6);
+$pitch-black: black;
 $blackish-button: #140e0e;
 $pearly-white: white;
 $drab-grey: #b0b0b0;
@@ -20,6 +21,7 @@ $palette-4: $blackish-button;
 $palette-5: $pearly-white;
 $palette-6: $drab-grey;
 $palette-7: $idontevenknow-black;
+$palette-8: $pitch-black;
 
 //Utility Palette
 $palette-facebook: $facebook-blue;
@@ -84,14 +86,18 @@ $palette-rss: $rss-blue;
 
    //Gallery-divider.
 	$gallery-divider-background: $palette-1;
-
-       //Contact-Divider
-	$contact-divider-background: $palette-1;
-	$contact-row-middle-text-color: $palette-6;
+	$gallery-divider-color: $palette-8;
 
     //Contact-Body
 	$contact-body-text: $palette-7;
 	$contact-body-text-faded : $palette-6;
+	//Boxed in portion
+	    $contact-body-boxed-in-border-color: $palette-8;
+
+    //Contact Divider
+	$contact-divider-color: $palette-5; 
+	$contact-divider-background: $palette-8; 
+	    
 
 
 	  

@@ -171,14 +171,12 @@ p, li {
   border-radius: 8px 8px 8px 8px; }
 
 .gallery-divider .container {
-  color: white;
+  color: black;
   background: #140e0e;
   padding-top: 50px;
   padding-bottom: 50px; }
 
 .gallery-body .container {
-  border-left: 0px solid black;
-  border-right: 0px solid black;
   background: #211d1e;
   padding-top: 0px;
   padding-bottom: 0px; }

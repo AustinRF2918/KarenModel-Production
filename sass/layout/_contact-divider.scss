@@ -1,4 +1,4 @@
 .contact-divider
 {
-    @include generateDivider($contact-divider-container-padding-top + $contact-divider-container-padding-bottom, white, black);
+    @include generateDivider($contact-divider-container-padding-top + $contact-divider-container-padding-bottom, $contact-divider-color, $contact-divider-background);
 }

@@ -1,5 +1,5 @@
 .gallery-divider
 {
 
-    @include generateDivider($gallery-divider-container-padding-top + $gallery-divider-container-padding-bottom, $gallery-divider-background, white);
+    @include generateDivider($gallery-divider-container-padding-top + $gallery-divider-container-padding-bottom, $gallery-divider-background, $gallery-divider-color);
 }
