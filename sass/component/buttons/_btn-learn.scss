@@ -1,18 +1,4 @@
 .btn-learn
 {
-    background: $btn-learn-background;
-    color: $btn-learn-color;
-
-    border-radius: 8px;
-    line-height: 30px;
-    width: 150px;
-
-    transtion: fade-out 0.5s;
-
-    &:hover
-    {
-	transtion: fade-in 0.5s;
-	background: $btn-learn-background-hover;
-	color: $btn-learn-color-hover;
-    }
+    @include generateButton($btn-learn-color, $btn-learn-background, $btn-learn-color-hover, $btn-learn-background-hover, 30px, 150px);
 }

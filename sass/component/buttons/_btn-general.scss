@@ -1,0 +1,23 @@
+@mixin generateButton($color, $background, $colorHover, $backgroundHover, $height, $width, $borderRadius)
+{
+    background: $background;
+    color: $color;
+
+    border-radius: $borderRadius;
+
+    line-height: $height;
+    width: $width;
+
+    //Refactor to be generalizable from interface.
+    transition: fade-out 0.5s;
+
+    &:hover
+    {
+	background: $backgroundHover;
+	color: $colorHover;
+
+	//Refactor to be generalizable from interface.
+	transition: fade-in 0.5s;
+    }
+}
+    
