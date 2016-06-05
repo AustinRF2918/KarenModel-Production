@@ -1,3 +1,18 @@
+//Utility Mixin.
+@mixin generateIconColors($bg, $cl, $bghv, $clhv)
+{
+    svg{
+	background: $bg;
+	fill: $cl;
+	color: $cl;
+       &:hover{
+	   background: $bghv;
+	   fill: $clhv;
+	   color: $clhv;
+       }
+    }
+}
+
 .general-icon
 {
     &:hover
@@ -8,16 +23,13 @@
        width: 36px;
        height: 36px;
        border-radius: 100%;
-       fill: black;
-       background: white;
-       border: 1px solid black;
        transition: background-color .25s, transform .25s ease-out;
 
        &:hover
        {
-	border-radius: 100%;
-	transform: scale(1.25);
-	transition: background-color .25s, transform .25s ease-out;
+	    border-radius: 100%;
+	    transform: scale(1.25);
+	    transition: background-color .25s, transform .25s ease-out;
        }
     }
 }

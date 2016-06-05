@@ -64,14 +64,56 @@ p, li {
   width: 36px;
   height: 36px;
   border-radius: 100%;
-  fill: black;
-  background: white;
-  border: 1px solid black;
   transition: background-color .25s, transform .25s ease-out; }
   .general-icon svg:hover {
     border-radius: 100%;
     transform: scale(1.25);
     transition: background-color .25s, transform .25s ease-out; }
+
+.facebook svg {
+  background: blue;
+  fill: white;
+  color: white; }
+  .facebook svg:hover {
+    background: white;
+    fill: blue;
+    color: blue; }
+
+.google svg {
+  background: green;
+  fill: white;
+  color: white; }
+  .google svg:hover {
+    background: white;
+    fill: green;
+    color: green; }
+
+.pintrest svg {
+  background: red;
+  fill: white;
+  color: white; }
+  .pintrest svg:hover {
+    background: white;
+    fill: red;
+    color: red; }
+
+.wifi svg {
+  background: blue;
+  fill: white;
+  color: white; }
+  .wifi svg:hover {
+    background: white;
+    fill: blue;
+    color: blue; }
+
+.twitter svg {
+  background: blue;
+  fill: white;
+  color: white; }
+  .twitter svg:hover {
+    background: white;
+    fill: blue;
+    color: blue; }
 
 .introduction .container {
   background: #211d1e;

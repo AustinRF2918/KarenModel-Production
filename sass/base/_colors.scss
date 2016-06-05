@@ -7,6 +7,12 @@ $pearly-white: white;
 $drab-grey: #b0b0b0;
 $idontevenknow-black: rgb(33, 29, 30);
 
+$facebook-blue: blue;
+$twitter-blue: blue;
+$google-green: green;
+$pintrest-red: red;
+$rss-blue: blue;
+
 $palette-1: $almost-black;
 $palette-2: $almost-black-transparent;
 $palette-3: $almost-black-more-transparent;
@@ -14,6 +20,14 @@ $palette-4: $blackish-button;
 $palette-5: $pearly-white;
 $palette-6: $drab-grey;
 $palette-7: $idontevenknow-black;
+
+//Utility Palette
+$palette-facebook: $facebook-blue;
+$palette-twitter: $twitter-blue;
+$palette-google: $google-green;
+$palette-pintrest: $pintrest-red;
+$palette-rss: $rss-blue;
+
 
 //Button Colors.
     //Btn-Learn
@@ -30,6 +44,13 @@ $palette-7: $idontevenknow-black;
 	$btn-read-background-hover: $palette-2;
 	$btn-read-color-hover: $palette-5;
 
+//Icon Colors.
+	$icon-facebook-color: $palette-facebook;
+	$icon-twitter-color: $palette-twitter;
+	$icon-google-color: $palette-google;
+	$icon-pinterest-color: $palette-pintrest;
+	$icon-rss-color: $palette-rss;
+	$icon-general-background:  $palette-5;
 
 //Containers
     //brand
