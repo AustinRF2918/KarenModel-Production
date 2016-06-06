@@ -1,6 +1,6 @@
 @mixin generateContainer($background, $paddingTop, $paddingBottom)
 {
-    .container
+    .container-fluid
     {
 	@content;
 	background: $background;

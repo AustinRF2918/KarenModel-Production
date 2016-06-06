@@ -115,7 +115,7 @@ p, li {
     fill: blue;
     color: blue; }
 
-.introduction .container {
+.introduction .container-fluid {
   background: #211d1e;
   padding-top: 20px;
   padding-bottom: 0px; }
@@ -170,13 +170,13 @@ p, li {
   z-index: 1000;
   border-radius: 8px 8px 8px 8px; }
 
-.gallery-divider .container {
-  color: black;
-  background: #140e0e;
+.gallery-divider .container-fluid {
+  color: white;
+  background: black;
   padding-top: 50px;
   padding-bottom: 50px; }
 
-.gallery-body .container {
+.gallery-body .container-fluid {
   background: #211d1e;
   padding-top: 0px;
   padding-bottom: 0px; }
@@ -192,7 +192,7 @@ p, li {
       color: white; }
       .gallery-body-row-left h1 {
         font-weight: bold;
-        margin-top: 75%;
+        margin-top: 60%;
         padding: 10%; } }
   @media screen and (min-width: 768px) {
     .gallery-body-row-right {
@@ -203,7 +203,7 @@ p, li {
       color: white; }
       .gallery-body-row-right h1 {
         font-weight: bold;
-        margin-top: 75%;
+        margin-top: 60%;
         padding: 10%; } }
   .gallery-body-row-middle-brand {
     background-image: url(../../images/logo.png);
@@ -216,13 +216,13 @@ p, li {
     color: #b0b0b0;
     text-align: justify; }
 
-.about-divider .container {
+.about-divider .container-fluid {
   color: #140e0e;
   background: white;
   padding-top: 50px;
   padding-bottom: 50px; }
 
-.about-body .container {
+.about-body .container-fluid {
   background: inherit;
   padding-top: 0px;
   padding-bottom: 100px; }
@@ -247,16 +247,16 @@ p, li {
   .about-body .remove-sides .model-attribute {
     color: #211d1e; }
 
-.contact-divider .container {
+.contact-divider .container-fluid {
   color: black;
   background: white;
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-top: 75px;
+  padding-bottom: 75px; }
 
-.contact-body .container {
+.contact-body .container-fluid {
   background: inherit;
   padding-top: 0px;
-  padding-bottom: 0px; }
+  padding-bottom: 100px; }
 
 .contact-body .boxed-in {
   border-radius: 8px;
