@@ -39,7 +39,7 @@ p, li {
   margin-left: -60px;
   margin-right: -50px;
   z-index: 1000;
-  border-radius: 5px 5px 0px 0px; }
+  border-radius: 8px 8px 0px 0px; }
 
 .text-container {
   background: #140e0e;
@@ -48,7 +48,7 @@ p, li {
   margin-left: -60px;
   margin-right: -50px;
   z-index: 1000;
-  border-radius: 0px 0px 5px 5px; }
+  border-radius: 0px 0px 8px 8px; }
 
 .text-overlay {
   margin-left: 28%;
@@ -131,7 +131,7 @@ p, li {
     background-size: cover; }
   @media screen and (min-width: 768px) {
     .introduction-row-left {
-      border-radius: 5px 5px 5px 5px;
+      border-radius: 8px 8px 8px 8px;
       background-image: url(../../images/gallery4.jpg); } }
   .introduction-row-right {
     text-align: right; }
@@ -148,27 +148,6 @@ p, li {
   .introduction-row-middle-text {
     color: #b0b0b0;
     text-align: justify; }
-
-.brand-container {
-  background: #140e0e;
-  position: relative;
-  padding-top: 30px;
-  padding-bottom: 10px;
-  margin-top: -20px;
-  margin-left: -17px;
-  margin-right: -17px;
-  z-index: 1000;
-  border-radius: 8px 8px 8px 8px; }
-
-.text-container {
-  background: transparent;
-  padding: 45px;
-  position: relative;
-  margin-top: 100px;
-  margin-left: -45px;
-  margin-right: -45px;
-  z-index: 1000;
-  border-radius: 8px 8px 8px 8px; }
 
 .gallery-divider .container-fluid {
   color: white;
@@ -272,7 +251,3 @@ p, li {
     line-height: 30px; }
   .contact-body .remove-sides .model-attribute {
     color: #211d1e; }
-
-.contact-information {
-  letter-spacing: .1em;
-  font-weight: 800; }

@@ -6,7 +6,7 @@
 
     .boxed-in
     {
-	border-radius: 8px;
+	border-radius: $primary-border-radius;
 	border: 1px solid $contact-body-boxed-in-border-color;
 	padding-bottom: 15px;
     }
@@ -30,8 +30,4 @@
     }
 }
 
-.contact-information
-{
-    letter-spacing: .1em;
-    font-weight: 800;
-}
+

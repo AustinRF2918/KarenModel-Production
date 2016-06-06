@@ -1,4 +1,4 @@
 .pintrest
 {
-    @include generateIconColors($icon-pinterest-color, white, white, $icon-pinterest-color);
+    @include generateIconColors($icon-pinterest-color, $icon-general-background, $icon-general-background, $icon-pinterest-color);
 }

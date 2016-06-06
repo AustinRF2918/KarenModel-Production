@@ -19,15 +19,16 @@
     {
 	color: transparent;
     }
+
     svg{
        width: 36px;
        height: 36px;
-       border-radius: 100%;
+       border-radius: $icon-border-radius;
        transition: background-color .25s, transform .25s ease-out;
 
        &:hover
        {
-	    border-radius: 100%;
+	    border-radius: $icon-border-radius;
 	    transform: scale(1.25);
 	    transition: background-color .25s, transform .25s ease-out;
        }

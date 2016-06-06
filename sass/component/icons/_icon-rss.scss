@@ -1,4 +1,4 @@
 .wifi
 {
-    @include generateIconColors($icon-rss-color, white, white, $icon-rss-color);
+    @include generateIconColors($icon-rss-color, $icon-general-background, $icon-general-background, $icon-rss-color);
 }
