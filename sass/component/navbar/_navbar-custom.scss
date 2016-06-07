@@ -1,5 +1,23 @@
 .navbar-custom
 {
     height: 90px;
-    padding-top: 25px;
+    padding-top: 20px;
+
+    &-brand
+    {
+	//REFACTOR
+	font-size: 26px;
+    }
+
+    &-icon-group
+    {
+	//REFACTOR
+	padding-top: 5px;
+    }
+
+    &-quick-nav
+    {
+	//REFACTOR
+	font-size: 26px;
+    }
 }
