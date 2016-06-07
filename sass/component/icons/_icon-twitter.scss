@@ -2,3 +2,8 @@
 {
     @include generateIconColors($icon-twitter-color, $icon-general-background, $icon-general-background, $icon-twitter-color);
 }
+
+.twitter-navbar
+{
+    @include generateIconColors($icon-twitter-color, $icon-general-background, $icon-general-background, $icon-twitter-color);
+}

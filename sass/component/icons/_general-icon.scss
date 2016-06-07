@@ -25,14 +25,21 @@
     svg{
        width: 36px;
        height: 36px;
-       border-radius: $icon-border-radius;
+
+       //Refactor at later point.
+       border-radius: 2px;
        transition: background-color .25s, transform .25s ease-out;
+       transform: scale(1);
 
        &:hover
        {
-	    border-radius: $icon-border-radius;
-	    transform: scale(1.25);
+	    //Refactor at later point.
+	    transform: scale(1.1);
 	    transition: background-color .25s, transform .25s ease-out;
+
+	    //Refactor at later point.
+	    border-radius: 2px;
+
        }
     }
 }

@@ -2,3 +2,8 @@
 {
     @include generateIconColors($icon-rss-color, $icon-general-background, $icon-general-background, $icon-rss-color);
 }
+
+.wifi-navbar
+{
+    @include generateIconColors($icon-rss-color, $icon-general-background, $icon-general-background, $icon-rss-color);
+}

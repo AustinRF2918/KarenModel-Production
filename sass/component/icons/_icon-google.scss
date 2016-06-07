@@ -2,3 +2,8 @@
 {
     @include generateIconColors($icon-google-color, $icon-general-background, $icon-general-background, $icon-google-color);
 }
+
+.google-navbar
+{
+    @include generateIconColors($icon-google-color, $icon-general-background, $icon-general-background, $icon-google-color);
+}

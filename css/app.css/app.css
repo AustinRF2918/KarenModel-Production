@@ -65,18 +65,28 @@ p, li {
   .general-icon svg {
     width: 36px;
     height: 36px;
-    border-radius: 100%;
-    transition: background-color .25s, transform .25s ease-out; }
+    border-radius: 2px;
+    transition: background-color .25s, transform .25s ease-out;
+    transform: scale(1); }
     .general-icon svg:hover {
-      border-radius: 100%;
-      transform: scale(1.25);
-      transition: background-color .25s, transform .25s ease-out; }
+      transform: scale(1.1);
+      transition: background-color .25s, transform .25s ease-out;
+      border-radius: 2px; }
 
 .facebook svg {
   background: blue;
   fill: white;
   color: white; }
   .facebook svg:hover {
+    background: white;
+    fill: blue;
+    color: blue; }
+
+.facebook-navbar svg {
+  background: blue;
+  fill: white;
+  color: white; }
+  .facebook-navbar svg:hover {
     background: white;
     fill: blue;
     color: blue; }
@@ -90,11 +100,29 @@ p, li {
     fill: green;
     color: green; }
 
+.google-navbar svg {
+  background: green;
+  fill: white;
+  color: white; }
+  .google-navbar svg:hover {
+    background: white;
+    fill: green;
+    color: green; }
+
 .pintrest svg {
   background: red;
   fill: white;
   color: white; }
   .pintrest svg:hover {
+    background: white;
+    fill: red;
+    color: red; }
+
+.pintrest-navbar svg {
+  background: red;
+  fill: white;
+  color: white; }
+  .pintrest-navbar svg:hover {
     background: white;
     fill: red;
     color: red; }
@@ -108,11 +136,29 @@ p, li {
     fill: blue;
     color: blue; }
 
+.wifi-navbar svg {
+  background: blue;
+  fill: white;
+  color: white; }
+  .wifi-navbar svg:hover {
+    background: white;
+    fill: blue;
+    color: blue; }
+
 .twitter svg {
   background: blue;
   fill: white;
   color: white; }
   .twitter svg:hover {
+    background: white;
+    fill: blue;
+    color: blue; }
+
+.twitter-navbar svg {
+  background: blue;
+  fill: white;
+  color: white; }
+  .twitter-navbar svg:hover {
     background: white;
     fill: blue;
     color: blue; }
