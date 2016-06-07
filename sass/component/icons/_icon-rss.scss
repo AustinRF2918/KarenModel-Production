@@ -5,5 +5,5 @@
 
 .wifi-navbar
 {
-    @include generateIconColors($icon-rss-color, $icon-general-background, $icon-general-background, $icon-rss-color);
+    @include generateIconColors($navbar-icons, $navbar-background, $navbar-background, $navbar-icons-darker);
 }

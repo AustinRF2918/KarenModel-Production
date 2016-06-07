@@ -2,17 +2,25 @@
 $almost-black: rgb(20, 14, 14);
 $almost-black-transparent: rgba(20, 14, 14, .5);
 $almost-black-more-transparent: rgba(0, 0, 0, 0.6);
-$pitch-black: black;
+
+$base-black : black;
+$pitch-black: $base-black;
+
 $blackish-button: #140e0e;
-$pearly-white: white;
 $drab-grey: #b0b0b0;
 $idontevenknow-black: rgb(33, 29, 30);
-
 $facebook-blue: blue;
 $twitter-blue: blue;
 $google-green: green;
 $pintrest-red: red;
 $rss-blue: blue;
+
+$sandy: #c1bab3;
+$sandy-dark: #7a7571;
+$ebony-black: $base-black;
+$pearly-white: white;
+
+
 
 $palette-1: $almost-black;
 $palette-2: $almost-black-transparent;
@@ -22,6 +30,10 @@ $palette-5: $pearly-white;
 $palette-6: $drab-grey;
 $palette-7: $idontevenknow-black;
 $palette-8: $pitch-black;
+$palette-9: $sandy;
+$palette-10: $sandy-dark;
+$palette-11: $ebony-black;
+$palette-12: $pearly-white;
 
 //Utility Palette
 $palette-facebook: $facebook-blue;
@@ -30,6 +42,11 @@ $palette-google: $google-green;
 $palette-pintrest: $pintrest-red;
 $palette-rss: $rss-blue;
 
+//Navbar Colors
+    $navbar-background: $palette-9;
+    $navbar-icons: $palette-10;
+    $navbar-icons-darker: darken($palette-9, 20%);
+    $navbar-text: $palette-11;
 
 //Button Colors.
     //Btn-Learn

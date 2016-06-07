@@ -5,5 +5,5 @@
 
 .google-navbar
 {
-    @include generateIconColors($icon-google-color, $icon-general-background, $icon-general-background, $icon-google-color);
+    @include generateIconColors($navbar-background, $navbar-icons, $navbar-background, $navbar-icons-darker);
 }

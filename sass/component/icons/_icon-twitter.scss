@@ -5,5 +5,5 @@
 
 .twitter-navbar
 {
-    @include generateIconColors($icon-twitter-color, $icon-general-background, $icon-general-background, $icon-twitter-color);
+    @include generateIconColors($navbar-background, $navbar-icons, $navbar-background, $navbar-icons-darker);
 }
