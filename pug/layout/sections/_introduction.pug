@@ -1,15 +1,10 @@
 include ../../utility/bootstrap/_index.pug  
 
+//- We need to get this to be a bi-imagal section,
+//- Divided into two portions: No weird middle portion
+//- And then add overlaying text: This will be done via
+//- Pseudo elements.
+
 +generateSection("introduction")
-  +generateRow("introduction")
-    +generateColumn(4, "left", "introduction")
-    +generateColumn(4, "middle", "introduction")
-      .brand-container
-        +generateSubRow("middle-brand", "introduction")
-      .text-container
-        +generateSubRow("middle-text", "introduction")
-          p Karen is currently modeling in the metro Detroit Area. She is doing limited TFP/CD work since graduated and now working full time. Karen is currently modeling in the metro Detroit Area. She is doing limited TFP/CD work since graduated and now working full time. Karen is currently modeling in the metro Detroit Area. She is doing limited TFP/CD work since graduated and now working full time. Karen is currently modeling in the metro Detroit Area. She is doing limited TFP/CD work since graduated and now working full time.
-      +generateSubRow("middle-button", "introduction")
-        +generateMargin("large")
-        button(class=["btn", "btn-learn"]) Learn More
-    +generateColumn(4, "right", "introduction")
+.col-xs-6.just-chillin-left
+.col-xs-6.just-chillin-right

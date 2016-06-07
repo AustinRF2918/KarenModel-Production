@@ -194,37 +194,32 @@ p, li {
 
 .introduction .container-fluid {
   background: #211d1e;
-  padding-top: 20px;
+  padding-top: 0px;
   padding-bottom: 0px; }
 
 .introduction-row {
   text-align: center;
-  min-height: 500px; }
-  .introduction-row-left, .introduction-row-right {
-    margin-top: -20px;
-    text-align: center;
-    height: 750px;
-    background-repeat: no-repeat;
-    background-size: cover; }
-  @media screen and (min-width: 768px) {
-    .introduction-row-left {
-      border-radius: 8px 8px 8px 8px;
-      background-image: url(../../images/gallery4.jpg); } }
-  .introduction-row-right {
-    text-align: right; }
-    @media screen and (min-width: 768px) {
-      .introduction-row-right {
-        background-image: url(../../images/gallery3.jpg); } }
-  .introduction-row-middle-brand {
-    background-image: url(../../images/logo.png);
-    background-repeat: no-repeat;
-    height: 100px;
-    width: 150px;
-    margin-left: 120px;
-    background-size: cover; }
-  .introduction-row-middle-text {
-    color: #b0b0b0;
-    text-align: justify; }
+  min-height: 700px; }
+
+.just-chillin-left {
+  width: 50%;
+  height: 700px;
+  background-image: url("../../img/page-assets/just-chillin-asset.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.just-chillin-right {
+  width: 50%;
+  height: 700px;
+  background-image: url("../../img/page-assets/just-chillin-asset-2.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .gallery-divider .container-fluid {
   color: white;
