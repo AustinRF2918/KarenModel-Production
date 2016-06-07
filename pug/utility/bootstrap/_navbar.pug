@@ -1,14 +1,17 @@
 include ../../component/icons/_index.pug
+include _mobile-toggler.pug
   
 mixin prototypicalNavbar(navbarStyle)
   nav(class=["navbar", "navbar-custom", navbarStyle])
-    .container
-        .col-md-3
+     .container-fluid
+        .col-md-3.p-l-3
             a(class=["navbar-brand", "navbar-custom-brand", "pull-xs-left"], href="#") Anna Wiedenauer
         .col-md-6.text-xs-center.navbar-custom-icon-group
             +facebook-icon-navbar
             +pintrest-icon-navbar
             +twitter-icon-navbar
             +google-icon-navbar
-        .col-md-3
-            a(class=["navbar-brand", "pull-xs-right", "navbar-custom-quick-nav"], href="#") Anna Wiedenauer
+        .col-md-3.text-xs-right.p-r-3
+            +mobileToggler
+  //a
+             

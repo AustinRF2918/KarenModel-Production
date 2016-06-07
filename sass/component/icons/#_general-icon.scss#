@@ -1,0 +1,48 @@
+//Utility Mixin.
+//TODO: MAKE MORE EXPANDABLE AND REUSABLE
+@mixin generateIconColors($bg, $cl, $bghv, $clhv)
+{
+    svg{
+	background: $bg;
+	fill: $cl;
+	color: $cl;
+       &:hover{
+	   background: $bghv;
+	   fill: $clhv;
+	   color: $clhv;
+       }
+    }
+}
+
+.general-icon
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    &:hover
+    {
+	color: transparent;
+    }
+
+    svg{
+       width: 36px;
+       height: 36px;
+
+       //Refactor at later point.
+       border-radius: 2px;
+       transition: background-color .25s, transform .25s ease-out;
+       transform: scale(1);
+
+       &:hover
+       {
+	    //Refactor at later point.
+	    transform: scale(1.1);
+	    transition: background-color .25s, transform .25s ease-out;
+
+	    //Refactor at later point.
+	    border-radius: 2px;
+
+       }
+    }
+}
+
+
