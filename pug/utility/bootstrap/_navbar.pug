@@ -1,13 +1,14 @@
 include ../../component/icons/_index.pug
   
 mixin prototypicalNavbar(navbarStyle)
-    nav(class=["navbar", navbarStyle])
+  nav(class=["navbar", "navbar-custom", navbarStyle])
+    .container
         .col-md-3
             a(class=["navbar-brand", "pull-xs-left"], href="#") Anna Wiedenauer
         .col-md-6.text-xs-center
-          +facebook-icon
-          +facebook-icon
-          +facebook-icon
-          +facebook-icon
+            +facebook-icon
+            +facebook-icon
+            +facebook-icon
+            +facebook-icon
         .col-md-3
             a(class=["navbar-brand", "pull-xs-right"], href="#") Anna Wiedenauer

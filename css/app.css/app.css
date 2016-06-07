@@ -117,6 +117,10 @@ p, li {
     fill: blue;
     color: blue; }
 
+.navbar-custom {
+  height: 90px;
+  padding-top: 25px; }
+
 .introduction .container-fluid {
   background: #211d1e;
   padding-top: 20px;
