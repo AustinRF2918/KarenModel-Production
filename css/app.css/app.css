@@ -57,18 +57,20 @@ p, li {
   width: 50%;
   background: rgba(0, 0, 0, 0.6); }
 
-.general-icon:hover {
-  color: transparent; }
-
-.general-icon svg {
-  width: 36px;
-  height: 36px;
-  border-radius: 100%;
-  transition: background-color .25s, transform .25s ease-out; }
-  .general-icon svg:hover {
+.general-icon {
+  padding-left: 10px;
+  padding-right: 10px; }
+  .general-icon:hover {
+    color: transparent; }
+  .general-icon svg {
+    width: 36px;
+    height: 36px;
     border-radius: 100%;
-    transform: scale(1.25);
     transition: background-color .25s, transform .25s ease-out; }
+    .general-icon svg:hover {
+      border-radius: 100%;
+      transform: scale(1.25);
+      transition: background-color .25s, transform .25s ease-out; }
 
 .facebook svg {
   background: blue;
