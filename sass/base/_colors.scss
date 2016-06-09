@@ -81,16 +81,21 @@ $palette-rss: $rss-blue;
     //text
 	$text-overlay-background: $palette-3;
 
+//Breaks
+    //Break color
+	$mini-break-color: $palette-3;
+
 //Layout Information
    //Introduction
 	$introduction-container-background: $palette-1;
 
     //About-divider.
-	$about-divider-background: compliment($palette-5);
-	$about-divider-color: $palette-1;
+	$about-divider-color: $palette-3;
+	$about-divider-background: darken($palette-9, 5%);
 	$about-row-middle-text-color: $palette-6;
 
    //About-Body
+	$about-body-background: darken($palette-9, 5%);
 	$about-body-text: $palette-7;
 	$about-body-text-faded : $palette-6;
 

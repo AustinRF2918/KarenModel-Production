@@ -1,39 +1,51 @@
 .about-body
 {
-    @include generateContainer(inherit, $about-body-container-padding-top, $about-body-container-padding-bottom);
+    @include generateContainer($about-body-background, $about-body-container-padding-top, $about-body-container-padding-bottom);
+}
 
-    &-beautifulBox
-    {
-	&Top
-	{
-	    border-radius: $primary-border-radius $primary-border-radius 0px 0px;
-	    background: black;
-	    color: white;
-	}
+.just-chillin-left-temp
+{
+    padding: 0px;
+    margin: 0px;
+    height: 900px;
+    background-image: url("../../img/page-assets/just-chillin-asset.jpg");
+    background-repeat: no-repeat;
 
-	&Bottom
-	{
-	    border-radius: 0px 0px $primary-border-radius $primary-border-radius;
-	    background: white;
-	    border: 1px solid black;
-	}
-    }
+    //Refactor
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
-    .remove-sides
-    {
+.just-chillin-right-temp
+{
+    padding: 0px;
+    margin: 0px;
+    height: 450px;
+    background-image: url("../../img/page-assets/just-chillin-asset-2.jpg");
+    background-repeat: no-repeat;
+
+    //Refactor
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.fast-facts-header
+{
+    margin-left: 47vw;
+}
+
+.fast-facts-content
+{
+
+    position: relative;
+
+    li{
+	margin-top: 15px;
+	margin-bottom: 15px;
 	list-style: none;
-
-	li
-	{
-	    color: $about-body-text-faded;
-	    line-height: 30px;
-	}
-
-	.model-attribute
-	{
-	    color: $about-body-text;
-	}
-
-	@include removePositioning;
     }
+    left: 21vw;
 }

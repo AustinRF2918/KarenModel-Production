@@ -80,6 +80,24 @@ p, li {
   .introduction-text-container h2 {
     font-size: 4em; }
 
+.fast-facts-container {
+  position: fixed;
+  position: absolute;
+  margin-top: 100px;
+  left: 15%;
+  z-index: 1000; }
+  .fast-facts-container h1, .fast-facts-container h2, .fast-facts-container li {
+    color: #d8d4cf; }
+  .fast-facts-container h1 {
+    font-size: 7em; }
+  .fast-facts-container h2, .fast-facts-container li {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em; }
+
+.model-attribute {
+  text-transform: lowercase; }
+
 .text-overlay {
   margin-left: 28%;
   text-align: center;
@@ -204,6 +222,10 @@ p, li {
   .navbar-custom-quick-nav {
     font-size: 26px; }
 
+.mini-break {
+  width: 2.5vw;
+  border: 2px solid rgba(0, 0, 0, 0.6); }
+
 .introduction .container-fluid {
   background: #211d1e;
   padding-top: 0px;
@@ -284,35 +306,48 @@ p, li {
     text-align: justify; }
 
 .about-divider .container-fluid {
-  color: #140e0e;
-  background: compliment(white);
+  color: rgba(0, 0, 0, 0.6);
+  background: #b6ada5;
   padding-top: 50px;
   padding-bottom: 50px; }
 
 .about-body .container-fluid {
-  background: inherit;
+  background: #b6ada5;
   padding-top: 0px;
-  padding-bottom: 100px; }
+  padding-bottom: 0px; }
 
-.about-body-beautifulBoxTop {
-  border-radius: 8px 8px 0px 0px;
-  background: black;
-  color: white; }
-
-.about-body-beautifulBoxBottom {
-  border-radius: 0px 0px 8px 8px;
-  background: white;
-  border: 1px solid black; }
-
-.about-body .remove-sides {
-  list-style: none;
+.just-chillin-left-temp {
   padding: 0px;
-  margin: 0px; }
-  .about-body .remove-sides li {
-    color: #b0b0b0;
-    line-height: 30px; }
-  .about-body .remove-sides .model-attribute {
-    color: #211d1e; }
+  margin: 0px;
+  height: 900px;
+  background-image: url("../../img/page-assets/just-chillin-asset.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.just-chillin-right-temp {
+  padding: 0px;
+  margin: 0px;
+  height: 450px;
+  background-image: url("../../img/page-assets/just-chillin-asset-2.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.fast-facts-header {
+  margin-left: 47vw; }
+
+.fast-facts-content {
+  position: relative;
+  left: 21vw; }
+  .fast-facts-content li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    list-style: none; }
 
 .contact-divider .container-fluid {
   color: black;

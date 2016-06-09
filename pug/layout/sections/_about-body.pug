@@ -2,24 +2,33 @@ include ../../utility/bootstrap/_index.pug
 
 +generateSection("about-body")
   +generateRow("about-body")
-    +generateColumn(12, "facts", "about-body")
-      +generateMargin("small")
-        .about-body-beautifulBoxTop.col-md-4.col-md-offset-4.p-y-2.p-x-2
-          h2.text-xs-center <strong>Fast Facts</strong>
-        .row
-            ul.text-xs-left.remove-sides
-              .col-md-12
-                .col-md-4.col-md-offset-4.about-body-beautifulBoxBottom.p-y-2
-                  .col-md-8.col-md-offset-2
-                    li Height: <span class="model-attribute">5'9</span>
-                    li Shoe size: <span class="model-attribute">9.5</span>
-                    li Measurements: <span class="model-attribute">34-25-36</span>
-                    li Hair color: <span class="model-attribute">Brown</span>
-                    li Hair length: <span class="model-attribute">Long</span>
-                    li Eye color: <span class="model-attribute">Hazel</span>
-                    li Ethicity: <span class="model-attribute">Caucasian</span>
-                    li Skin color: <span class="model-attribute">Fair</span>
-        .row
-           +generateMargin("large")
-            .text-xs-center
-                button(class=["btn", "btn-read"])= "Read More"
+    .fast-facts-container
+        .fast-facts-header
+          h1 Fast Facts
+        .fast-facts-content.m-t-3
+          .col-md-5
+            li Height: 
+            li Shoe size: 
+            li Measurements: 
+            li Hair color: 
+            li Hair length: 
+            li Eye color: 
+            li Ethicity: 
+            li Skin color: 
+          .col-md-4.text-xs-left
+            li <span class="model-attribute">5'9</span>
+            li <span class="model-attribute">9.5</span>
+            li <span class="model-attribute">34-25-36</span>
+            li <span class="model-attribute">Brown</span>
+            li <span class="model-attribute">Long</span>
+            li <span class="model-attribute">Hazel</span>
+            li <span class="model-attribute">Caucasian</span>
+            li <span class="model-attribute">Fair</span>
+    .col-sm-4.just-chillin-left-temp
+    .col-sm-4.p-x-0.m-x-0
+      .just-chillin-right-temp
+      .just-chillin-right-temp
+    .col-sm-4.p-x-0.m-x-0
+      .just-chillin-right-temp
+      .just-chillin-right-temp
+    

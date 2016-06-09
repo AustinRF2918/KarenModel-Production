@@ -1,0 +1,26 @@
+.fast-facts-container
+{
+    position: fixed;
+    position: absolute;
+    margin-top: 100px;
+    left: 15%;
+    z-index: 1000;
+
+    h1, h2, li{
+	color: lighten(#c1bab3, 10%);
+    }
+
+    h1{
+	font-size: 7em;
+    }
+
+    h2, li{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.5em;
+    }
+}
+
+.model-attribute{
+    text-transform: lowercase;
+}
