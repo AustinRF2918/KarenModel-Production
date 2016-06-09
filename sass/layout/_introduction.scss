@@ -9,35 +9,44 @@
     min-height: 700px;
 }
 
+//Refactor at later point
 $width-var: 50%;
-.just-chillin-left
+
+//Mixin for DRY.
+%just-chillin
 {
     padding: 0px;
     margin: 0px;
     width: $width-var;
     height: 700px;
-    background-image: url("../../img/page-assets/just-chillin-asset.jpg");
     background-repeat: no-repeat;
+}
 
-    //Refactor
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+
+.just-chillin-left
+{
+    @extend just-chillin;
+    background-image: url("../../img/page-assets/just-chillin-asset.jpg");
+
+    //Responsive backgrounds.
+    @media screen and (max-width: 767px)
+    {
+	width: 100%;
+    }
+
+    @include backgroundSizeCover;
 }
 
 .just-chillin-right
 {
-    padding: 0px;
-    margin: 0px;
-    width: $width-var;
-    height: 700px;
+    @extend just-chillin;
     background-image: url("../../img/page-assets/just-chillin-asset-2.jpg");
-    background-repeat: no-repeat;
 
-    //Refactor
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    //Responsive backgrounds.
+    @media screen and (max-width: 767px)
+    {
+	display: none;
+    }
+
+    @include backgroundSizeCover;
 }

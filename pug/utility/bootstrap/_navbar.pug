@@ -2,10 +2,10 @@ include ../../component/icons/_index.pug
 include _mobile-toggler.pug
   
 mixin prototypicalNavbar(navbarStyle)
-  nav(class=["navbar", "navbar-custom", navbarStyle])
+  nav(class=["navbar", "navbar-custom", "navbar-fixed-top" , navbarStyle])
      .container-fluid
         .col-md-3.p-l-3
-            a(class=["navbar-brand", "navbar-custom-brand", "pull-xs-left"], href="#") <strong>Anna Wiedenauer</strong>
+            a(class=["navbar-brand", "navbar-custom-brand", "pull-xs-left"], href="#") <strong>Karen Polzin</strong>
         .col-md-6.text-xs-center.navbar-custom-icon-group
             +facebook-icon-navbar
             +pintrest-icon-navbar

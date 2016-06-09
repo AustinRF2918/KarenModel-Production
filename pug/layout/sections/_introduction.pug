@@ -5,6 +5,7 @@ include ../../utility/bootstrap/_index.pug
 //- And then add overlaying text: This will be done via
 //- Pseudo elements.
 
+.m-t-3
 +generateSection("introduction")
   .row
     .introduction-text-container
@@ -13,5 +14,5 @@ include ../../utility/bootstrap/_index.pug
         .m-t-2
         button(class=["btn", "btn-read"]) Learn More
   .row
-    .col-sm-6.just-chillin-left
-    .col-sm-6.just-chillin-right
+    .col-xs-12.col-md-6.just-chillin-left
+    .col-xs-12.col-md-6.just-chillin-right
