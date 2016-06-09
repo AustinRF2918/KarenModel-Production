@@ -6,5 +6,12 @@ include ../../utility/bootstrap/_index.pug
 //- Pseudo elements.
 
 +generateSection("introduction")
-.col-xs-6.just-chillin-left
-.col-xs-6.just-chillin-right
+  .row
+    .introduction-text-container
+        h1 Karen Polzin
+        h2 Milford Based Model
+        .m-t-2
+        button(class=["btn", "btn-read"]) Learn More
+  .row
+    .col-sm-6.just-chillin-left
+    .col-sm-6.just-chillin-right

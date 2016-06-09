@@ -86,7 +86,7 @@ $palette-rss: $rss-blue;
 	$introduction-container-background: $palette-1;
 
     //About-divider.
-	$about-divider-background: $palette-5;
+	$about-divider-background: compliment($palette-5);
 	$about-divider-color: $palette-1;
 	$about-row-middle-text-color: $palette-6;
 

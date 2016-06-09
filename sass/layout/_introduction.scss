@@ -9,9 +9,12 @@
     min-height: 700px;
 }
 
+$width-var: 50%;
 .just-chillin-left
 {
-    width: 50%;
+    padding: 0px;
+    margin: 0px;
+    width: $width-var;
     height: 700px;
     background-image: url("../../img/page-assets/just-chillin-asset.jpg");
     background-repeat: no-repeat;
@@ -25,7 +28,9 @@
 
 .just-chillin-right
 {
-    width: 50%;
+    padding: 0px;
+    margin: 0px;
+    width: $width-var;
     height: 700px;
     background-image: url("../../img/page-assets/just-chillin-asset-2.jpg");
     background-repeat: no-repeat;

@@ -68,6 +68,18 @@ p, li {
   z-index: 1000;
   border-radius: 0px 0px 8px 8px; }
 
+.introduction-text-container {
+  position: absolute;
+  top: 300px;
+  left: 22%;
+  z-index: 1000; }
+  .introduction-text-container h1, .introduction-text-container h2 {
+    color: #d8d4cf; }
+  .introduction-text-container h1 {
+    font-size: 7em; }
+  .introduction-text-container h2 {
+    font-size: 4em; }
+
 .text-overlay {
   margin-left: 28%;
   text-align: center;
@@ -202,6 +214,8 @@ p, li {
   min-height: 700px; }
 
 .just-chillin-left {
+  padding: 0px;
+  margin: 0px;
   width: 50%;
   height: 700px;
   background-image: url("../../img/page-assets/just-chillin-asset.jpg");
@@ -212,6 +226,8 @@ p, li {
   background-size: cover; }
 
 .just-chillin-right {
+  padding: 0px;
+  margin: 0px;
   width: 50%;
   height: 700px;
   background-image: url("../../img/page-assets/just-chillin-asset-2.jpg");
@@ -269,7 +285,7 @@ p, li {
 
 .about-divider .container-fluid {
   color: #140e0e;
-  background: white;
+  background: compliment(white);
   padding-top: 50px;
   padding-bottom: 50px; }
 

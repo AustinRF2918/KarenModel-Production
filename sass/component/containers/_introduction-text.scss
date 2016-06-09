@@ -1,0 +1,20 @@
+.introduction-text-container
+{
+    position: absolute;
+    top: 300px;
+    left: 22%;
+    z-index: 1000;
+
+    h1, h2{
+	color: lighten(#c1bab3, 10%);
+    }
+
+    h1{
+	font-size: 7em;
+    }
+
+    h2{
+	font-size: 4em;
+    }
+
+}
