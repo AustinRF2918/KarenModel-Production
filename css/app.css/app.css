@@ -260,8 +260,8 @@ p, li {
   background-size: cover; }
 
 .gallery-divider .container-fluid {
-  color: white;
-  background: black;
+  color: rgba(0, 0, 0, 0.6);
+  background: #b6ada5;
   padding-top: 50px;
   padding-bottom: 50px; }
 
@@ -350,10 +350,10 @@ p, li {
     list-style: none; }
 
 .contact-divider .container-fluid {
-  color: black;
-  background: white;
-  padding-top: 75px;
-  padding-bottom: 75px; }
+  color: rgba(0, 0, 0, 0.6);
+  background: #b6ada5;
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .contact-body .container-fluid {
   background: inherit;
