@@ -294,28 +294,16 @@ p, li {
 
 .gallery-body-row {
   min-height: 500px; }
-  @media screen and (min-width: 768px) {
-    .gallery-body-row-left {
-      background-image: url(../../images/gallery4.jpg);
-      background-repeat: no-repeat;
-      height: 500px;
-      background-size: cover;
-      color: white; }
-      .gallery-body-row-left h1 {
-        font-weight: bold;
-        margin-top: 60%;
-        padding: 10%; } }
-  @media screen and (min-width: 768px) {
-    .gallery-body-row-right {
-      background-image: url(../../images/gallery3.jpg);
-      background-repeat: no-repeat;
-      height: 500px;
-      background-size: cover;
-      color: white; }
-      .gallery-body-row-right h1 {
-        font-weight: bold;
-        margin-top: 60%;
-        padding: 10%; } }
+  .gallery-body-row-left {
+    background-image: url(../../img/gallery4.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: cover; }
+  .gallery-body-row-right {
+    background-image: url(../../img/gallery3.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: cover; }
   .gallery-body-row-middle-brand {
     background-image: url(../../images/logo.png);
     background-repeat: no-repeat;
@@ -323,9 +311,6 @@ p, li {
     width: 150px;
     margin-left: 160px;
     background-size: cover; }
-  .gallery-body-row-middle-text {
-    color: #b0b0b0;
-    text-align: justify; }
 
 .about-divider .container-fluid {
   color: rgba(0, 0, 0, 0.6);

@@ -8,38 +8,18 @@
 
     &-left
     {
-	@media screen and (min-width: 768px)
-	{
-	    background-image: url(../../images/gallery4.jpg);
+	    background-image: url(../../img/gallery4.jpg);
 	    background-repeat: no-repeat;
 	    height: 500px;
 	    background-size: cover;
-	    color: $gallery-body-row-color;
-
-	    h1{
-		font-weight: bold;
-		margin-top: 60%;
-		padding: 10%;
-	    }
-	}
     }
 
     &-right
     {
-	@media screen and (min-width: 768px)
-	{
-	    background-image: url(../../images/gallery3.jpg);
+	    background-image: url(../../img/gallery3.jpg);
 	    background-repeat: no-repeat;
 	    height: 500px;
 	    background-size: cover;
-	    color: $gallery-body-row-color;
-
-	    h1{
-		font-weight: bold;
-		margin-top: 60%;
-		padding: 10%;
-	    }
-	}
     }
 
     &-middle
@@ -52,12 +32,6 @@
 	    width: 150px;
 	    margin-left: 160px;
 	    background-size: cover;
-	}
-
-	&-text
-	{
-	    color: $gallery-body-row-middle-text-color;
-	    text-align: justify;
 	}
     }
 
