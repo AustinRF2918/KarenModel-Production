@@ -19,6 +19,7 @@ $sandy: #c1bab3;
 $sandy-dark: #7a7571;
 $ebony-black: $base-black;
 $pearly-white: white;
+$dark-green: #333003;
 
 
 
@@ -34,6 +35,7 @@ $palette-9: $sandy;
 $palette-10: $sandy-dark;
 $palette-11: $ebony-black;
 $palette-12: $pearly-white;
+$palette-13: $dark-green;
 
 //Utility Palette
 $palette-facebook: $facebook-blue;
@@ -90,12 +92,12 @@ $palette-rss: $rss-blue;
 	$introduction-container-background: $palette-1;
 
     //About-divider.
-	$about-divider-color: $palette-3;
+	$about-divider-header-color: $palette-5;
 	$about-divider-background: darken($palette-9, 5%);
-	$about-row-middle-text-color: $palette-6;
+	$about-divider-subheader-color: $palette-11;
 
    //About-Body
-	$about-body-background: darken($palette-9, 5%);
+	$about-body-background: darken($palette-8, 5%);
 	$about-body-text: $palette-7;
 	$about-body-text-faded : $palette-6;
 

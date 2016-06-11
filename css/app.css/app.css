@@ -101,7 +101,7 @@ p, li {
   margin-top: 20%;
   left: 15%; }
   .fast-facts-content-container p {
-    color: #efedeb;
+    color: #c8baac;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.25em; }
@@ -277,10 +277,13 @@ p, li {
       display: none; } }
 
 .gallery-divider .container-fluid {
-  color: rgba(0, 0, 0, 0.6);
   background: #b6ada5;
   padding-top: 50px;
   padding-bottom: 50px; }
+  .gallery-divider .container-fluid h1 {
+    color: white; }
+  .gallery-divider .container-fluid p {
+    color: black; }
 
 .gallery-body .container-fluid {
   background: #211d1e;
@@ -308,13 +311,16 @@ p, li {
     background-size: cover; }
 
 .about-divider .container-fluid {
-  color: rgba(0, 0, 0, 0.6);
   background: #b6ada5;
   padding-top: 50px;
   padding-bottom: 50px; }
+  .about-divider .container-fluid h1 {
+    color: white; }
+  .about-divider .container-fluid p {
+    color: black; }
 
 .about-body .container-fluid {
-  background: #b6ada5;
+  background: black;
   padding-top: 0px;
   padding-bottom: 0px; }
 
@@ -353,10 +359,13 @@ p, li {
     list-style: none; }
 
 .contact-divider .container-fluid {
-  color: rgba(0, 0, 0, 0.6);
   background: #b6ada5;
   padding-top: 50px;
   padding-bottom: 50px; }
+  .contact-divider .container-fluid h1 {
+    color: white; }
+  .contact-divider .container-fluid p {
+    color: black; }
 
 .contact-body .container-fluid {
   background: inherit;

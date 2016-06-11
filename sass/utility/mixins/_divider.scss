@@ -1,7 +1,13 @@
-@mixin generateDivider($symetric-padding, $background-color, $text-color)
+@mixin generateDivider($symetric-padding, $background-color, $text-color, $subheader-color)
 {
     @include generateContainer($background-color, $symetric-padding/2, $symetric-padding/2)
     {
-	color: $text-color
+	h1{
+	    color: $text-color
+	}
+
+	p{
+	    color: $subheader-color;
+	}
     }
 }
