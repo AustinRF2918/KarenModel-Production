@@ -6,19 +6,17 @@
 
     &-brand
     {
-	//REFACTOR
-	font-size: 26px;
+	color: $navbar-brand !important;
+	font-size: $navbar-brand-font-size;
     }
 
     &-icon-group
     {
-	//REFACTOR
-	padding-top: 5px;
+	padding-top: $navbar-icon-group-padding-top;
     }
 
     &-quick-nav
     {
-	//REFACTOR
-	font-size: 26px;
+	font-size: $navbar-quick-nav-font-size;
     }
 }

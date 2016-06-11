@@ -1,13 +1,14 @@
 .brand-container
 {
-    background: $brand-container-background;
     position: relative;
-    margin-top: -20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: -60px;
-    margin-right: -50px;
-    z-index: 1000;
+
+    background: $brand-container-background;
+    margin-top: $brand-container-margin-top;
+    padding-top: $brand-container-padding-top;
+    padding-bottom: $brand-container-padding-bottom;
+    margin-left: $brand-container-margin-left;
+    margin-right: $brand-container-margin-right;
+    z-index: $brand-container-z-index;
     border-radius: $primary-border-radius $primary-border-radius 0px 0px;
 }
 

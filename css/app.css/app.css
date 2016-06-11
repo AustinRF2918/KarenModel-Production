@@ -49,8 +49,8 @@ p, li {
   border-radius: 1px; }
 
 .brand-container {
-  background: #140e0e;
   position: relative;
+  background: #140e0e;
   margin-top: -20px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -58,15 +58,6 @@ p, li {
   margin-right: -50px;
   z-index: 1000;
   border-radius: 8px 8px 0px 0px; }
-
-.text-container {
-  background: #140e0e;
-  margin-top: 50px;
-  position: relative;
-  margin-left: -60px;
-  margin-right: -50px;
-  z-index: 1000;
-  border-radius: 0px 0px 8px 8px; }
 
 .introduction-text-container {
   position: absolute;
@@ -227,6 +218,7 @@ p, li {
   height: 90px;
   padding-top: 20px; }
   .navbar-custom-brand {
+    color: white !important;
     font-size: 26px; }
   .navbar-custom-icon-group {
     padding-top: 5px; }

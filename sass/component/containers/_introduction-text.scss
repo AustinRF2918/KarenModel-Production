@@ -1,18 +1,18 @@
 .introduction-text-container
 {
     position: absolute;
-    z-index: 1000;
+    z-index: $introduction-text-container-z-index;
 
     @media screen and (min-height: 768px)
     {
-	top: 300px;
-	left: 22%;
+	top: $introduction-text-container-top-desktop;
+	left: $introduction-text-container-left-desktop;
     }
 
     @media screen and (max-height: 767px)
     {
-	top: 100px;
-	left: 22%;
+	top: $introduction-text-container-top-mobile;
+	left: $introduction-text-container-left-mobile;
     }
 
     h1, h2{
@@ -20,11 +20,11 @@
     }
 
     h1{
-	font-size: 7em;
+	font-size: $introduction-text-container-header-size;
     }
 
     h2{
-	font-size: 4em;
+	font-size: $introduction-text-container-subheader-size;
     }
 
 }
