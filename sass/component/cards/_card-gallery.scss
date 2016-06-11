@@ -1,0 +1,37 @@
+.modelGallery{
+    cursor: pointer;
+
+    background: transparent;
+    color: transparent;
+    border: 0px black solid;
+    border-radius: 0px;
+
+    height: 25%;
+    width: 100%;
+    overflow: hidden;
+
+    //Make transition mixin.
+    transition: 0.8s all;
+
+    img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	transition: 0.8s all;
+    }
+
+    h4{
+	font-size: 2.5em;
+    }
+
+    &:hover
+    {
+	z-index: 0;
+	position: relative;
+	color: white;
+
+	img{
+	    transform: scale(1.25);
+	}
+    }
+}
