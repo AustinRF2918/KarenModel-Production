@@ -2,7 +2,12 @@ include ../../utility/bootstrap/_index.pug
 
 +generateSection("gallery-body")
   +generateRow("gallery-body")
-    .col-lg-6.gallery-body-row-left
-    .col-lg-6.gallery-body-row-right
-    .col-lg-6.gallery-body-row-left
-    .col-lg-6.gallery-body-row-right
+    .col-md-10.col-md-offset-1
+      .col-md-4.double-height
+        +generateCardWithOverlay("modelGallery", "Runway, 2016", "", "img/page-assets/just-chillin-asset.jpg")
+      .col-md-4.double-height
+        +generateCardWithOverlay("modelGallery", "Runway, 2016", "", "img/page-assets/just-chillin-asset.jpg")
+      .col-md-4.double-height
+        +generateCardWithOverlay("modelGallery", "Runway, 2016", "", "img/page-assets/just-chillin-asset.jpg")
+    
+    

@@ -109,7 +109,7 @@ $palette-rss: $rss-blue;
 	    $contact-divider-subheader-color: $palette-11;
 
    //About-Body
-	    $about-body-background: $palette-13; 
+	$about-body-background: $palette-13; 
 	$about-body-text: $palette-7;
 	$about-body-text-faded : $palette-6;
 
