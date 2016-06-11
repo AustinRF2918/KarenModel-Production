@@ -1,37 +1,34 @@
 .modelGallery{
     cursor: pointer;
 
+    //Reset stuff.
     background: transparent;
     color: transparent;
     border: 0px black solid;
-    border-radius: 0px;
 
-    height: 25%;
-    width: 100%;
+    height: $model-gallery-height;
+    width: $model-gallery-width;
     overflow: hidden;
 
-    //Make transition mixin.
-    transition: 0.8s all;
+    @include generateTransition(0.8s);
 
     img{
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-	transition: 0.8s all;
+	@include img-full;
     }
 
     h4{
-	font-size: 2.5em;
+	font-size: $model-gallery-text-size;
     }
 
     &:hover
     {
+	//Generalize
 	z-index: 0;
 	position: relative;
-	color: white;
+	color: $model-gallery-text-color;
 
 	img{
-	    transform: scale(1.25);
+	    @include scaleTransform(1.25);
 	}
     }
 }
