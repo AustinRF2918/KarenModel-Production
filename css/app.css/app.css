@@ -104,9 +104,9 @@ p, li {
   left: 15%;
   margin-top: 15%;
   z-index: 1000; }
-  .fast-facts-content-container h1, .fast-facts-content-container h2, .fast-facts-content-container li {
+  .fast-facts-content-container h1, .fast-facts-content-container h2, .fast-facts-content-container p {
     color: #d8d4cf; }
-  .fast-facts-content-container li {
+  .fast-facts-content-container p {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.25em; }
@@ -346,12 +346,12 @@ p, li {
   background-size: cover; }
 
 .fast-facts-header {
-  margin-left: 54vw; }
+  margin-left: 78vw; }
 
 .fast-facts-content {
   width: 110%;
   position: relative;
-  left: 10vw; }
+  left: 35vw; }
   .fast-facts-content li {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -365,8 +365,8 @@ p, li {
 
 .contact-body .container-fluid {
   background: inherit;
-  padding-top: 0px;
-  padding-bottom: 100px; }
+  padding-top: 200px;
+  padding-bottom: 200px; }
 
 .contact-body .boxed-in {
   border-radius: 8px;

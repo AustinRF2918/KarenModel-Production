@@ -1,6 +1,7 @@
 .about-body
 {
     @include generateContainer($about-body-background, $about-body-container-padding-top, $about-body-container-padding-bottom);
+
 }
 
 .just-chillin-left-temp
@@ -34,7 +35,7 @@
 }
 .fast-facts-header
 {
-    margin-left: 54vw;
+    margin-left: 78vw;
 }
 
 .fast-facts-content
@@ -48,5 +49,5 @@
 	margin-bottom: 15px;
 	list-style: none;
     }
-    left: 10vw;
+    left: 35vw;
 }
