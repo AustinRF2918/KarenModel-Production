@@ -91,10 +91,21 @@ $palette-rss: $rss-blue;
    //Introduction
 	$introduction-container-background: $palette-1;
 
-    //About-divider.
-	$about-divider-header-color: $palette-5;
-	$about-divider-background: darken($palette-9, 5%);
-	$about-divider-subheader-color: $palette-11;
+    //Dividers 
+	//About-Divider.
+	    $about-divider-header-color: $palette-5;
+	    $about-divider-background: darken($palette-9, 5%);
+	    $about-divider-subheader-color: $palette-11;
+
+	//Gallery-divider.
+	    $gallery-divider-header-color: $palette-5;
+	    $gallery-divider-background: darken($palette-9, 5%);
+	    $gallery-divider-subheader-color: $palette-11;
+
+	//Contact Divider
+	    $contact-divider-header-color: $palette-5;
+	    $contact-divider-background: darken($palette-9, 5%);
+	    $contact-divider-subheader-color: $palette-11;
 
    //About-Body
 	$about-body-background: darken($palette-8, 5%);
@@ -108,9 +119,6 @@ $palette-rss: $rss-blue;
 	    $gallery-body-row-color: $palette-5;
 	    $gallery-body-row-middle-text-color: $palette-6;
 
-   //Gallery-divider.
-	$gallery-divider-background: $palette-8;
-	$gallery-divider-color: $palette-5;
 
     //Contact-Body
 	$contact-body-text: $palette-7;
@@ -118,9 +126,6 @@ $palette-rss: $rss-blue;
 	//Boxed in portion
 	    $contact-body-boxed-in-border-color: $palette-8;
 
-    //Contact Divider
-	$contact-divider-color: $palette-5; 
-	$contact-divider-background: $palette-8; 
 	    
 
 
