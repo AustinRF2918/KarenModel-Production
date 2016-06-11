@@ -86,20 +86,30 @@ p, li {
   .introduction-text-container h2 {
     font-size: 4em; }
 
-.fast-facts-container {
-  position: fixed;
+.fast-facts-header-container {
+  position: absolute;
+  margin-top: 100px;
+  z-index: 1000;
+  left: -35%; }
+  .fast-facts-header-container h1 {
+    font-size: 7em;
+    color: #d8d4cf; }
+
+.model-attribute {
+  text-transform: lowercase; }
+
+.fast-facts-content-container {
   position: absolute;
   margin-top: 100px;
   left: 15%;
+  margin-top: 15%;
   z-index: 1000; }
-  .fast-facts-container h1, .fast-facts-container h2, .fast-facts-container li {
+  .fast-facts-content-container h1, .fast-facts-content-container h2, .fast-facts-content-container li {
     color: #d8d4cf; }
-  .fast-facts-container h1 {
-    font-size: 7em; }
-  .fast-facts-container h2, .fast-facts-container li {
+  .fast-facts-content-container li {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.5em; }
+    font-size: 1.25em; }
 
 .model-attribute {
   text-transform: lowercase; }
@@ -246,8 +256,8 @@ p, li {
   margin: 0px;
   width: 50%;
   height: 700px;
-  background-image: url("../../img/page-assets/just-chillin-asset.jpg");
   background-repeat: no-repeat;
+  background-image: url("../../img/page-assets/just-chillin-asset.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -261,8 +271,8 @@ p, li {
   margin: 0px;
   width: 50%;
   height: 700px;
-  background-image: url("../../img/page-assets/just-chillin-asset-2.jpg");
   background-repeat: no-repeat;
+  background-image: url("../../img/page-assets/just-chillin-asset-2.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -351,11 +361,12 @@ p, li {
   background-size: cover; }
 
 .fast-facts-header {
-  margin-left: 47vw; }
+  margin-left: 54vw; }
 
 .fast-facts-content {
+  width: 110%;
   position: relative;
-  left: 21vw; }
+  left: 10vw; }
   .fast-facts-content li {
     margin-top: 15px;
     margin-bottom: 15px;

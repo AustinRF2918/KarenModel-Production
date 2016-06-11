@@ -2,11 +2,12 @@ include ../../utility/bootstrap/_index.pug
 
 +generateSection("about-body")
   +generateRow("about-body")
-    .fast-facts-container
-        .fast-facts-header
+    .fast-facts-header-container
+      .fast-facts-header
           h1 Fast Facts
+    .fast-facts-content-container
         .fast-facts-content.m-t-3
-          .col-md-5
+          .col-md-6.p-x-3
             li Height: 
             li Shoe size: 
             li Measurements: 
@@ -15,7 +16,7 @@ include ../../utility/bootstrap/_index.pug
             li Eye color: 
             li Ethicity: 
             li Skin color: 
-          .col-md-4.text-xs-left
+          .col-md-6.text-xs-left.p-x-3
             li <span class="model-attribute">5'9</span>
             li <span class="model-attribute">9.5</span>
             li <span class="model-attribute">34-25-36</span>

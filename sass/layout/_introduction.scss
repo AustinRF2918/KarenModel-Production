@@ -25,7 +25,13 @@ $width-var: 50%;
 
 .just-chillin-left
 {
-    @extend just-chillin;
+    //For some reason this extend screws
+    //us up.
+    padding: 0px;
+    margin: 0px;
+    width: $width-var;
+    height: 700px;
+    background-repeat: no-repeat;
     background-image: url("../../img/page-assets/just-chillin-asset.jpg");
 
     //Responsive backgrounds.
@@ -39,7 +45,13 @@ $width-var: 50%;
 
 .just-chillin-right
 {
-    @extend just-chillin;
+    //For some reason this extend screws
+    //us up.
+    padding: 0px;
+    margin: 0px;
+    width: $width-var;
+    height: 700px;
+    background-repeat: no-repeat;
     background-image: url("../../img/page-assets/just-chillin-asset-2.jpg");
 
     //Responsive backgrounds.
