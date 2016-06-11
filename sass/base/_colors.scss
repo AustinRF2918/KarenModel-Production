@@ -126,8 +126,13 @@ $palette-rss: $rss-blue;
 
 //Containers
     //Containers
-	$brand-container-background: $palette-1;
-	$text-container-background: $palette-1;
-	$introduction-container-background: $palette-7;
-	//
+	//Brand
+	    $brand-container-background: $palette-1;
+	//Text
+	    $text-container-background: $palette-1;
+	//Introduction
+	    $introduction-container-background: $palette-7;
+	//Fast Facts
+	    $fast-facts-color: lighten(#c1bab3, 10%);
+
 	    

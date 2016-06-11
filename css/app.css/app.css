@@ -86,27 +86,22 @@ p, li {
   .introduction-text-container h2 {
     font-size: 4em; }
 
-.fast-facts-header-container {
-  position: absolute;
-  margin-top: 100px;
+.fast-facts, .fast-facts-header-container, .fast-facts-content-container {
   z-index: 1000;
+  position: absolute; }
+
+.fast-facts-header-container {
+  margin-top: 13.5%;
   left: -35%; }
   .fast-facts-header-container h1 {
     font-size: 7em;
     color: #d8d4cf; }
 
-.model-attribute {
-  text-transform: lowercase; }
-
 .fast-facts-content-container {
-  position: absolute;
-  margin-top: 100px;
-  left: 15%;
-  margin-top: 15%;
-  z-index: 1000; }
-  .fast-facts-content-container h1, .fast-facts-content-container h2, .fast-facts-content-container p {
-    color: #d8d4cf; }
+  margin-top: 20%;
+  left: 15%; }
   .fast-facts-content-container p {
+    color: #efedeb;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.25em; }

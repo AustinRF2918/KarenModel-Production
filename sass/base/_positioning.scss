@@ -30,3 +30,10 @@
     //Contact Body
     $contact-body-container-padding-top: 200px;
     $contact-body-container-padding-bottom: 200px;
+
+ //Component positioning (a bit complex)
+    $fast-facts-header-margin-top: 13.5%;
+    $fast-facts-header-left: -35%; //try to fix minus
+    $fast-facts-content-margin-top: 20%;
+    $fast-facts-content-left: 15%;
+    $fast-facts-cover-index: 1000;

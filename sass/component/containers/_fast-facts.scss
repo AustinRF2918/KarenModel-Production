@@ -1,38 +1,34 @@
+.fast-facts
+{
+    z-index: $fast-facts-cover-index;
+    position: absolute;
+}
+
 .fast-facts-header-container
 {
-    position: absolute;
-    margin-top: 100px;
-    z-index: 1000;
-    left: -35%;
+    @extend .fast-facts;
+    margin-top: $fast-facts-header-margin-top;
+    left: $fast-facts-header-left;
 
     h1{
-	font-size: 7em;
-	color: lighten(#c1bab3, 10%);
+	font-size: $fast-facts-header-size;
+	color: $fast-facts-color;
     }
 
 }
 
-.model-attribute{
-    text-transform: lowercase;
-}
 
 .fast-facts-content-container
 {
-    position: absolute;
-    margin-top: 100px;
-    left: 15%;
-    margin-top: 15%;
-    z-index: 1000;
-
-    h1, h2, p{
-	color: lighten(#c1bab3, 10%);
-    }
-
+    @extend .fast-facts;
+    margin-top: $fast-facts-content-margin-top;
+    left: $fast-facts-content-left;
 
     p{
+	color: lighten($fast-facts-color, 10%);
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 1.25em;
+	font-size: $fast-facts-paragraph-size;
     }
 }
 
