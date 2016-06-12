@@ -4,6 +4,18 @@ h1, h2, h3, h4, h5 {
 p, li {
   font-family: "Roboto", sans-serif; }
 
+html {
+  width: 100vw; }
+
+.navbar {
+  width: 100vw; }
+
+body {
+  width: 100vw; }
+
+html {
+  width: 100vw; }
+
 .btn-learn {
   background: #140e0e;
   color: white;
@@ -68,14 +80,19 @@ p, li {
       left: 22%; } }
   @media screen and (max-height: 767px) {
     .introduction-text-container {
-      top: 100px;
-      left: 22%; } }
+      top: 160px;
+      left: 16%; } }
   .introduction-text-container h1, .introduction-text-container h2 {
     color: #d8d4cf; }
   .introduction-text-container h1 {
     font-size: 7em; }
   .introduction-text-container h2 {
     font-size: 4em; }
+    @media screen and (max-width: 767px) {
+      .introduction-text-container h2 {
+        display: none; } }
+  .introduction-text-container .btn-read {
+    margin-top: 20px; }
 
 .fast-facts, .fast-facts-header-container, .fast-facts-content-container {
   z-index: 1000;
@@ -224,6 +241,9 @@ p, li {
     padding-top: 5px; }
   .navbar-custom-quick-nav {
     font-size: 26px; }
+  @media screen and (max-width: 767px) {
+    .navbar-custom .general-icon {
+      display: none; } }
 
 .mini-break {
   width: 2.5vw;

@@ -25,6 +25,15 @@
 
     h2{
 	font-size: $introduction-text-container-subheader-size;
+	@media screen and (max-width: 767px)
+	{
+	    display: none;
+	}
+    }
+
+    .btn-read
+    {
+	margin-top: 20px;
     }
 
 }

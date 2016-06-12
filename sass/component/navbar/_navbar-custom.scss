@@ -19,4 +19,11 @@
     {
 	font-size: $navbar-quick-nav-font-size;
     }
+
+    .general-icon{
+	@media screen and (max-width: 767px)
+	{
+	    display: none;
+	}
+    }
 }
