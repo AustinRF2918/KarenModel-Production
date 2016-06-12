@@ -1,33 +1,28 @@
 .contact-body
 {
+    @include generateContainer($contact-body-background, $contact-body-container-padding-top, $contact-body-container-padding-bottom);
 
-    //Refactor all these types at a later date.
-    @include generateContainer(inherit, $contact-body-container-padding-top, $contact-body-container-padding-bottom);
-
-    .boxed-in
-    {
-	border-radius: $primary-border-radius;
-	border: 1px solid $contact-body-boxed-in-border-color;
-	padding-bottom: 15px;
+    h1{
+	color: $contact-body-text;
     }
 
-    .remove-sides
+    h5{
+	color: $contact-body-text-faded;
+    }
+
+    .contact-body-row-contact-info
     {
-	li
-	{
-	    color: $contact-body-text-faded;
-	    line-height: 30px;
-	}
+	position: absolute;
+	transform: translateY(150%)
+    }
 
-	.model-attribute
-	{
-	    color: $contact-body-text;
-	}
-
-	list-style: none;
-
-	@include removePositioning;
+    .icon-cluster
+    {
+	transform: translateY(650%)
     }
 }
+
+
+
 
 

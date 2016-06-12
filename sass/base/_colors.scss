@@ -9,11 +9,11 @@ $pitch-black: $base-black;
 $blackish-button: #140e0e;
 $drab-grey: #b0b0b0;
 $idontevenknow-black: #211D1E;
-$facebook-blue: blue;
-$twitter-blue: blue;
-$google-green: green;
-$pintrest-red: red;
-$rss-blue: blue;
+$facebook-blue: transparent;
+$twitter-blue: transparent;
+$google-green: transparent;
+$pintrest-red: transparent;
+$rss-blue: transparent;
 
 $sandy: #c1bab3;
 $sandy-dark: #7a7571;
@@ -108,8 +108,8 @@ $palette-rss: $rss-blue;
 	    $contact-divider-background: darken($palette-9, 5%);
 	    $contact-divider-subheader-color: $palette-11;
 
-   //About-Body
-	    $about-body-background: $palette-13; 
+    //About-Body
+	$about-body-background: $palette-13; 
 	$about-body-text: $palette-7;
 	$about-body-text-faded : $palette-6;
 
@@ -122,7 +122,8 @@ $palette-rss: $rss-blue;
 
 
     //Contact-Body
-	$contact-body-text: $palette-7;
+	$contact-body-background: $palette-13;
+	$contact-body-text: $palette-5;
 	$contact-body-text-faded : $palette-6;
 	//Boxed in portion
 	$contact-body-boxed-in-border-color: $palette-8;
@@ -141,7 +142,7 @@ $palette-rss: $rss-blue;
 
 	    
 //Model gallery
-	    $model-gallery-text-color: $palette-7;
+	$model-gallery-text-color: $palette-5;
 
 	    
 	    

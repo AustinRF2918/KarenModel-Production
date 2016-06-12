@@ -51,3 +51,18 @@
     }
     left: 35vw;
 }
+
+.just-chillin-left-temp-2
+{
+    padding: 0px;
+    margin: 0px;
+    height: 600px;
+    background-image: url("../../img/page-assets/just-chillin-asset.jpg");
+    background-repeat: no-repeat;
+
+    //Refactor
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

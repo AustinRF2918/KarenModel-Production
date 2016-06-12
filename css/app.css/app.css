@@ -115,22 +115,22 @@ p, li {
   .general-icon svg {
     width: 36px;
     height: 36px;
-    border-radius: 2px;
+    border-radius: 100%;
     transition: background-color .25s, transform .25s ease-out;
     transform: scale(1); }
     .general-icon svg:hover {
       transform: scale(1.1);
       transition: background-color .25s, transform .25s ease-out;
-      border-radius: 2px; }
+      border-radius: 100%; }
 
 .facebook svg {
-  background: blue;
+  background: transparent;
   fill: white;
   color: white; }
   .facebook svg:hover {
     background: white;
-    fill: blue;
-    color: blue; }
+    fill: transparent;
+    color: transparent; }
 
 .facebook-navbar svg {
   background: #c1bab3;
@@ -142,13 +142,13 @@ p, li {
     color: #93877b; }
 
 .google svg {
-  background: green;
+  background: transparent;
   fill: white;
   color: white; }
   .google svg:hover {
     background: white;
-    fill: green;
-    color: green; }
+    fill: transparent;
+    color: transparent; }
 
 .google-navbar svg {
   background: #c1bab3;
@@ -160,13 +160,13 @@ p, li {
     color: #93877b; }
 
 .pintrest svg {
-  background: red;
+  background: transparent;
   fill: white;
   color: white; }
   .pintrest svg:hover {
     background: white;
-    fill: red;
-    color: red; }
+    fill: transparent;
+    color: transparent; }
 
 .pintrest-navbar svg {
   background: #c1bab3;
@@ -178,13 +178,13 @@ p, li {
     color: #93877b; }
 
 .wifi svg {
-  background: blue;
+  background: transparent;
   fill: white;
   color: white; }
   .wifi svg:hover {
     background: white;
-    fill: blue;
-    color: blue; }
+    fill: transparent;
+    color: transparent; }
 
 .wifi-navbar svg {
   background: #7a7571;
@@ -196,13 +196,13 @@ p, li {
     color: #93877b; }
 
 .twitter svg {
-  background: blue;
+  background: transparent;
   fill: white;
   color: white; }
   .twitter svg:hover {
     background: white;
-    fill: blue;
-    color: blue; }
+    fill: transparent;
+    color: transparent; }
 
 .twitter-navbar svg {
   background: #c1bab3;
@@ -245,13 +245,23 @@ p, li {
   .modelGallery img {
     width: 100%;
     height: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    -moz-transition: 0.8s all;
+    -o-transition: 0.8s all;
+    -ms-transition: 0.8s all;
+    -webkit-transition: 0.8s all;
+    transition: 0.8s all; }
   .modelGallery h4 {
     font-size: 2.5em; }
   .modelGallery:hover {
     z-index: 0;
     position: relative;
-    color: #211D1E; }
+    color: white;
+    -moz-transition: 0.8s all;
+    -o-transition: 0.8s all;
+    -ms-transition: 0.8s all;
+    -webkit-transition: 0.8s all;
+    transition: 0.8s all; }
     .modelGallery:hover img {
       -moz-transform: scale(1.25);
       -o-transform: scale(1.25);
@@ -375,6 +385,17 @@ p, li {
     margin-bottom: 15px;
     list-style: none; }
 
+.just-chillin-left-temp-2 {
+  padding: 0px;
+  margin: 0px;
+  height: 600px;
+  background-image: url("../../img/page-assets/just-chillin-asset.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 .contact-divider .container-fluid {
   background: #b6ada5;
   padding-top: 50px;
@@ -385,21 +406,19 @@ p, li {
     color: black; }
 
 .contact-body .container-fluid {
-  background: inherit;
-  padding-top: 200px;
-  padding-bottom: 200px; }
+  background: #211D1E;
+  padding-top: 0px;
+  padding-bottom: 0px; }
 
-.contact-body .boxed-in {
-  border-radius: 8px;
-  border: 1px solid black;
-  padding-bottom: 15px; }
+.contact-body h1 {
+  color: white; }
 
-.contact-body .remove-sides {
-  list-style: none;
-  padding: 0px;
-  margin: 0px; }
-  .contact-body .remove-sides li {
-    color: #b0b0b0;
-    line-height: 30px; }
-  .contact-body .remove-sides .model-attribute {
-    color: #211D1E; }
+.contact-body h5 {
+  color: #b0b0b0; }
+
+.contact-body .contact-body-row-contact-info {
+  position: absolute;
+  transform: translateY(150%); }
+
+.contact-body .icon-cluster {
+  transform: translateY(650%); }
