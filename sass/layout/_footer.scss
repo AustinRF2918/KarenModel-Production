@@ -1,0 +1,11 @@
+.footer
+{
+    font-size: .8em;
+    background: darken($contact-body-background, 10%);
+    color: $contact-body-text;
+
+    p{
+	padding: 0px;
+	margin: 0px;
+    }
+}

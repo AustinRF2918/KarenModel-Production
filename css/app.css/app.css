@@ -422,3 +422,11 @@ p, li {
 
 .contact-body .icon-cluster {
   transform: translateY(650%); }
+
+.footer {
+  font-size: .8em;
+  background: #060505;
+  color: white; }
+  .footer p {
+    padding: 0px;
+    margin: 0px; }
