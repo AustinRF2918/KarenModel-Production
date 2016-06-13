@@ -98,16 +98,44 @@ html {
   z-index: 1000;
   position: absolute; }
 
-.fast-facts-header-container {
-  margin-top: 13.5%;
-  left: -35%; }
-  .fast-facts-header-container h1 {
-    font-size: 7em;
-    color: #d8d4cf; }
+@media screen and (min-width: 1001px) {
+  .fast-facts-header-container {
+    top: 50%;
+    transform: translateY(125%);
+    left: -35%; } }
+
+@media screen and (max-width: 1000px) {
+  .fast-facts-header-container {
+    position: relative;
+    top: 50%;
+    left: -87%;
+    transform: translateY(125%);
+    transform: translateX(50%); } }
+
+.fast-facts-header-container h1 {
+  font-size: 7em;
+  color: #d8d4cf; }
 
 .fast-facts-content-container {
-  margin-top: 20%;
-  left: 15%; }
+  left: 15%;
+  top: 10vh; }
+  @media screen and (min-width: 1001px) {
+    .fast-facts-content-container {
+      position: absolute;
+      width: 30vw;
+      top: 300px;
+      transform: translateY(40%);
+      transform: translateX(160%);
+      left: -35%; }
+      .fast-facts-content-container p {
+        font-size: 1.20vw !important; } }
+  @media screen and (max-width: 1000px) {
+    .fast-facts-content-container {
+      position: relative;
+      top: 50%;
+      width: 60%;
+      transform: translateY(125%);
+      transform: translateX(-32.5%); } }
   .fast-facts-content-container p {
     color: #d8d4cf;
     text-transform: uppercase;
@@ -116,6 +144,9 @@ html {
 
 .model-attribute {
   text-transform: lowercase; }
+
+.fast-facts-super-container {
+  position: relative; }
 
 .text-overlay {
   margin-left: 28%;
@@ -381,23 +412,14 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-
-.just-chillin-right-temp {
-  padding: 0px;
-  margin: 0px;
-  height: 450px;
-  background-image: url("../../img/page-assets/just-chillin-asset-2.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  @media screen and (max-width: 1000px) {
+    .just-chillin-left-temp {
+      width: 0px; } }
 
 .fast-facts-header {
   margin-left: 78vw; }
 
 .fast-facts-content {
-  width: 110%;
   position: relative;
   left: 35vw; }
   .fast-facts-content li {
@@ -415,6 +437,10 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+
+.fast-facts-super-container {
+  position: relative;
+  transform: translateY(100%); }
 
 .contact-divider .container-fluid {
   background: #b6ada5;

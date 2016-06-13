@@ -6,6 +6,11 @@
 
 .just-chillin-left-temp
 {
+    @media screen and (max-width: 1000px)
+    {
+	width: 0px;
+    }
+
     padding: 0px;
     margin: 0px;
     height: 900px;
@@ -19,20 +24,6 @@
     background-size: cover;
 }
 
-.just-chillin-right-temp
-{
-    padding: 0px;
-    margin: 0px;
-    height: 450px;
-    background-image: url("../../img/page-assets/just-chillin-asset-2.jpg");
-    background-repeat: no-repeat;
-
-    //Refactor
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 .fast-facts-header
 {
     margin-left: 78vw;
@@ -40,8 +31,6 @@
 
 .fast-facts-content
 {
-    width: 110%;
-
     position: relative;
 
     li{
@@ -49,6 +38,7 @@
 	margin-bottom: 15px;
 	list-style: none;
     }
+
     left: 35vw;
 }
 
@@ -66,3 +56,13 @@
     -o-background-size: cover;
     background-size: cover;
 }
+
+.fast-facts-super-container
+{
+    position: relative;
+    transform: translateY(100%);
+}
+
+
+
+
