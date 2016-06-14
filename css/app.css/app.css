@@ -101,8 +101,7 @@ html {
 
 @media screen and (min-width: 1001px) {
   .fast-facts-header-container {
-    top: 50%;
-    transform: translateY(75%);
+    top: 7.5vh;
     left: -35%; } }
 
 @media screen and (max-width: 1000px) {
@@ -129,17 +128,15 @@ html {
       width: 30vw;
       left: 10%;
       transform: translateX(10%);
-      top: 45%;
-      transform: translateY(45%); }
+      top: 35%;
+      transform: translateY(35%); }
       .fast-facts-content-container p {
         font-size: 1.20vw !important; } }
   @media screen and (max-width: 1000px) {
     .fast-facts-content-container {
       position: relative;
-      top: 50%;
       width: 100%;
-      transform: translateY(125%);
-      transform: translateX(-50%); } }
+      transform: translateX(-40%); } }
   .fast-facts-content-container p {
     color: #d8d4cf;
     text-transform: uppercase;
@@ -171,8 +168,10 @@ html {
     list-style: none; }
 
 .fast-facts-super-container {
-  position: relative;
-  transform: translateY(100%); }
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .fast-facts-super-container {
+      transform: translateY(100%); } }
 
 .text-overlay {
   margin-left: 28%;
@@ -428,6 +427,12 @@ html {
   padding-top: 0px;
   padding-bottom: 0px; }
 
+@media screen and (max-width: 767px) {
+  .about-body {
+    background: #211D1E;
+    padding-top: 50px;
+    padding-bottom: 50px; } }
+
 .just-chillin-left-temp {
   padding: 0px;
   margin: 0px;
@@ -445,7 +450,7 @@ html {
 .just-chillin-left-temp-2 {
   padding: 0px;
   margin: 0px;
-  height: 600px;
+  height: 800px;
   background-image: url("../../img/page-assets/just-chillin-asset.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -469,7 +474,7 @@ html {
   background: #211d1e; }
   @media screen and (min-width: 768px) {
     .contact-body {
-      height: 600px; } }
+      height: 800px; } }
   @media screen and (max-width: 767px) {
     .contact-body {
       height: auto 0; } }
@@ -484,8 +489,8 @@ html {
 
 @media screen and (min-width: 768px) {
   .contact-info {
-    top: 125%;
-    transform: translateY(125%); } }
+    top: 200%;
+    transform: translateY(200%); } }
 
 @media screen and (max-width: 767px) {
   .contact-info {

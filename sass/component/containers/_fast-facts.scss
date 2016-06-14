@@ -5,6 +5,8 @@
 
 .fast-facts
 {
+    
+
     z-index: $fast-facts-cover-index;
     position: absolute;
 }
@@ -13,8 +15,7 @@
 {
     @media screen and (min-width: 1001px)
     {
-	top: 50%;
-	transform: translateY(75%);
+	top: 7.5vh;
 	left: $fast-facts-header-left;
     }
 
@@ -23,6 +24,7 @@
 	position: relative;
 	left: 50%;
 	transform: translateX(-100%);
+	     
     }
 
     @extend .fast-facts;
@@ -53,8 +55,8 @@
 	width: 30vw;
 	left: 10%;
 	transform: translateX(10%);
-	top: 45%;
-	transform: translateY(45%);
+	top: 35%;
+	transform: translateY(35%);
 
 	p{
 	    font-size: 1.20vw !important;
@@ -64,10 +66,8 @@
     @media screen and (max-width: 1000px)
     {
 	position: relative;
-	top: 50%;
 	width: 100%;
-	transform: translateY(125%);
-	transform: translateX(-50%);
+	transform: translateX(-40%);
     }
 
     @extend .fast-facts;
@@ -122,5 +122,10 @@
 .fast-facts-super-container
 {
     position: relative;
-    transform: translateY(100%);
+    @media screen and (min-width: 768px)
+    {
+	transform: translateY(100%);
+    }
+
+    
 }

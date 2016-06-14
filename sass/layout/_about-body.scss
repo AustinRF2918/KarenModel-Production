@@ -2,6 +2,13 @@
 {
     @include generateContainer($about-body-background, $about-body-container-padding-top, $about-body-container-padding-bottom);
 
+    @media screen and (max-width: 767px)
+    {
+	background: $about-body-background;
+	padding-top: 50px;
+	padding-bottom: 50px;
+    }
+
 }
 
 .just-chillin-left-temp
@@ -33,7 +40,7 @@
 {
     padding: 0px;
     margin: 0px;
-    height: 600px;
+    height: 800px;
     background-image: url("../../img/page-assets/just-chillin-asset.jpg");
     background-repeat: no-repeat;
 
