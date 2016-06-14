@@ -1,5 +1,18 @@
 .contact-body
 {
+    //refac
+    background: #211d1e;
+
+    @media screen and (min-width: 768px)
+    {
+	height: 600px;
+    }
+    @media screen and (max-width: 767px)
+    {
+	height: auto 0;
+    }
+
+
     @include generateContainer($contact-body-background, $contact-body-container-padding-top, $contact-body-container-padding-bottom);
 
     h1{
@@ -9,18 +22,31 @@
     h5{
 	color: $contact-body-text-faded;
     }
+}
 
-    .contact-body-row-contact-info
+.contact-info{
+    @media screen and (min-width: 768px)
     {
-	position: absolute;
-	transform: translateY(150%)
+	top: 125%;
+	transform: translateY(125%);
     }
 
-    .icon-cluster
+    @media screen and (max-width: 767px)
     {
-	transform: translateY(650%)
+	padding-top: 50px;
+	padding-bottom: 50px;
     }
 }
+.dam
+{
+    @media screen and (max-width: 767px)
+    {
+	display: hidden;
+    }
+}
+
+
+
 
 
 

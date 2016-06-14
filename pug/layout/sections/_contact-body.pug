@@ -2,22 +2,18 @@ include ../../utility/bootstrap/_index.pug
 
 +generateSection("contact-body")
   +generateRow("contact-body")
-    .col-md-4.just-chillin-left-temp-2
+    .col-md-4.just-chillin-left-temp-2.dam
     .col-md-4
-        +generateColumn(12, "contact-info", "contact-body")
-            .row.text-xs-center
-            .contact-information.text-xs-center
-                h1 Milford, MI
-            .m-t-2
-                .row.text-xs-center
-                    h5 polzink@yahoo.com
-            .m-t-2
-        +generateMargin()
+      .contact-info
+          .contact-information.text-xs-center
+              h1 Milford, MI
+          .m-t-2
+              .row.text-xs-center
+                  h5 polzink@yahoo.com
+          .m-t-2
+          +generateMargin()
           .icon-cluster.text-xs-center
             .row.text-xs-center
                 +facebook-icon
                 +google-icon
-                +pintrest-icon
-                +twitter-icon
-                +wifi-icon
-    .col-md-4.just-chillin-left-temp-2
+    .col-md-4.just-chillin-left-temp-2.dam

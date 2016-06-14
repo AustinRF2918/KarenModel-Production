@@ -1,3 +1,8 @@
+//Coupling in this IS HORRIBLE
+//Fix this and encapsulate it better...
+
+//This is REALLY cluster...
+
 .fast-facts
 {
     z-index: $fast-facts-cover-index;
@@ -9,24 +14,32 @@
     @media screen and (min-width: 1001px)
     {
 	top: 50%;
-	transform: translateY(125%);
+	transform: translateY(75%);
 	left: $fast-facts-header-left;
     }
 
     @media screen and (max-width: 1000px)
     {
 	position: relative;
-	top: 50%;
-	left: -87%;
-	transform: translateY(125%);
-	transform: translateX(50%);
+	left: 50%;
+	transform: translateX(-100%);
     }
 
     @extend .fast-facts;
 
-    h1{
-	font-size: $fast-facts-header-size;
-	color: $fast-facts-color;
+    @media screen and (max-width: 767px)
+    {
+	h1{
+	    font-size: $fast-facts-header-size * .65;
+	    color: $fast-facts-color;
+	}
+    }
+    @media screen and (min-width: 768px)
+    {
+	h1{
+	    font-size: $fast-facts-header-size;
+	    color: $fast-facts-color;
+	}
     }
 
 }
@@ -38,10 +51,11 @@
     {
 	position: absolute;
 	width: 30vw;
-	top: 300px;
-	transform: translateY(40%);
-	transform: translateX(160%);
-	left: $fast-facts-header-left;
+	left: 10%;
+	transform: translateX(10%);
+	top: 45%;
+	transform: translateY(45%);
+
 	p{
 	    font-size: 1.20vw !important;
 	}
@@ -51,14 +65,13 @@
     {
 	position: relative;
 	top: 50%;
-	width: 60%;
+	width: 100%;
 	transform: translateY(125%);
-	transform: translateX(-32.5%);
+	transform: translateX(-50%);
     }
 
     @extend .fast-facts;
     left: $fast-facts-content-left;
-    top: 10vh;
 
     p{
 	color: $fast-facts-color;
@@ -76,4 +89,38 @@
 .fast-facts-super-container
 {
     position: relative;
+}
+
+.fast-facts-header
+{
+    @media screen and (min-width: 768px)
+    {
+	margin-left: 78vw;
+    }
+
+    @media screen and (max-width: 767px)
+    {
+	position: relative;
+	margin-left: 60%;
+	transform: translateX(60%);
+    }
+    
+}
+
+.fast-facts-content
+{
+    position: relative;
+
+    li{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	list-style: none;
+    }
+
+    left: 35vw;
+}
+.fast-facts-super-container
+{
+    position: relative;
+    transform: translateY(100%);
 }

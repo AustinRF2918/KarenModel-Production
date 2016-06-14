@@ -3,15 +3,16 @@
     position: absolute;
     z-index: $introduction-text-container-z-index;
 
-    @media screen and (min-height: 768px)
+    @media screen and (min-width: 768px)
     {
-	top: $introduction-text-container-top-desktop;
-	left: $introduction-text-container-left-desktop;
+	transform: translateY(60%);
+	left: 23%;
     }
 
-    @media screen and (max-height: 767px)
+    @media screen and (max-width: 767px)
     {
-	top: $introduction-text-container-top-mobile;
+	top: 50%;
+	transform: translateY(-50%);
 	left: $introduction-text-container-left-mobile;
     }
 
