@@ -1,0 +1,20 @@
+@mixin overlay-third($bg-img)
+{
+    padding: 0px;
+    margin: 0px;
+    width: 33%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-image: url($bg-img);
+    @include backgroundSizeCover;
+}
+
+.about-overlay-left
+{
+    @include overlay-third("../../img/page-assets/just-chillin-asset.jpg");
+
+    @media screen and (max-width: 767px)
+    {
+	width: 100%;
+    }
+}

@@ -1,113 +1,58 @@
-//Coupling in this IS HORRIBLE
-//Fix this and encapsulate it better...
-
-//This is REALLY cluster...
+@mixin _std-cartesian-translate-desktop($x, $y)
+{
+    position: relative;
+    left: $x;
+    transform: translateX(-$x);
+    top: $y;
+    transform: translateY(-$y);
+}
 
 .fast-facts
 {
-    
-
-    z-index: $fast-facts-cover-index;
     position: absolute;
+    height: 800px;
+    width: 100%;
 }
-
+.fast-facts-container
+{
+    @media screen and (min-width: 768px)
+    {
+	@include _std-cartesian-translate-desktop(12.5%, 22.5%);
+    }
+}
 .fast-facts-header-container
 {
     @media screen and (min-width: 1001px)
     {
-	top: 7.5vh;
-	left: $fast-facts-header-left;
+	@include _std-cartesian-translate-desktop(40%, 20%);
     }
 
     @media screen and (max-width: 1000px)
     {
 	position: relative;
-	left: 50%;
-	transform: translateX(-100%);
-	     
+	left: 50vw;
+
+	//WATCH OUT
+	top: 15px;
     }
 
-    @extend .fast-facts;
+    h1{
+	color: $fast-facts-color;
 
-    @media screen and (max-width: 767px)
-    {
-	h1{
+	@media screen and (max-width: 767px)
+	{
 	    font-size: $fast-facts-header-size * .65;
-	    color: $fast-facts-color;
 	}
-    }
-    @media screen and (min-width: 768px)
-    {
-	h1{
+
+	@media screen and (min-width: 768px)
+	{
 	    font-size: $fast-facts-header-size;
-	    color: $fast-facts-color;
 	}
+
     }
-
 }
-
 
 .fast-facts-content-container
-{
-    @media screen and (min-width: 1001px)
-    {
-	position: absolute;
-	width: 30vw;
-	left: 10%;
-	transform: translateX(10%);
-	top: 35%;
-	transform: translateY(35%);
-
-	p{
-	    font-size: 1.20vw !important;
-	}
-    }
-
-    @media screen and (max-width: 1000px)
-    {
-	position: relative;
-	width: 100%;
-	transform: translateX(-40%);
-    }
-
-    @extend .fast-facts;
-    left: $fast-facts-content-left;
-
-    p{
-	color: $fast-facts-color;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: $fast-facts-paragraph-size;
-    }
-}
-
-.model-attribute{
-    text-transform: lowercase;
-}
-
-
-.fast-facts-super-container
-{
-    position: relative;
-}
-
-.fast-facts-header
-{
-    @media screen and (min-width: 768px)
-    {
-	margin-left: 78vw;
-    }
-
-    @media screen and (max-width: 767px)
-    {
-	position: relative;
-	margin-left: 60%;
-	transform: translateX(60%);
-    }
-    
-}
-
-.fast-facts-content
 {
     position: relative;
 
@@ -117,15 +62,32 @@
 	list-style: none;
     }
 
-    left: 35vw;
-}
-.fast-facts-super-container
-{
-    position: relative;
-    @media screen and (min-width: 768px)
-    {
-	transform: translateY(100%);
+    p{
+	color: $fast-facts-color;
+	text-transform: uppercase;
+	font-weight: bold;
+
+	@media screen and (max-width: 1000px){
+	font-size: $fast-facts-paragraph-size;
+	}
+
+	@media screen and (min-width: 1001px){
+	    font-size: 1.20vw !important;
+	}
     }
 
-    
+    @media screen and (min-width: 1001px)
+    {
+	@include _std-cartesian-translate-desktop(43%, 20%);
+	width: 30vw;
+    }
+
+    @media screen and (max-width: 1000px)
+    {
+	position: relative;
+	width: 100%;
+    }
 }
+
+
+
