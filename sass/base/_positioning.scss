@@ -63,10 +63,12 @@ html{
     $introduction-text-container-top-mobile: 160px;
     $introduction-text-container-left-mobile: 16%;
 
-    //Just chillin
-    $just-chillin-width: 50%;
-    $just-chillin-height: 700px;
-    //
+    //Introduction overlay
+    $introduction-overlay-width: 50%;
+    $introduction-overlay-height: 700px;
+
+    //Contact-Overlay
+    $contact-overlay-height: 800px;
 
     .navbar{
 	width: 100vw;
