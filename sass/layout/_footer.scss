@@ -1,7 +1,7 @@
 .footer
 {
-    font-size: .8em;
-    background: darken($contact-body-background, 10%);
+    font-size: $footer-font-size;
+    background: darken($contact-body-background, 5%);
     color: $contact-body-text;
 
     p{

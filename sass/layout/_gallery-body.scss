@@ -2,9 +2,3 @@
 {
     @include generateContainer($gallery-body-container-background, $gallery-body-container-padding-top, $gallery-body-container-padding-bottom)
 }
-
-.gallery-body-row
-{
-    min-height: 0px;
-}
-
