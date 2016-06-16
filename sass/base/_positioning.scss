@@ -20,12 +20,20 @@ html{
     $about-body-container-padding-bottom: 0px;
 
     //Gallery Divider
-    $gallery-divider-container-padding-top: 50px;
-    $gallery-divider-container-padding-bottom: 50px;
+	//Desktop
+	    $gallery-divider-container-padding-top: 50px;
+	    $gallery-divider-container-padding-bottom: 50px;
+	//Mobile
+	    $gallery-divider-container-padding-top-mobile: 0px;
+	    $gallery-divider-container-padding-bottom-mobile: 0px;
 
     //Gallery Body
-    $gallery-body-container-padding-top: 100px;
-    $gallery-body-container-padding-bottom: 100px;
+        //Desktop
+	    $gallery-body-container-padding-top: 100px;
+	    $gallery-body-container-padding-bottom: 100px;
+        //Mobile
+	    $gallery-body-container-padding-top-mobile: 25px;
+	    $gallery-body-container-padding-bottom-mobile: 25px;
 
     //Contact Divider
     $contact-divider-container-padding-top: 50px;

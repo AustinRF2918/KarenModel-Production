@@ -16,6 +16,10 @@ body {
 html {
   width: 100vw; }
 
+@media screen and (max-width: 768px) {
+  .m-t-md-2 {
+    margin-top: 2em; } }
+
 @media screen and (max-width: 767px) {
   .dam {
     display: hidden; } }
@@ -436,10 +440,17 @@ html {
   .gallery-divider .container-fluid p {
     color: black; }
 
-.gallery-body .container-fluid {
-  background: #211D1E;
-  padding-top: 100px;
-  padding-bottom: 100px; }
+@media screen and (min-width: 768px) {
+  .gallery-body .container-fluid {
+    background: #211D1E;
+    padding-top: 100px;
+    padding-bottom: 100px; } }
+
+@media screen and (max-width: 767px) {
+  .gallery-body .container-fluid {
+    background: #211D1E;
+    padding-top: 25px;
+    padding-bottom: 25px; } }
 
 .about-divider .container-fluid {
   background: #b6ada5;
