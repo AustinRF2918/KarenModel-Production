@@ -123,7 +123,8 @@ html {
 @media screen and (max-width: 1000px) {
   .fast-facts-header-container {
     position: relative;
-    left: 50vw;
+    left: 20vw;
+    width: 20vw;
     top: 15px; } }
 
 .fast-facts-header-container h1 {
