@@ -53,6 +53,27 @@ html{
     $fast-facts-cover-index: 1000;
     $fast-facts-height: 800px;
     $fast-facts-width: 100%; 
+    //Cartesians
+	$fast-facts-container-x-desktop: 12.5%;
+	$fast-facts-container-y-desktop: 22.5%;
+
+	$fast-facts-header-container-x-desktop: 40%;
+	$fast-facts-header-container-y-desktop: 20%;
+
+	$fast-facts-header-container-x-mobile: 20vw;
+	$fast-facts-header-container-left-mobile: 20vw;
+	$fast-facts-header-container-top-mobile: 15px;
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!BAD BAD BAD
+	$fast-facts-header-container-y-mobile: 20vw;
+
+	$fast-facts-content-container-width-desktop: 30vw;
+	$fast-facts-content-container-x-desktop: 43%;
+	$fast-facts-content-container-y-desktop: 20%
+	$fast-facts-content-container-width-mobile: 100%;
+
+	$fast-facts-content-container-li-margin-top: 15px;
+
+						     
 
 //Navbar
     $navbar-icon-group-padding-top: 5px;

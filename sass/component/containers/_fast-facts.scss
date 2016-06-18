@@ -17,24 +17,22 @@
 {
     @media screen and (min-width: 768px)
     {
-	@include _std-cartesian-translate-desktop(12.5%, 22.5%);
+	@include _std-cartesian-translate-desktop($fast-facts-container-x-desktop, $fast-facts-container-y-desktop);
     }
 }
 .fast-facts-header-container
 {
     @media screen and (min-width: 1001px)
     {
-	@include _std-cartesian-translate-desktop(40%, 20%);
+	@include _std-cartesian-translate-desktop($fast-facts-header-container-x-desktop, $fast-facts-header-container-y-desktop);
     }
 
     @media screen and (max-width: 1000px)
     {
 	position: relative;
-	left: 20vw;
-	width: 20vw;
-
-	//WATCH OUT
-	top: 15px;
+	left: $fast-facts-header-container-left-mobile;
+	width: $fast-facts-header-container-x-mobile;
+	top: $fast-facts-header-container-top-mobile;
     }
 
     h1{
@@ -58,8 +56,8 @@
     position: relative;
 
     li{
-	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-top: $fast-facts-content-container-li-margin-top;
+	margin-bottom: $fast-facts-content-container-li-margin-bottom;
 	list-style: none;
     }
 
@@ -79,14 +77,14 @@
 
     @media screen and (min-width: 1001px)
     {
-	@include _std-cartesian-translate-desktop(43%, 20%);
-	width: 30vw;
+	@include _std-cartesian-translate-desktop($fast-facts-content-container-x-desktop, $fast-facts-content-container-y-desktop);
+	width: $fast-facts-content-container-width-desktop;
     }
 
     @media screen and (max-width: 1000px)
     {
 	position: relative;
-	width: 100%;
+	width: $fast-facts-content-container-width-mobile;
     }
 }
 
