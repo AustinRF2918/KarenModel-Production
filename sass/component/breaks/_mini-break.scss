@@ -1,6 +1,7 @@
+//Maybe we could generate this into an itnerface.
+
 .mini-break
 {
-    width: 2.5vw;
-    //Refactor sizes..
-    border: 2px solid $mini-break-color;
+    width: $mini-break-width;
+    border: $border-size solid $mini-break-color;
 }

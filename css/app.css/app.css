@@ -7,15 +7,6 @@ p, li {
 html {
   width: 100vw; }
 
-.navbar {
-  width: 100vw; }
-
-body {
-  width: 100vw; }
-
-html {
-  width: 100vw; }
-
 @media screen and (max-width: 768px) {
   .m-t-md-2 {
     margin-top: 2em; } }
@@ -28,8 +19,8 @@ html {
   background: #140e0e;
   color: white;
   border-radius: 8px;
-  line-height: 30px;
-  width: 150px;
+  line-height: 15px;
+  width: 30px;
   transition: background-color .25s, transform .25s ease-out; }
   .btn-learn:hover {
     background: white;
@@ -51,7 +42,7 @@ html {
     transition: background-color .25s, transform .25s ease-out; }
 
 .navbar-mobile-toggler {
-  margin-top: -1px;
+  margin-top: 0px;
   background: transparent;
   border: 0px solid transparent;
   border-radius: 4px;

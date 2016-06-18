@@ -51,6 +51,8 @@ html{
     $fast-facts-content-margin-top: 20%;
     $fast-facts-content-left: 15%;
     $fast-facts-cover-index: 1000;
+    $fast-facts-height: 800px;
+    $fast-facts-width: 100%; 
 
 //Navbar
     $navbar-icon-group-padding-top: 5px;
@@ -87,16 +89,35 @@ html{
 	//Desktop only.
 	$contact-info-container-top: 200%;
 
-    .navbar{
-	width: 100vw;
-    }
-
-    body{
-	width: 100vw;
-    }
-
-    html{
-	width: 100vw;
-    }
-
+    //Breaks sizing
+        $mini-break-width: 2.5vw;
+	$border-size: 2px;
     
+   //Relative button sizing.
+	$button-scale: 1.25;
+
+    //Btn learn sizes
+	$btn-learn-size-x: 30px;
+	$btn-learn-size-y: 150px;
+
+    //Btn mobile toggler sizes.
+	$btn-mobile-toggler-radius: 4px;
+	$btn-mobile-padding-top: 10px;
+	$btn-mobile-padding-bottom: 11px;
+	    //Recursive horizontal bar.
+	     //!! NOTE BOTH OF THESE CHANGE HEIGHT OF ABOVE BUTTON!!!
+	    $btn-bar-width: 32px;
+	    $btn-bar-height: 4px;
+	    $btn-bar-margin-top: 5px;
+	    $btn-bar-margin-bottom: 3px;
+	    //Makes a more rounded bar.
+	    $btn-bar-radius: 1px;
+	
+    //Btn learn sizes
+	$btn-learn-size-x: 50px;
+	$btn-learn-size-y: 250px;
+
+//Overlay stuff.
+    //Croptop
+	$crop-top-height: 500px;
+

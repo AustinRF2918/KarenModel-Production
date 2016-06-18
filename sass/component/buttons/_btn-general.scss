@@ -1,3 +1,5 @@
+//Mix with bootstrap and this would be a prime interface.
+
 @mixin generateButton($color, $background, $colorHover, $backgroundHover, $height, $width, $borderRadius)
 {
     background: $background;
@@ -17,7 +19,7 @@
 	color: $colorHover;
 
 	//Refactor to be generalizable from interface.
-	transform: scale(1.25);
+	transform: scale($button-scale);
 	transition: background-color .25s, transform .25s ease-out;
     }
 }

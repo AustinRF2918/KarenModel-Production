@@ -1,13 +1,12 @@
 .card-img-overlay
 {
     text-align: center;
-    //Refactor this.
     @include va-card-overlay;
 }
 
 .crop-top
 {
     img{
-	height: 500px;
+	height: $crop-top-height;
     }
 }

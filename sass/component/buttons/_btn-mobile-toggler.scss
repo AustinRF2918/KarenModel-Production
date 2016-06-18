@@ -1,27 +1,27 @@
 .navbar-mobile-toggler
 {
-    margin-top: -1px;
+    margin-top: 0px;
     background: transparent;
-
     border: 0px solid transparent;
 
-    border-radius: 4px;
-    padding: 10px 11px;
+    border-radius: $navbar-mobile-toggler-radius;
+    padding-top: $btn-mobile-padding-top;
+    padding-bottom: $btn-mobile-padding-bottom;
     &:hover .navbar-mobile-toggler-horizontal-bar, &:active, &:focus{
 	background: grey;
     }
 }
 
+//Probably would be useful to make this a reusible
+//mixin or something...
 .navbar-mobile-toggler-horizontal-bar
 {
     display: block;
-    width: 32px;
-    height: 4px;
-    margin-top: 5px;
-    margin-bottom: 3px;
+    width: $btn-bar-width;
+    height: $btn-bar-height;
+    margin-top: $btn-bar-margin-top;
+    margin-bottom: $btn-bar-margin-bottom;
 
-    //Refactor color.
     background-color: $navbar-text;
-
-    border-radius: 1px;
+    border-radius: $btn-bar-radius;
 }
