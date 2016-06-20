@@ -19,8 +19,8 @@ html {
   background: #140e0e;
   color: white;
   border-radius: 8px;
-  line-height: 15px;
-  width: 30px;
+  line-height: 250px;
+  width: 50px;
   transition: background-color .25s, transform .25s ease-out; }
   .btn-learn:hover {
     background: white;
@@ -45,8 +45,8 @@ html {
   margin-top: 0px;
   background: transparent;
   border: 0px solid transparent;
-  border-radius: 4px;
-  padding: 10px 11px; }
+  margin-top: 5px;
+  border-radius: 4px; }
   .navbar-mobile-toggler:hover .navbar-mobile-toggler-horizontal-bar, .navbar-mobile-toggler:active, .navbar-mobile-toggler:focus {
     background: grey; }
 
@@ -69,6 +69,9 @@ html {
   margin-right: -50px;
   z-index: 1000;
   border-radius: 8px 8px 0px 0px; }
+
+.brand-container-nav {
+  margin-top: -20px; }
 
 .introduction-text-container {
   position: absolute;
@@ -118,9 +121,9 @@ html {
 @media screen and (max-width: 1000px) {
   .fast-facts-header-container {
     position: relative;
-    left: 20vw;
+    left: 32.5vw;
     width: 20vw;
-    top: 15px; } }
+    top: 0px; } }
 
 .fast-facts-header-container h1 {
   color: #d8d4cf; }
@@ -158,6 +161,8 @@ html {
   @media screen and (max-width: 1000px) {
     .fast-facts-content-container {
       position: relative;
+      left: 9%;
+      margin-top: 10%;
       width: 100%; } }
 
 @media screen and (min-width: 768px) {
@@ -234,6 +239,7 @@ html {
   background-size: cover; }
   @media screen and (max-width: 767px) {
     .about-overlay-left {
+      z-index: -1000;
       width: 100%; } }
 
 .general-icon {

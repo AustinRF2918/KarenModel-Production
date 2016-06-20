@@ -3,13 +3,13 @@
     margin-top: 0px;
     background: transparent;
     border: 0px solid transparent;
+    margin-top: 5px;
 
-    border-radius: $navbar-mobile-toggler-radius;
-    padding-top: $btn-mobile-padding-top;
-    padding-bottom: $btn-mobile-padding-bottom;
+    border-radius: $btn-mobile-radius;
     &:hover .navbar-mobile-toggler-horizontal-bar, &:active, &:focus{
 	background: grey;
     }
+
 }
 
 //Probably would be useful to make this a reusible

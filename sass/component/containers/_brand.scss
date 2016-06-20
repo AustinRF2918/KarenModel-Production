@@ -4,7 +4,7 @@
 
     background: $brand-container-background;
     margin-top: $brand-container-margin-top;
-    padding-top: $brand-container-padding-top;
+    padding-top: $navbar-btn-padding-top;
     padding-bottom: $brand-container-padding-bottom;
     margin-left: $brand-container-margin-left;
     margin-right: $brand-container-margin-right;
@@ -12,3 +12,7 @@
     border-radius: $primary-border-radius $primary-border-radius 0px 0px;
 }
 
+.brand-container-nav
+{
+    margin-top: $brand-container-margin-top;
+}

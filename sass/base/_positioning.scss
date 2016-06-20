@@ -47,6 +47,7 @@ html{
 
  //Component positioning (a bit complex)
     $fast-facts-header-margin-top: 13.5%;
+    $fast-facts-header-margin-bottom: 13.5%;
     $fast-facts-header-left: -35%; //try to fix minus
     $fast-facts-content-margin-top: 20%;
     $fast-facts-content-left: 15%;
@@ -61,14 +62,14 @@ html{
 	$fast-facts-header-container-y-desktop: 20%;
 
 	$fast-facts-header-container-x-mobile: 20vw;
-	$fast-facts-header-container-left-mobile: 20vw;
-	$fast-facts-header-container-top-mobile: 15px;
+	$fast-facts-header-container-left-mobile: 32.5vw;
+	$fast-facts-header-container-top-mobile: 0px;
 	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!BAD BAD BAD
 	$fast-facts-header-container-y-mobile: 20vw;
 
 	$fast-facts-content-container-width-desktop: 30vw;
 	$fast-facts-content-container-x-desktop: 43%;
-	$fast-facts-content-container-y-desktop: 20%
+	$fast-facts-content-container-y-desktop: 20%;
 	$fast-facts-content-container-width-mobile: 100%;
 
 	$fast-facts-content-container-li-margin-top: 15px;
@@ -117,14 +118,15 @@ html{
    //Relative button sizing.
 	$button-scale: 1.25;
 
+   //General navbar
+	$navbar-btn-padding-top: 10px;
+
     //Btn learn sizes
 	$btn-learn-size-x: 30px;
 	$btn-learn-size-y: 150px;
 
     //Btn mobile toggler sizes.
-	$btn-mobile-toggler-radius: 4px;
-	$btn-mobile-padding-top: 10px;
-	$btn-mobile-padding-bottom: 11px;
+	$btn-mobile-radius: 4px;
 	    //Recursive horizontal bar.
 	     //!! NOTE BOTH OF THESE CHANGE HEIGHT OF ABOVE BUTTON!!!
 	    $btn-bar-width: 32px;

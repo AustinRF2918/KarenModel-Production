@@ -57,7 +57,7 @@
 
     li{
 	margin-top: $fast-facts-content-container-li-margin-top;
-	margin-bottom: $fast-facts-content-container-li-margin-bottom;
+	margin-bottom: $fast-facts-content-container-li-margin-top;
 	list-style: none;
     }
 
@@ -84,6 +84,8 @@
     @media screen and (max-width: 1000px)
     {
 	position: relative;
+	left: 9%;
+	margin-top: 10%;
 	width: $fast-facts-content-container-width-mobile;
     }
 }
