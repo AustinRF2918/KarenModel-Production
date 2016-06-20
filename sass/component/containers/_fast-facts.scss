@@ -22,12 +22,12 @@
 }
 .fast-facts-header-container
 {
-    @media screen and (min-width: 1001px)
+    @media screen and (min-width: 768px)
     {
-	@include _std-cartesian-translate-desktop($fast-facts-header-container-x-desktop, $fast-facts-header-container-y-desktop);
+	@include _std-cartesian-translate-desktop($fast-facts-header-container-x-desktop - 10%, $fast-facts-header-container-y-desktop + -75%);
     }
 
-    @media screen and (max-width: 1000px)
+    @media screen and (max-width: 767px)
     {
 	position: relative;
 	left: $fast-facts-header-container-left-mobile;
@@ -66,22 +66,23 @@
 	text-transform: uppercase;
 	font-weight: bold;
 
-	@media screen and (max-width: 1000px){
+	@media screen and (max-width: 767px){
 	font-size: $fast-facts-paragraph-size;
 	}
 
-	@media screen and (min-width: 1001px){
+	@media screen and (min-width: 768px){
 	    font-size: 1.20vw !important;
 	}
     }
 
-    @media screen and (min-width: 1001px)
+    @media screen and (min-width: 768px)
     {
 	@include _std-cartesian-translate-desktop($fast-facts-content-container-x-desktop, $fast-facts-content-container-y-desktop);
+	margin-top: 10%;
 	width: $fast-facts-content-container-width-desktop;
     }
 
-    @media screen and (max-width: 1000px)
+    @media screen and (max-width: 767px)
     {
 	position: relative;
 	left: 9%;
@@ -90,5 +91,10 @@
     }
 }
 
+.fast-facts, .fast-facts-container, html, body, fast-facts-header-container
+{
+    width: 100%;
+    overflow-x: hidden;
+}
 
 

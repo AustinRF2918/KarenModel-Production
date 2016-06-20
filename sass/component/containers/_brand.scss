@@ -1,7 +1,6 @@
 .brand-container
 {
     position: relative;
-
     background: $brand-container-background;
     margin-top: $brand-container-margin-top;
     padding-top: $navbar-btn-padding-top;
@@ -12,7 +11,10 @@
     border-radius: $primary-border-radius $primary-border-radius 0px 0px;
 }
 
-.brand-container-nav
+.brand-navbar-container
 {
-    margin-top: $brand-container-margin-top;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
 }

@@ -49,7 +49,7 @@ html{
     $fast-facts-header-margin-top: 13.5%;
     $fast-facts-header-margin-bottom: 13.5%;
     $fast-facts-header-left: -35%; //try to fix minus
-    $fast-facts-content-margin-top: 20%;
+    $fast-facts-content-margin-top: 40%;
     $fast-facts-content-left: 15%;
     $fast-facts-cover-index: 1000;
     $fast-facts-height: 800px;
@@ -69,7 +69,7 @@ html{
 
 	$fast-facts-content-container-width-desktop: 30vw;
 	$fast-facts-content-container-x-desktop: 43%;
-	$fast-facts-content-container-y-desktop: 20%;
+	$fast-facts-content-container-y-desktop: 30%;
 	$fast-facts-content-container-width-mobile: 100%;
 
 	$fast-facts-content-container-li-margin-top: 15px;
@@ -119,7 +119,7 @@ html{
 	$button-scale: 1.25;
 
    //General navbar
-	$navbar-btn-padding-top: 10px;
+	$navbar-btn-padding-top: 0px;
 
     //Btn learn sizes
 	$btn-learn-size-x: 30px;

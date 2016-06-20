@@ -6,13 +6,32 @@
 
     &-brand
     {
-	color: $navbar-brand !important;
-	font-size: $navbar-brand-font-size;
+	color: lighten($navbar-brand, 20%);
+	@media screen and (min-width: 768px)
+	{
+	    font-size: $navbar-brand-font-size-desktop;
+	}
+
+	@media screen and (max-width: 767px)
+	{
+	    font-size: $navbar-brand-font-size-mobile;
+	}
+
+	transition: color .5s;
+
+       &:hover
+       {
+	   transition: color .5s;
+	   color: darken($navbar-brand, 10%);
+       }
+
+	height: 90px;
     }
 
     &-icon-group
     {
-	padding-top: $navbar-icon-group-padding-top;
+	height: 100%;
+	height: 90px;
     }
 
     &-quick-nav

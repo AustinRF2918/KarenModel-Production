@@ -2,16 +2,16 @@ include ../../component/icons/_index.pug
 include _mobile-toggler.pug
   
 mixin prototypicalNavbar(navbarStyle)
-  nav(class=["navbar", "navbar-custom", "navbar-fixed-top" , navbarStyle])
-     .container-fluid
-        .col-md-3.p-l-3.brand-container-navbar
-            a(class=["navbar-brand", "navbar-custom-brand", "pull-xs-left"], href="#") <strong>Karen Polzin</strong>
-        .col-md-6.text-xs-center.navbar-custom-icon-group
+  nav(class=["navbar", "navbar-fixed" , navbarStyle])
+     .container-fluid.navbar-contents
+        .col-md-3.p-l-3.col-xs-6
+            a(class=["", "",  "navbar-custom-brand", "pull-xs-left"], href="#")
+              div(class="brand-navbar-container")
+                <strong>Karen Polzin</strong>
+        .col-md-6.text-xs-center.navbar-custom-icon-group.hide-xs.dam
+          .icon-group.dam
             +facebook-icon-navbar
             +pintrest-icon-navbar
-            +twitter-icon-navbar
-            +google-icon-navbar
-        .col-md-3.text-xs-right.p-r-3
+        .col-md-3.text-xs-right.p-r-3.mobile-toggler-group.col-xs-6
             +mobileToggler
-  //a
              

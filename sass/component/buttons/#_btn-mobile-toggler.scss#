@@ -28,7 +28,7 @@
 //mixin or something...
 .navbar-mobile-toggler-horizontal-bar
 {
-	       transition: background .5s;
+    transition: background .5s;
     display: block;
     width: $btn-bar-width;
     height: $btn-bar-height;

@@ -1,0 +1,16 @@
+@mixin C01b-generateNavbar($selector)
+{
+    @include C01b-Navbar-CorePositioning($selector)
+    {
+	@include C01b-Navbar-CoreContents("#{$selector}-contents")
+    }
+}
+
+@mixin C01b-makeFixed($selector)
+{
+    @include C01b-Navbar-CoreFixed($selector);
+
+}
+
+@include C01b-generateNavbar(".navbar");
+@include C01b-makeFixed(".navbar-fixed");
