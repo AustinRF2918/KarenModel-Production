@@ -88,19 +88,23 @@ html {
   z-index: 1000; }
   @media screen and (min-width: 768px) {
     .introduction-text-container {
-      transform: translateY(60%);
-      left: 23%; } }
+      position: absolute;
+      top: 250px;
+      left: 30%;
+      transform: translateX(-30%); } }
   @media screen and (max-width: 767px) {
     .introduction-text-container {
-      top: 70%;
-      transform: translateY(-70%);
-      left: 16%; } }
+      position: absolute;
+      top: 250px;
+      transform: translateY(-33%);
+      left: 50%;
+      transform: translateX(-50%); } }
   .introduction-text-container h1, .introduction-text-container h2 {
     color: #d8d4cf; }
   .introduction-text-container h1 {
-    font-size: 7em; }
+    font-size: 6em; }
   .introduction-text-container h2 {
-    font-size: 4em; }
+    font-size: 3em; }
     @media screen and (max-width: 767px) {
       .introduction-text-container h2 {
         display: none; } }

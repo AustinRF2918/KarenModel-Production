@@ -5,15 +5,19 @@
 
     @media screen and (min-width: 768px)
     {
-	transform: translateY(60%);
-	left: 23%;
+	position: absolute;
+	top: 250px;
+	left: 30%;
+	transform: translateX(-30%)
     }
 
     @media screen and (max-width: 767px)
     {
-	top: 70%;
-	transform: translateY(-70%);
-	left: $introduction-text-container-left-mobile;
+	position: absolute;
+	top: 250px;
+	transform: translateY(-33%);
+	left: 50%;
+	transform: translateX(-50%)
     }
 
     h1, h2{

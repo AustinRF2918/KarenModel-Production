@@ -1,6 +1,7 @@
 .introduction
 {
     @include generateContainer($introduction-container-background, $introduction-container-padding-top, $introduction-container-padding-bottom)
+
 }
 
 .introduction-row
