@@ -11,6 +11,10 @@ html {
   .m-t-md-2 {
     margin-top: 2em; } }
 
+.rel-opl {
+  position: relative;
+  top: -90px; }
+
 @media screen and (max-width: 767px) {
   .dam {
     display: none; } }
