@@ -1,0 +1,7 @@
+@mixin generateHoverableTest($selector)
+{
+    @include Core-Hoverable-Base($selector, 40px, black);
+}
+
+@include generateHoverableTest(".slide-out-item");
+//

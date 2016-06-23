@@ -529,6 +529,25 @@ html {
   width: 100%;
   overflow-x: hidden; }
 
+.slide-out-item {
+  position: relative;
+  left: -40px;
+  height: 50px;
+  width: 130% !important;
+  padding-left: 30px;
+  margin: 0px !important; }
+  .slide-out-item a {
+    position: relative;
+    top: 25%;
+    transform: translateY(-25%); }
+  .slide-out-item-wrapper {
+    height: 100vh !important;
+    position: relative;
+    padding-top: -5px;
+    margin-top: -10px; }
+  .slide-out-item:hover {
+    background: black; }
+
 .introduction .container-fluid {
   background: #211D1E;
   padding-top: 0px;

@@ -1,0 +1,29 @@
+@mixin Core-Hoverable-Base($selector, $offset-value, $background-color)
+{
+    #{$selector}
+    {
+	a{
+	    position: relative;
+	    top: 25%;
+	    transform: translateY(-25%);
+	}
+	position: relative;
+	left: -$offset-value;
+	height: 50px;
+	width: 130% !important;
+	padding-left: 30px;
+	margin: 0px !important;
+
+	&-wrapper{
+	    height: 100vh !important;
+	    position: relative;
+	    padding-top: -5px;
+	    margin-top: -10px;
+	}
+
+	&:hover{
+	    background: complement($background-color);
+	}
+			
+    }
+}
