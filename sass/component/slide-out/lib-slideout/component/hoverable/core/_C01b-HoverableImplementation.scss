@@ -1,29 +1,52 @@
-@mixin Core-Hoverable-Base($selector, $offset-value, $background-color)
+//Selector: Obvious.
+//Offset-Value: Offset for etnire list (Useful for filling area).
+//Link-padding-left: offset of all selectors.
+//Width: width of single list element.
+//Height: height of single list element.
+//Padding-top: padding of our entire list.
+//Margin-top: margin of our entire list.
+//Transform-top: % based indicator of how far down a should be in it's li element.
+@mixin Core-Hoverable-Base($selector, $offset-value, $link-padding-left, $width, $height, $padding-top, $margin-top, $transform-top)
 {
     #{$selector}
     {
+	//Should be wrapped inside of a li item of which selector is named..
+	//This will take our a values and center them in relation to their parent
+	//selector.
 	a{
 	    position: relative;
-	    top: 25%;
-	    transform: translateY(-25%);
+
+	    //REQUIRES _STD-Translate
+	    top: $transform-top;
+	    transform: translateY(-$transform-top);
 	}
+
 	position: relative;
 	left: -$offset-value;
-	height: 50px;
-	width: 130% !important;
-	padding-left: 30px;
+	height: $height;
+	width: $width;
+	padding-left: $link-padding-left;
+
 	margin: 0px !important;
 
 	&-wrapper{
 	    height: 100vh !important;
 	    position: relative;
-	    padding-top: -5px;
-	    margin-top: -10px;
+	    padding-top: $padding-top;
+	    margin-top: $margin-top;
 	}
+    }
+}
 
+//Simple color generator.
+@mixin Core-Hoverable-Colors($selector, $font-color, $background-color)
+{
+    #{$selector}
+    {
 	&:hover{
-	    background: complement($background-color);
+	    //Overloads for this component.
+	    background: $background-color !important;
+	    color: $font-color !important;
 	}
-			
     }
 }

@@ -1,7 +1,13 @@
-@mixin generateHoverableTest($selector)
+@mixin generateHoverableDefault($selector)
 {
-    @include Core-Hoverable-Base($selector, 40px, black);
+    @include Core-Hoverable-Base($selector, 40px, 30px, 140%, 50px, 10px, -20px, 25%)
+    @include Core-Hoverable-Colors($selector, black, white);
 }
 
-@include generateHoverableTest(".slide-out-item");
-//
+@mixin generateHoverableCustom($selector, $list-left, $list-element-left, $width-rel-to-parent, $height-abs, $list-padding-top, $list-margin-top, $element-vertical-centering, $background, $foreground)
+{
+    @include Core-Hoverable-Base($selector, $list-left, $list-element-left, $width-rel-to-parent, $height-abs, $list-padding-top, $list-margin-top, $element-vertical-centering)
+    @include Core-Hoverable-Colors($selector, $background, $foreground);
+}
+
+@include generateHoverableDefault(".slide-out-item");

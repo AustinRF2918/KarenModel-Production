@@ -533,7 +533,7 @@ html {
   position: relative;
   left: -40px;
   height: 50px;
-  width: 130% !important;
+  width: 140%;
   padding-left: 30px;
   margin: 0px !important; }
   .slide-out-item a {
@@ -543,10 +543,12 @@ html {
   .slide-out-item-wrapper {
     height: 100vh !important;
     position: relative;
-    padding-top: -5px;
-    margin-top: -10px; }
-  .slide-out-item:hover {
-    background: black; }
+    padding-top: 10px;
+    margin-top: -20px; }
+
+.slide-out-item:hover {
+  background: white !important;
+  color: black !important; }
 
 .introduction .container-fluid {
   background: #211D1E;
