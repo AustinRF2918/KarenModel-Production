@@ -1,3 +1,6 @@
+//TO IMPLEMENT:
+//    TRANSITION.
+
 //Selector: Obvious.
 //Offset-Value: Offset for etnire list (Useful for filling area).
 //Link-padding-left: offset of all selectors.
@@ -13,7 +16,7 @@
 	//Should be wrapped inside of a li item of which selector is named..
 	//This will take our a values and center them in relation to their parent
 	//selector.
-	a{
+	p{
 	    position: relative;
 
 	    //REQUIRES _STD-Translate

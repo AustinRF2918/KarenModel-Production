@@ -536,10 +536,10 @@ html {
   width: 140%;
   padding-left: 30px;
   margin: 0px !important; }
-  .slide-out-item a {
+  .slide-out-item p {
     position: relative;
-    top: 25%;
-    transform: translateY(-25%); }
+    top: 50%;
+    transform: translateY(-50%); }
   .slide-out-item-wrapper {
     height: 100vh !important;
     position: relative;
