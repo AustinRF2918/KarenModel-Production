@@ -19,6 +19,10 @@ html {
   .dam {
     display: none; } }
 
+@media screen and (max-height: 767px) {
+  .p-l-0-mobile {
+    padding-left: 0px !important; } }
+
 .btn-learn {
   background: #140e0e;
   color: white;
@@ -529,17 +533,21 @@ html {
   width: 100%;
   overflow-x: hidden; }
 
+.slide-down {
+  text-decoration: none !important; }
+
 .slide-out-item {
   position: relative;
   left: -40px;
   height: 50px;
-  width: 140%;
+  width: 300%;
   padding-left: 30px;
   margin: 0px !important; }
   .slide-out-item p {
     position: relative;
+    transform: translateY(-50%);
     top: 50%;
-    transform: translateY(-50%); }
+    text-decoration: none !important; }
   .slide-out-item-wrapper {
     height: 100vh !important;
     position: relative;

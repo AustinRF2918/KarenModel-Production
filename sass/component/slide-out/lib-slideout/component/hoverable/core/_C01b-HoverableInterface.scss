@@ -27,7 +27,7 @@
 
 @mixin generateHoverableDefault($selector)
 {
-    @include Core-Hoverable-Base($selector, 40px, 30px, 140%, 50px, 10px, -20px, 50%)
+    @include Core-Hoverable-Base($selector, 40px, 30px, 300%, 50px, 10px, -20px, 50%)
     @include Core-Hoverable-Colors($selector, black, white);
 }
 

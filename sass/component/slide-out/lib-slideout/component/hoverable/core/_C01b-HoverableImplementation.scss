@@ -20,8 +20,9 @@
 	    position: relative;
 
 	    //REQUIRES _STD-Translate
-	    top: $transform-top;
 	    transform: translateY(-$transform-top);
+	    top: $transform-top;
+	    text-decoration: none !important;
 	}
 
 	position: relative;
@@ -39,6 +40,11 @@
 	    margin-top: $margin-top;
 	}
     }
+}
+
+.slide-down
+{
+    text-decoration: none !important;
 }
 
 //Simple color generator.
