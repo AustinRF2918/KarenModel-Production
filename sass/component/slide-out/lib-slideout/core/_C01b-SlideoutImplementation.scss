@@ -31,12 +31,12 @@
 	z-index: 1999;
 	top: 0px;
 	right: 0px;
-	transition: .4s ease-in-out;
+	@include STD-GenerateTransition(0.5s);
 	@content
 
 	&-toggleOff
 	{
-	    transition: .4s ease-in-out;
+	    @include STD-GenerateTransition(0.5s);
 	    right: -$width !important;
 	    width: 0vw;
 	    overflow: hidden;

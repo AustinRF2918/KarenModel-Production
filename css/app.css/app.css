@@ -29,12 +29,20 @@ html {
   border-radius: 8px;
   line-height: 250px;
   width: 50px;
-  transition: background-color .25s, transform .25s ease-out; }
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  -webkit-transition: background-color 0.5s, transform 0.5s ease-out;
+  -o-transition: background-color 0.5s, transform 0.5s ease-out;
+  -ms-transition: background-color 0.5s, transform 0.5s ease-out;
+  -moz-transition: background-color 0.5s, transform 0.5s ease-out; }
   .btn-learn:hover {
     background: white;
     color: #140e0e;
     transform: scale(1.25);
-    transition: background-color .25s, transform .25s ease-out; }
+    transition: background-color 0.25s, transform 0.25s ease-out;
+    -webkit-transition: background-color 0.25s, transform 0.25s ease-out;
+    -o-transition: background-color 0.25s, transform 0.25s ease-out;
+    -ms-transition: background-color 0.25s, transform 0.25s ease-out;
+    -moz-transition: background-color 0.25s, transform 0.25s ease-out; }
 
 .btn-read {
   background: #140e0e;
@@ -42,12 +50,20 @@ html {
   border-radius: 8px;
   line-height: 50px;
   width: 250px;
-  transition: background-color .25s, transform .25s ease-out; }
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  -webkit-transition: background-color 0.5s, transform 0.5s ease-out;
+  -o-transition: background-color 0.5s, transform 0.5s ease-out;
+  -ms-transition: background-color 0.5s, transform 0.5s ease-out;
+  -moz-transition: background-color 0.5s, transform 0.5s ease-out; }
   .btn-read:hover {
     background: rgba(20, 14, 14, 0.5);
     color: white;
     transform: scale(1.25);
-    transition: background-color .25s, transform .25s ease-out; }
+    transition: background-color 0.25s, transform 0.25s ease-out;
+    -webkit-transition: background-color 0.25s, transform 0.25s ease-out;
+    -o-transition: background-color 0.25s, transform 0.25s ease-out;
+    -ms-transition: background-color 0.25s, transform 0.25s ease-out;
+    -moz-transition: background-color 0.25s, transform 0.25s ease-out; }
 
 .navbar-mobile-toggler {
   position: absolute;
@@ -495,7 +511,11 @@ html {
   z-index: 1999;
   top: 0px;
   right: 0px;
-  transition: .4s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
   color: black;
   background: #c1bab3; }
   .slide-out ul {
@@ -511,7 +531,11 @@ html {
     .slide-out {
       width: 30vw; } }
   .slide-out-toggleOff {
-    transition: .4s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
     right: -250px !important;
     width: 0vw;
     overflow: hidden;
@@ -555,11 +579,19 @@ html {
     margin-top: -20px; }
 
 .slide-out-item {
-  transition: background-color 0.5s ease; }
+  transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease; }
   .slide-out-item:hover {
     background: rgba(0, 0, 0, 0.6) !important;
     color: #c1bab3 !important;
-    transition: background-color 0.5s ease; }
+    transition: background-color 0.5s ease;
+    -webkit-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    -ms-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease; }
 
 .introduction .container-fluid {
   background: #211D1E;

@@ -57,9 +57,9 @@
 	    //Overloads for this component.
 	    background: $background-color !important;
 	    color: $font-color !important;
-	    transition: background-color 0.5s ease;
+	    @include STD-GenerateBackgroundTransition(0.5s);
 	}
 
-	transition: background-color 0.5s ease;
+	@include STD-GenerateBackgroundTransition(0.5s);
     }
 }

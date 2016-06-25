@@ -10,8 +10,7 @@
     line-height: $height;
     width: $width;
 
-    //Refactor to be generalizable from interface.
-    transition: background-color .25s, transform .25s ease-out;
+    @include P01b-ButtonTransition(0.5s);
 
     &:hover
     {
@@ -20,7 +19,7 @@
 
 	//Refactor to be generalizable from interface.
 	transform: scale($button-scale);
-	transition: background-color .25s, transform .25s ease-out;
+	@include P01b-ButtonTransition(0.25s);
     }
 }
     
