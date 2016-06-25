@@ -50,12 +50,16 @@
 //Simple color generator.
 @mixin Core-Hoverable-Colors($selector, $font-color, $background-color)
 {
+
     #{$selector}
     {
 	&:hover{
 	    //Overloads for this component.
 	    background: $background-color !important;
 	    color: $font-color !important;
+	    transition: background-color 0.5s ease;
 	}
+
+	transition: background-color 0.5s ease;
     }
 }
