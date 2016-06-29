@@ -1,0 +1,20 @@
+//model gallery sizing:
+    $model-gallery-height: 25%;
+    $model-gallery-width: 100%;
+
+    @mixin img-full
+    {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    }
+
+//Layout sizing...
+    //About
+    $about-body-height: 800px;
+    //Contact
+	$contact-body-height: 800px;
+	$contact-body-height-mobile: auto 0;
+    $about-bod-height: 700px;
+    
+

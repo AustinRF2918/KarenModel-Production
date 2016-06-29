@@ -493,6 +493,9 @@ html {
       -webkit-transform: scale(1.25);
       transform: scale(1.25); }
 
+.modelGalleryInvisible {
+  display: none; }
+
 .card-img-overlay {
   text-align: center;
   top: 50%;

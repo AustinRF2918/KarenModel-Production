@@ -4,10 +4,16 @@ include ../../utility/bootstrap/_index.pug
   +generateRow("gallery-body")
     .col-md-10.col-md-offset-1
       .col-md-4.crop-top.m-t-md-2
-        +generateCardWithOverlay("modelGallery", "Runway, 2016", "", "img/page-assets/just-chillin-asset.jpg")
+        +generateCardWithOverlay("modelGallery", "Runway, 2016", "", "img/page-assets/just-chillin-asset.jpg", "First", "First")
+        +generateInvisibleCard("modelGalleryInvisible", "Runway, 2016", "", "img/page-assets/just-chillin-asset.jpg", "First", "Second")
+        +generateInvisibleCard("modelGalleryInvisible", "Runway, 2016", "", "img/page-assets/just-chillin-asset.jpg", "First", "Second")
       .col-md-4.crop-top.m-t-md-2
-        +generateCardWithOverlay("modelGallery", "Runway, 2016", "", "img/page-assets/just-chillin-asset.jpg")
+        +generateCardWithOverlay("modelGallery", "Runway, 2016", "", "img/page-assets/just-chillin-asset.jpg", "Second", "First")
+        +generateInvisibleCard("modelGalleryInvisible", "Runway, 2016", "", "img/page-assets/just-chillin-asset.jpg", "Second", "Second")
+        +generateInvisibleCard("modelGalleryInvisible", "Runway, 2016", "", "img/page-assets/just-chillin-asset.jpg", "Second", "Third")
       .col-md-4.crop-top.m-t-md-2
-        +generateCardWithOverlay("modelGallery", "Runway, 2016", "", "img/page-assets/just-chillin-asset.jpg")
+        +generateCardWithOverlay("modelGallery", "Runway, 2016", "", "img/page-assets/just-chillin-asset.jpg", "Third", "First")
+        +generateInvisibleCard("modelGalleryInvisible", "Runway, 2016", "", "img/page-assets/just-chillin-asset.jpg", "Third", "Second")
+        +generateInvisibleCard("modelGalleryInvisible", "Runway, 2016", "", "img/page-assets/just-chillin-asset.jpg", "Third", "Third")
     
     
