@@ -1,3 +1,5 @@
+@include P01b-GenerateIntroduction-Top("reveal-on-scroll-contact-body", "is-revealed", 200px, 0.5s);
+
 .contact-body
 {
     @include generateContainer($contact-body-background, $contact-body-container-padding-top, $contact-body-container-padding-bottom);

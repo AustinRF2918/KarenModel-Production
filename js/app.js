@@ -25,17 +25,26 @@ var force_off_prototype_subtractive = function(selector, toggleableClass)
     };
 };
 
-var create_page_hook = function(startPoint, stopPoint, linkID, ssCont, offset)
+var create_page_hook = function(startPoint, stopPoint, linkID, ssCont, offset, className)
 {
 	new ScrollMagic.Scene({
 	    offset: $(startPoint).offset().top - offset,
 	    duration: $(stopPoint).offset().top - $(startPoint).offset().top 
 	})
-	    .setClassToggle(linkID, 'slide-out-item-active')
+	    .setClassToggle(linkID, className)
 	    .addTo(ssCont);
-    
 };
 
+var create_page_hook_oneshot = function(startPoint, stopPoint, linkID, ssCont, offset, className)
+{
+	new ScrollMagic.Scene({
+	    offset: $(startPoint).offset().top - offset,
+	})
+	    .removeClassToggle()
+	    .setClassToggle(linkID, className)
+	    .reverse(false)
+	    .addTo(ssCont);
+};
 
 //Toggle constructs
 var switch_toggle = switching_prototype(".slide-out", "slide-out-toggleOff");
@@ -87,9 +96,15 @@ $(document).ready(function(){
     });
 
     var controller = new ScrollMagic.Controller();
-    var home_hook = create_page_hook('body', '.about-divider', '#link-to-home', controller, 70);
-    var about_hook = create_page_hook('.about-divider', '.gallery-divider', '#link-to-about', controller, 70);
-    var gallery_hook = create_page_hook('.gallery-divider', '.contact-divider', '#link-to-gallery', controller, 70);
-    var contact_hook = create_page_hook('.contact-divider', '.footer', '#link-to-contact', controller, 70);
+    var home_hook = create_page_hook('body', '.about-divider', '#link-to-home', controller, 70, "slide-out-item-active");
+    var home_hook_slide_in = create_page_hook_oneshot('body', '.about-divider', '.introduction-text-container', controller, 70, "is-revealed");
+    var about_hook = create_page_hook('.about-divider', '.gallery-divider', '#link-to-about', controller, 70, "slide-out-item-active");
+    var about_divider_slide_in = create_page_hook_oneshot('.about-divider', '.about-divider', '.about-divider-cont', controller, 600, "is-revealed");
+    var fast_facts_slide_in = create_page_hook_oneshot('.about-body', '.gallery-divider', '.fast-facts-cont', controller, 400, "is-revealed");
+    var gallery_hook = create_page_hook('.gallery-divider', '.contact-divider', '#link-to-gallery', controller, 70, "slide-out-item-active");
+    var gallery_divider_slide_in = create_page_hook_oneshot('.gallery-divider', '.gallery-divider', '.gallery-divider-cont', controller, 600, "is-revealed");
+    var contact_hook = create_page_hook('.contact-divider', '.footer', '#link-to-contact', controller, 70, "slide-out-item-active");
+    var contact_divider_slide_in = create_page_hook_oneshot('.contact-divider', '.contact-divider', '.contact-divider-cont', controller, 600, "is-revealed");
+    var contact_slide_in = create_page_hook_oneshot('.contact-divider', '.footer', '.contact-body-cont', controller, 200, "is-revealed");
 });
 

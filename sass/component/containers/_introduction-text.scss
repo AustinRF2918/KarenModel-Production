@@ -1,11 +1,14 @@
+@include P01b-GenerateIntroduction-Left("reveal-on-scroll-introduction", "is-revealed", 200px, 0.5s)
+
 .introduction-text-container
 {
+
     @include STD-GenerateTransition-Out(.2s);
 
     position: absolute;
     z-index: $introduction-text-container-z-index;
 
-    @media screen and (min-width: 768px)
+        @media screen and (min-width: 768px)
     {
 	position: absolute;
 	top: 250px;
@@ -42,6 +45,7 @@
     {
 	margin-top: 20px;
     }
+
 
 }
 
