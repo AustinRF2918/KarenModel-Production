@@ -95,8 +95,31 @@
 
 .fast-facts, .fast-facts-container, html, body, fast-facts-header-container
 {
+    @include STD-GenerateTransition-In(.2s);
     width: 100%;
     overflow-x: hidden;
 }
 
+.fast-facts-header-container
+{
+    @include STD-GenerateTransition-Out(.2s);
+}
 
+.fast-facts-columns
+{
+    @include STD-GenerateTransition-Out(.2s);
+}
+
+.fast-facts-header-toggled
+{
+    position: relative;
+    transform: translateX(-10%);
+    @include STD-GenerateTransition-In(.2s);
+}
+
+.fast-facts-content-toggled
+{
+    position: relative;
+    transform: translateX(-30%);
+    @include STD-GenerateTransition-In(.2s);
+}

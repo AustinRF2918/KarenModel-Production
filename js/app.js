@@ -15,15 +15,8 @@ var switching_prototype = function(selector, toggleableClass)
 //Toggle constructs
 var switch_toggle = switching_prototype(".slide-out", "slide-out-toggleOff");
 var switch_layout_width = switching_prototype(".page-layout-element", "shrunken");
-
-//Simple DOM animation.
-//Attr this should be a a this value called from an
-//anonymous function( $('...').click(function(){ scroll_down(this...)})
-//Offset value designates to what point we should scroll past or before
-//our point, and time is obvious.
-var scroll_down = function(attr_this, offset_value, time)
-{
-};
+var switch_fast_facts_header = switching_prototype(".fast-facts-header-container", "fast-facts-header-toggled");
+var switch_fast_facts_content = switching_prototype(".fast-facts-columns", "fast-facts-content-toggled");
 
 $(document).ready(function(){
     //Functions as a switch (Could be done using CSS but
@@ -32,6 +25,8 @@ $(document).ready(function(){
     $(".navbar-mobile-toggler").click(function(){
 	switch_toggle();
 	switch_layout_width();
+	switch_fast_facts_header();
+	switch_fast_facts_content();
     });
 
     //If you click a link, we want it to scroll

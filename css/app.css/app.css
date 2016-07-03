@@ -205,8 +205,45 @@ body {
       width: 100%; } }
 
 .fast-facts, .fast-facts-container, html, body, fast-facts-header-container {
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
   width: 100%;
   overflow-x: hidden; }
+
+.fast-facts-header-container {
+  transition: 0.2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out; }
+
+.fast-facts-columns {
+  transition: 0.2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out; }
+
+.fast-facts-header-toggled {
+  position: relative;
+  transform: translateX(-10%);
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in; }
+
+.fast-facts-content-toggled {
+  position: relative;
+  transform: translateX(-30%);
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in; }
 
 @media screen and (min-width: 768px) {
   .contact-info-container {
