@@ -9,13 +9,39 @@
 
 @mixin STD-GenerateTransition($time)
 {
-    transition: 0.5s ease-in-out;
-    -webkit-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    -ms-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
+    transition: $time ease-in-out;
+    -webkit-transition: $time ease-in-out;
+    -o-transition: $time ease-in-out;
+    -ms-transition: $time ease-in-out;
+    -moz-transition: $time ease-in-out;
 }
 
+@mixin STD-GenerateTransition-In($time)
+{
+    transition: $time ease-in;
+    -webkit-transition: $time ease-in;
+    -o-transition: $time ease-in;
+    -ms-transition: $time ease-in;
+    -moz-transition: $time ease-in;
+}
+
+@mixin STD-GenerateTransition-Out($time)
+{
+    transition: $time ease-out;
+    -webkit-transition: $time ease-out;
+    -o-transition: $time ease-out;
+    -ms-transition: $time ease-out;
+    -moz-transition: $time ease-out;
+}
+
+@mixin STD-GenerateTransition-Linear($time)
+{
+    transition: $time linear;
+    -webkit-transition: $time linear;
+    -o-transition: $time linear;
+    -ms-transition: $time linear;
+    -moz-transition: $time linear;
+}
 //Unique buttons.
 @mixin P01b-ButtonTransition($time)
 {

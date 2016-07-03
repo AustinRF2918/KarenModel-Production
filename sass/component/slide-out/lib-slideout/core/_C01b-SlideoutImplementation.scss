@@ -31,13 +31,13 @@
 	z-index: 1999;
 	top: 0px;
 	right: 0px;
-	@include STD-GenerateTransition(0.5s);
+	@include STD-GenerateTransition-In(.2s);
 	@content
 
 	&-toggleOff
 	{
-	    @include STD-GenerateTransition(0.5s);
-	    right: -$width !important;
+	    @include STD-GenerateTransition-Out(.2s);
+	    right: 0 !important;
 	    width: 0vw;
 	    overflow: hidden;
 	    z-index: -100;

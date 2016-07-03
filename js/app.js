@@ -1,11 +1,20 @@
-//Toggle construct.
-var switch_toggle = function()
+var switching_prototype = function(selector, toggleableClass)
 {
-    if ($(".slide-out").hasClass("slide-out-toggleOff"))
-	$(".slide-out").removeClass("slide-out-toggleOff", 1000, "easeOutBounce");
-    else
-	$(".slide-out").addClass("slide-out-toggleOff", 1000, "easeOutBounce");
+    return function(){
+	if ($(selector).hasClass(toggleableClass))
+	{
+	    $(selector).removeClass(toggleableClass);
+	}
+	else
+	{
+	    $(selector).addClass(toggleableClass);
+	}
+    };
 };
+
+//Toggle constructs
+var switch_toggle = switching_prototype(".slide-out", "slide-out-toggleOff");
+var switch_layout_width = switching_prototype(".page-layout-element", "shrunken");
 
 //Simple DOM animation.
 //Attr this should be a a this value called from an
@@ -24,6 +33,7 @@ $(document).ready(function(){
     //presence of class or non-presense.
     $(".navbar-mobile-toggler").click(function(){
 	switch_toggle();
+	switch_layout_width();
     });
 
     //If you click a link, we want it to scroll

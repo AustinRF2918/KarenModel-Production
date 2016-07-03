@@ -1,0 +1,17 @@
+//Shrinks a layout component 
+.page-layout-element
+{
+    width: 100vw;
+    right: 0;
+    @include STD-GenerateTransition-Out(.2s);
+}
+
+.shrunken
+{
+    @media screen and (min-width: 768px)
+    {
+	right: 12.5%;
+	width: 87.5%;
+	@include STD-GenerateTransition-In(.2s);
+    }
+}

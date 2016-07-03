@@ -215,6 +215,25 @@ html {
     padding-top: 50px;
     padding-bottom: 50px; } }
 
+.page-layout-element {
+  width: 100vw;
+  right: 0;
+  transition: 0.2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out; }
+
+@media screen and (min-width: 768px) {
+  .shrunken {
+    right: 12.5%;
+    width: 87.5%;
+    transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    -ms-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in; } }
+
 .text-overlay {
   margin-left: 28%;
   text-align: center;
@@ -514,11 +533,11 @@ html {
   z-index: 1999;
   top: 0px;
   right: 0px;
-  transition: 0.5s ease-in-out;
-  -webkit-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
   color: black;
   background: #c1bab3; }
   .slide-out ul {
@@ -529,17 +548,17 @@ html {
     margin-top: 100px; }
   @media screen and (min-width: 768px) {
     .slide-out {
-      width: 250px; } }
+      width: 15%; } }
   @media screen and (max-width: 767px) {
     .slide-out {
       width: 30vw; } }
   .slide-out-toggleOff {
-    transition: 0.5s ease-in-out;
-    -webkit-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    -ms-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    right: -250px !important;
+    transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -ms-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    right: 0 !important;
     width: 0vw;
     overflow: hidden;
     z-index: -100; }
