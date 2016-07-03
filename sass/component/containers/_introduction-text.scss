@@ -1,5 +1,7 @@
 .introduction-text-container
 {
+    @include STD-GenerateTransition-Out(.2s);
+
     position: absolute;
     z-index: $introduction-text-container-z-index;
 
@@ -41,4 +43,14 @@
 	margin-top: 20px;
     }
 
+}
+
+.introduction-text-toggled
+{
+    @media screen and (min-width: 768px)
+    {
+	position: absolute;
+	transform: translateX(-45%);
+	@include STD-GenerateTransition-In(.2s);
+    }
 }

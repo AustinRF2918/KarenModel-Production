@@ -17,6 +17,7 @@ var switch_toggle = switching_prototype(".slide-out", "slide-out-toggleOff");
 var switch_layout_width = switching_prototype(".page-layout-element", "shrunken");
 var switch_fast_facts_header = switching_prototype(".fast-facts-header-container", "fast-facts-header-toggled");
 var switch_fast_facts_content = switching_prototype(".fast-facts-columns", "fast-facts-content-toggled");
+var switch_intro_content = switching_prototype(".introduction-text-container", "introduction-text-toggled");
 
 $(document).ready(function(){
     //Functions as a switch (Could be done using CSS but
@@ -27,6 +28,7 @@ $(document).ready(function(){
 	switch_layout_width();
 	switch_fast_facts_header();
 	switch_fast_facts_content();
+	switch_intro_content();
     });
 
     //If you click a link, we want it to scroll

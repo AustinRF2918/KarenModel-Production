@@ -112,14 +112,21 @@
 
 .fast-facts-header-toggled
 {
-    position: relative;
-    transform: translateX(-10%);
+    @media screen and (min-width: 768px)
+    {
+	position: relative;
+	transform: translateX(-10%);
+    }
     @include STD-GenerateTransition-In(.2s);
 }
 
 .fast-facts-content-toggled
 {
-    position: relative;
-    transform: translateX(-30%);
+    @media screen and (min-width: 768px)
+    {
+	position: relative;
+	transform: translateX(-30%);
+    }
+
     @include STD-GenerateTransition-In(.2s);
 }
