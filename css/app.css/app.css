@@ -306,7 +306,7 @@ body {
   width: 50%;
   height: 700px;
   background-repeat: no-repeat;
-  background-image: url("../../img/page-assets/just-chillin-asset.jpg");
+  background-image: url("../../img/gallery4.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -321,7 +321,7 @@ body {
   width: 50%;
   height: 700px;
   background-repeat: no-repeat;
-  background-image: url("../../img/page-assets/just-chillin-asset-2.jpg");
+  background-image: url("../../img/gallery3.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -330,19 +330,31 @@ body {
     .introduction-overlay-right {
       display: none; } }
 
-.contact-overlay {
+@media screen and (max-width: 767px) {
+  .contact-overlay {
+    display: none; } }
+
+.contact-overlay-picture-1 {
   padding: 0px;
   margin: 0px;
   height: 800px;
   background-repeat: no-repeat;
-  background-image: url("../../img/page-assets/just-chillin-asset.jpg");
+  background-image: url("../../img/gallery2.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-  @media screen and (max-width: 767px) {
-    .contact-overlay {
-      display: none; } }
+
+.contact-overlay-picture-2 {
+  padding: 0px;
+  margin: 0px;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-image: url("../../img/gallery1.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .about-overlay-left {
   padding: 0px;
@@ -350,7 +362,7 @@ body {
   width: 33%;
   height: 800px;
   background-repeat: no-repeat;
-  background-image: url("../../img/page-assets/just-chillin-asset.jpg");
+  background-image: url("../../img/gallery2.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

@@ -10,11 +10,18 @@
 
 .contact-overlay
 {
-    @include overlay-fit("../../img/page-assets/just-chillin-asset.jpg");
-
     @media screen and (max-width: 767px)
     {
 	display: none;
     }
 }
 
+.contact-overlay-picture-1
+{
+    @include overlay-fit("../../img/gallery2.jpg");
+}
+
+.contact-overlay-picture-2
+{
+    @include overlay-fit("../../img/gallery1.jpg");
+}
