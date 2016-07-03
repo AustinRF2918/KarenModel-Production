@@ -90,7 +90,7 @@ $(document).ready(function(){
     //If you click a link, we want it to scroll
     //downwards instead of just going immediately to the link.
     $('.slide-down').click(function(){
-	$(document).scrollTo($($.attr(this, 'href')).offset().top - 69, 200);
+	$(document).scrollTo($($.attr(this, 'href')).offset().top - 50, 200);
 	//$(document).scrollTo(.top - 70, 200);
 	return false;
     });
