@@ -641,6 +641,10 @@ body {
 .slide-down {
   text-decoration: none !important; }
 
+.slide-out-item-active {
+  background: #1a1a1a;
+  color: white !important; }
+
 .slide-out-item {
   position: relative;
   left: -40px;

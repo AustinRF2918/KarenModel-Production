@@ -37,4 +37,9 @@
     @include Core-Hoverable-Colors($selector, $background, $foreground);
 }
 
+.slide-out-item-active
+{
+    background: lighten(black, 10%);
+    color: lighten($hoverable-text, 50%) !important;
+}
 @include generateHoverableDefault(".slide-out-item");
