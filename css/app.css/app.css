@@ -5,7 +5,10 @@ p, li {
   font-family: "Roboto", sans-serif; }
 
 html {
-  width: 100vw; }
+  height: auto; }
+
+body {
+  height: auto; }
 
 @media screen and (max-width: 768px) {
   .m-t-md-2 {
