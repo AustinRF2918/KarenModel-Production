@@ -606,6 +606,7 @@ body {
     -webkit-transition: 0.8s all;
     transition: 0.8s all; }
   .modelGallery h4 {
+    font-weight: bold;
     font-size: 2.5em; }
   .modelGallery:hover {
     z-index: 0;
