@@ -82,13 +82,25 @@ body {
   border: 0px solid transparent;
   border-radius: 4px;
   outline: none !important;
-  transition: .5s; }
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out; }
   .navbar-mobile-toggler-toggled {
     top: 25.5px;
-    transition: .5s;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
     transform: rotate(90deg); }
   .navbar-mobile-toggler:hover .navbar-mobile-toggler-horizontal-bar {
-    transition: background .5s;
+    transition: background-color 0.5s ease;
+    -webkit-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    -ms-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
     background-color: #e6e6e6; }
 
 .navbar-mobile-toggler-horizontal-bar {

@@ -10,18 +10,19 @@
 
     border-radius: $btn-mobile-radius;
     outline: none !important;
-    transition: .5s;
+    @include STD-GenerateTransition(.5s);
 
     &-toggled{
 	top: 25.5px;
-	transition: .5s;
+	@include STD-GenerateTransition(.5s);
 	transform: rotate(90deg);
     }
+
     &:hover
     {
 	.navbar-mobile-toggler-horizontal-bar
 	{
-	    transition: background .5s;
+	    @include STD-GenerateBackgroundTransition(.5s);
 	    background-color: darken($navbar-brand, 10%);
 	}
     }

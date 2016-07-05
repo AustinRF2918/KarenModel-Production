@@ -64,6 +64,7 @@ var force_layout_width = force_off_prototype_subtractive(".page-layout-element",
 var force_fast_facts_header = force_off_prototype_subtractive(".fast-facts-header-container", "fast-facts-header-toggled");
 var force_fast_facts_content = force_off_prototype_subtractive(".fast-facts-columns", "fast-facts-content-toggled");
 var force_intro_content = force_off_prototype_subtractive(".introduction-text-container", "introduction-text-toggled");
+var force_mobile_toggler = force_off_prototype_subtractive(".navbar-mobile-toggler", "navbar-mobile-toggler-toggled");
 
 
 $(document).ready(function(){
@@ -87,6 +88,7 @@ $(document).ready(function(){
 	force_fast_facts_header();
 	force_fast_facts_content();
 	force_intro_content();
+	force_mobile_toggler();
     });
 
     //If you click a link, we want it to scroll
