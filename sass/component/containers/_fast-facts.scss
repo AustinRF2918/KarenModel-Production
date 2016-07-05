@@ -8,36 +8,35 @@
 }
 .fast-facts-container
 {
-    @media screen and (min-width: 768px)
+    @media screen and (min-width: 769px)
     {
 	@include STD-GenerateXY($fast-facts-container-x-desktop, $fast-facts-container-y-desktop);
     }
 }
 .fast-facts-header-container
 {
-    @media screen and (min-width: 768px)
+    @media screen and (min-width: 769px)
     {
-	margin-left: 30%;
+	margin-left: 0%;
 	margin-top: 66px;
     }
 
-    @media screen and (max-width: 767px)
+    @media screen and (max-width: 768px)
     {
 	position: relative;
-	left: $fast-facts-header-container-left-mobile;
-	width: $fast-facts-header-container-x-mobile;
+	width: 100%;
 	margin-top: 60px;
     }
 
     h1{
 	color: $fast-facts-color-header;
 
-	@media screen and (max-width: 767px)
+	@media screen and (max-width: 768px)
 	{
 	    font-size: $fast-facts-header-size * .65;
 	}
 
-	@media screen and (min-width: 768px)
+	@media screen and (min-width: 769px)
 	{
 	    font-size: $fast-facts-header-size;
 	}
@@ -60,17 +59,17 @@
 	text-transform: uppercase;
 	font-weight: bold;
 
-	@media screen and (min-width: 768px){
+	@media screen and (min-width: 769px){
 	    font-size: $fast-facts-paragraph-size * .8;
 	}
 
-	@media screen and (max-width: 767px){
+	@media screen and (max-width: 768px){
 	    font-size: $fast-facts-paragraph-size * .8;
 	}
 
     }
 
-    @media screen and (min-width: 768px)
+    @media screen and (min-width: 769px)
     {
 	@include STD-GenerateXY($fast-facts-content-container-x-desktop, $fast-facts-content-container-y-desktop);
 	margin-top: 40px;
@@ -78,10 +77,11 @@
 	width: $fast-facts-content-container-width-desktop;
     }
 
-    @media screen and (max-width: 767px)
+    @media screen and (max-width: 768px)
     {
 	position: relative;
-	left: 9%;
+	padding: 30px;
+	width: 100%;
 	margin-top: 10%;
 	width: $fast-facts-content-container-width-mobile;
     }
@@ -107,10 +107,10 @@
 
 .fast-facts-header-toggled
 {
-    @media screen and (min-width: 768px)
+    @media screen and (min-width: 769px)
     {
 	position: relative;
-	margin-left: 25%;
+	margin-left: -25%;
 	@include STD-GenerateX(-10%);
     }
     @include STD-GenerateTransition-In(.2s);
@@ -121,9 +121,9 @@
     @media screen and (min-width: 768px)
     {
 	position: absolute;
-	margin-left: -40%;
+	margin-left: -50%;
 	width: $fast-facts-content-container-width-desktop;
-	@include STD-GenerateX(-30%);
+	@include STD-GenerateX(-50%);
 	@include STD-GenerateTransition-In(.2s);
     }
 

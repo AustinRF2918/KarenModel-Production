@@ -13,7 +13,7 @@
 {
     @include overlay-third("/img/Runway/asset-runway3.jpg");
 
-    @media screen and (max-width: 767px)
+    @media screen and (max-width: 768px)
     {
 	z-index: -1000;
 	width: 100%;
