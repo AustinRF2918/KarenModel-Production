@@ -1,8 +1,9 @@
 .card-img-overlay
 {
     text-align: center;
-    top: 57.5%;
-    @include STD-GenerateY(-57.5%);
+    top: 5%;
+    @include STD-GenerateY(-5%);
+    @include STD-GenerateTransition(.5s);
 }
 
 .crop-top

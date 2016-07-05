@@ -1,16 +1,15 @@
 .modelGallery{
+    position: relative;
     cursor: pointer;
 
-    //Reset stuff.
     background: transparent;
-    color: transparent;
+    color: transparentize($palette-5, 0.5);
     border: 0px black solid;
 
     height: $model-gallery-height * 1.4;
     width: $model-gallery-width;
     overflow: hidden;
 
-    @include generateTransition(0.8s);
 
     img{
 	@include img-full;
@@ -19,17 +18,25 @@
 
     h4{
 	font-weight: bold;
-	font-size: $model-gallery-text-size;
+	font-size: $model-gallery-text-size * 1.4;
     }
 
+    .card-img-overlay
+    {
+	position: absolute;
+    }
     &:hover
     {
-	//Generalize
-	z-index: 0;
 	position: relative;
-	color: $model-gallery-text-color;
+	color: lighten($palette-10, 15%);
+	font-weight: 900;
 
-	@include generateTransition(0.8s);
+
+	.card-img-overlay
+	{
+	    top: 55.5%;
+	    @include STD-GenerateY(-55.5%);
+	}
 
 	img{
 	    @include scaleTransform(1.25);
