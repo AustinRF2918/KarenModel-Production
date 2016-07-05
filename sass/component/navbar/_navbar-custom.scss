@@ -1,7 +1,9 @@
+$navbar-height: 90px;
+
 .navbar-custom
 {
     background: $navbar-background !important;
-    height: 90px;
+    height: $navbar-height;
     padding-top: 20px;
 
     &-brand
@@ -17,26 +19,25 @@
 	    font-size: $navbar-brand-font-size-mobile;
 	}
 
-	transition: color .5s;
+	@include STD-GenerateTransition(.5s);
 
 	&:active, &:focus{
-	   transition: color .5s;
-	   color: $palette-3;
+	    @include STD-GenerateTransition(.5s);
+	    color: $palette-3;
 	}
 
         &:hover
         {
-	   transition: color .5s;
+	   @include STD-GenerateTransition(.5s);
 	   color: $palette-7;
         }
 
-
-	height: 90px;
+	height: $navbar-height;
     }
 
     &-icon-group
     {
-	height: 90px;
+	height: $navbar-height;
     }
 
     &-quick-nav

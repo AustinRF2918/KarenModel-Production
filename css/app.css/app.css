@@ -44,6 +44,10 @@ body {
     background: white;
     color: #08050E;
     transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -moz-transform: scale(1.25);
     transition: background-color 0.25s, transform 0.25s ease-out;
     -webkit-transition: background-color 0.25s, transform 0.25s ease-out;
     -o-transition: background-color 0.25s, transform 0.25s ease-out;
@@ -68,6 +72,10 @@ body {
     background: #A88CC1;
     color: white;
     transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -moz-transform: scale(1.25);
     transition: background-color 0.25s, transform 0.25s ease-out;
     -webkit-transition: background-color 0.25s, transform 0.25s ease-out;
     -o-transition: background-color 0.25s, transform 0.25s ease-out;
@@ -94,7 +102,11 @@ body {
     -o-transition: 0.5s ease-in-out;
     -ms-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
-    transform: rotate(90deg); }
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg); }
   .navbar-mobile-toggler:hover .navbar-mobile-toggler-horizontal-bar {
     transition: background-color 0.5s ease;
     -webkit-transition: background-color 0.5s ease;
@@ -104,7 +116,11 @@ body {
     background-color: #e6e6e6; }
 
 .navbar-mobile-toggler-horizontal-bar {
-  transition: background .5s;
+  transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
   display: block;
   width: 32px;
   height: 5px;
@@ -189,6 +205,10 @@ body {
   .introduction-text-toggled {
     position: absolute;
     transform: translateX(-45%);
+    -webkit-transform: translateX(-45%);
+    -o-transform: translateX(-45%);
+    -ms-transform: translateX(-45%);
+    -moz-transform: translateX(-45%);
     transition: 0.2s ease-in;
     -webkit-transition: 0.2s ease-in;
     -o-transition: 0.2s ease-in;
@@ -225,8 +245,16 @@ body {
     position: relative;
     left: 12.5%;
     transform: translateX(-12.5%);
+    -webkit-transform: translateX(-12.5%);
+    -o-transform: translateX(-12.5%);
+    -ms-transform: translateX(-12.5%);
+    -moz-transform: translateX(-12.5%);
     top: 22.5%;
-    transform: translateY(-22.5%); } }
+    transform: translateY(-22.5%);
+    -webkit-transform: translateY(-22.5%);
+    -o-transform: translateY(-22.5%);
+    -ms-transform: translateY(-22.5%);
+    -moz-transform: translateY(-22.5%); } }
 
 @media screen and (min-width: 768px) {
   .fast-facts-header-container {
@@ -270,8 +298,16 @@ body {
       position: relative;
       left: 43%;
       transform: translateX(-43%);
+      -webkit-transform: translateX(-43%);
+      -o-transform: translateX(-43%);
+      -ms-transform: translateX(-43%);
+      -moz-transform: translateX(-43%);
       top: 30%;
       transform: translateY(-30%);
+      -webkit-transform: translateY(-30%);
+      -o-transform: translateY(-30%);
+      -ms-transform: translateY(-30%);
+      -moz-transform: translateY(-30%);
       margin-top: 50px;
       width: 30vw; } }
   @media screen and (max-width: 767px) {
@@ -313,7 +349,12 @@ body {
   @media screen and (min-width: 768px) {
     .fast-facts-header-toggled {
       position: relative;
-      transform: translateX(-10%); } }
+      margin-left: 25%;
+      transform: translateX(-10%);
+      -webkit-transform: translateX(-10%);
+      -o-transform: translateX(-10%);
+      -ms-transform: translateX(-10%);
+      -moz-transform: translateX(-10%); } }
 
 .fast-facts-content-toggled {
   transition: 0.2s ease-in;
@@ -323,8 +364,19 @@ body {
   -moz-transition: 0.2s ease-in; }
   @media screen and (min-width: 768px) {
     .fast-facts-content-toggled {
-      position: relative;
-      transform: translateX(-30%); } }
+      position: absolute;
+      margin-left: -40%;
+      width: 100%;
+      transform: translateX(-30%);
+      -webkit-transform: translateX(-30%);
+      -o-transform: translateX(-30%);
+      -ms-transform: translateX(-30%);
+      -moz-transform: translateX(-30%);
+      transition: 0.2s ease-in;
+      -webkit-transition: 0.2s ease-in;
+      -o-transition: 0.2s ease-in;
+      -ms-transition: 0.2s ease-in;
+      -moz-transition: 0.2s ease-in; } }
 
 @media screen and (min-width: 768px) {
   .contact-info-container {
@@ -565,7 +617,11 @@ body {
   padding-top: 20px; }
   .navbar-custom-brand {
     color: white;
-    transition: color .5s;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
     height: 90px; }
     @media screen and (min-width: 768px) {
       .navbar-custom-brand {
@@ -574,10 +630,18 @@ body {
       .navbar-custom-brand {
         font-size: 5vw; } }
     .navbar-custom-brand:active, .navbar-custom-brand:focus {
-      transition: color .5s;
+      transition: 0.5s ease-in-out;
+      -webkit-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      -ms-transition: 0.5s ease-in-out;
+      -moz-transition: 0.5s ease-in-out;
       color: white; }
     .navbar-custom-brand:hover {
-      transition: color .5s;
+      transition: 0.5s ease-in-out;
+      -webkit-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      -ms-transition: 0.5s ease-in-out;
+      -moz-transition: 0.5s ease-in-out;
       color: #08050E; }
   .navbar-custom-icon-group {
     height: 90px; }
@@ -603,6 +667,10 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
   width: 100%; }
 
 .navbar-fixed {
@@ -741,8 +809,12 @@ body {
   margin: 0px !important; }
   .slide-out-item p {
     position: relative;
-    transform: translateY(-50%);
     top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
     text-decoration: none !important; }
   .slide-out-item-wrapper {
     height: 100vh !important;

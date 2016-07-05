@@ -10,12 +10,13 @@
 
     border-radius: $btn-mobile-radius;
     outline: none !important;
+
     @include STD-GenerateTransition(.5s);
 
     &-toggled{
 	top: 25.5px;
 	@include STD-GenerateTransition(.5s);
-	transform: rotate(90deg);
+	@include STD-GenerateRotation(90deg);
     }
 
     &:hover
@@ -32,7 +33,8 @@
 //mixin or something...
 .navbar-mobile-toggler-horizontal-bar
 {
-	       transition: background .5s;
+
+    @include STD-GenerateBackgroundTransition(.5s);
     display: block;
     width: $btn-bar-width;
     height: $btn-bar-height;

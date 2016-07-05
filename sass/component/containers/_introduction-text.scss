@@ -54,7 +54,7 @@
     @media screen and (min-width: 768px)
     {
 	position: absolute;
-	transform: translateX(-45%);
+	@include STD-GenerateX(-45%);
 	@include STD-GenerateTransition-In(.2s);
     }
 }

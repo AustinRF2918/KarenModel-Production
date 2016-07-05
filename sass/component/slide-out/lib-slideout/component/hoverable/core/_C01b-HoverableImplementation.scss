@@ -19,9 +19,9 @@
 	p{
 	    position: relative;
 
-	    //REQUIRES _STD-Translate
-	    transform: translateY(-$transform-top);
 	    top: $transform-top;
+	    @include STD-GenerateY(-$transform-top);
+
 	    text-decoration: none !important;
 	}
 

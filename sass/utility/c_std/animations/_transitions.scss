@@ -34,6 +34,53 @@
     -moz-transition: $time ease-out;
 }
 
+@mixin STD-GenerateRotation($deg)
+{
+    transform: rotate($deg);
+    -webkit-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+}
+
+@mixin STD-GenerateScale($scale)
+{
+    transform: scale($scale);
+    -webkit-transform: scale($scale);
+    -o-transform: scale($scale);
+    -ms-transform: scale($scale);
+    -moz-transform: scale($scale);
+}
+
+@mixin STD-GenerateY($percentage)
+{
+    transform: translateY($percentage);
+    -webkit-transform: translateY($percentage);
+    -o-transform: translateY($percentage);
+    -ms-transform: translateY($percentage);
+    -moz-transform: translateY($percentage);
+}
+
+@mixin STD-GenerateX($percentage)
+{
+    transform: translateX($percentage);
+    -webkit-transform: translateX($percentage);
+    -o-transform: translateX($percentage);
+    -ms-transform: translateX($percentage);
+    -moz-transform: translateX($percentage);
+}
+
+@mixin STD-GenerateXY($x, $y)
+{
+    position: relative;
+
+    left: $x;
+    @include STD-GenerateX(-$x);
+
+    top: $y;
+    @include STD-GenerateY(-$y);
+}
+
 @mixin STD-GenerateTransition-Linear($time)
 {
     transition: $time linear;

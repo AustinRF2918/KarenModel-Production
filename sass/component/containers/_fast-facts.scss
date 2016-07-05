@@ -1,12 +1,4 @@
 @include P01b-GenerateIntroduction-Left("reveal-on-scroll-fast-facts", "is-revealed", -200px, 0.5s);
-@mixin _std-cartesian-translate-desktop($x, $y)
-{
-    position: relative;
-    left: $x;
-    transform: translateX(-$x);
-    top: $y;
-    transform: translateY(-$y);
-}
 
 .fast-facts
 {
@@ -18,7 +10,7 @@
 {
     @media screen and (min-width: 768px)
     {
-	@include _std-cartesian-translate-desktop($fast-facts-container-x-desktop, $fast-facts-container-y-desktop);
+	@include STD-GenerateXY($fast-facts-container-x-desktop, $fast-facts-container-y-desktop);
     }
 }
 .fast-facts-header-container
@@ -80,7 +72,7 @@
 
     @media screen and (min-width: 768px)
     {
-	@include _std-cartesian-translate-desktop($fast-facts-content-container-x-desktop, $fast-facts-content-container-y-desktop);
+	@include STD-GenerateXY($fast-facts-content-container-x-desktop, $fast-facts-content-container-y-desktop);
 	margin-top: 50px;
 	width: $fast-facts-content-container-width-desktop;
     }
@@ -116,7 +108,8 @@
     @media screen and (min-width: 768px)
     {
 	position: relative;
-	transform: translateX(-10%);
+	margin-left: 25%;
+	@include STD-GenerateX(-10%);
     }
     @include STD-GenerateTransition-In(.2s);
 }
@@ -125,8 +118,11 @@
 {
     @media screen and (min-width: 768px)
     {
-	position: relative;
-	transform: translateX(-30%);
+	position: absolute;
+	margin-left: -40%;
+	width: 100%;
+	@include STD-GenerateX(-30%);
+	@include STD-GenerateTransition-In(.2s);
     }
 
     @include STD-GenerateTransition-In(.2s);
