@@ -515,33 +515,16 @@ body {
     height: inherit;
     margin-top: 5px;
     margin-bottom: 5px;
-    border-radius: 100%;
-    transition: 0.5s ease-in;
-    -webkit-transition: 0.5s ease-in;
-    -o-transition: 0.5s ease-in;
-    -ms-transition: 0.5s ease-in;
-    -moz-transition: 0.5s ease-in; }
-    .general-icon svg:hover {
-      border: 2px solid;
-      transform: scale(1.1);
-      -webkit-transform: scale(1.1);
-      -o-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      transition: 0.5s ease-in;
-      -webkit-transition: 0.5s ease-in;
-      -o-transition: 0.5s ease-in;
-      -ms-transition: 0.5s ease-in;
-      -moz-transition: 0.5s ease-in; }
+    border-radius: 100%; }
 
 .facebook svg {
-  background: transparent;
+  background: #3b64ec;
   fill: white;
   color: white; }
   .facebook svg:hover {
     background: white;
-    fill: white;
-    color: white; }
+    fill: #3b64ec;
+    color: #3b64ec; }
 
 .google svg {
   background: transparent;
@@ -557,9 +540,9 @@ body {
   fill: #0a7dc7;
   color: #0a7dc7; }
   .google-navbar svg:hover {
-    background: #98adf5;
-    fill: #3b64ec;
-    color: #3b64ec; }
+    background: #0a7dc7;
+    fill: #98adf5;
+    color: #98adf5; }
 
 .pintrest svg {
   background: transparent;
@@ -575,18 +558,18 @@ body {
   fill: #0a7dc7;
   color: #0a7dc7; }
   .pintrest-navbar svg:hover {
-    background: #98adf5;
-    fill: #3b64ec;
-    color: #3b64ec; }
+    background: #0a7dc7;
+    fill: #98adf5;
+    color: #98adf5; }
 
 .wifi svg {
-  background: transparent;
+  background: #3b64ec;
   fill: white;
   color: white; }
   .wifi svg:hover {
     background: white;
-    fill: white;
-    color: white; }
+    fill: #3b64ec;
+    color: #3b64ec; }
 
 .twitter svg {
   background: transparent;
@@ -602,9 +585,9 @@ body {
   fill: #0a7dc7;
   color: #0a7dc7; }
   .twitter-navbar svg:hover {
-    background: #98adf5;
-    fill: #3b64ec;
-    color: #3b64ec; }
+    background: #0a7dc7;
+    fill: #98adf5;
+    color: #98adf5; }
 
 .navbar-custom {
   background: #98adf5 !important;

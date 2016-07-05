@@ -7,9 +7,9 @@
 	fill: $cl;
 	color: $cl;
        &:hover{
-	   background: $bghv;
-	   fill: $clhv;
-	   color: $clhv;
+	   background: $cl;
+	   fill: $bg;
+	   color: $bg;
        }
     }
 }
@@ -32,13 +32,9 @@
        margin-bottom: 5px;
 
        border-radius: 100%;
-       @include STD-GenerateTransition-In(.5s);
 
        &:hover
        {
-	    border: 2px solid;
-	    @include STD-GenerateScale(1.1);
-	    @include STD-GenerateTransition-In(.5s);
        }
     }
 }

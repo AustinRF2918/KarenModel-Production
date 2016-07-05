@@ -71,12 +71,12 @@ $palette-rss: $rss-blue;
 	$btn-read-color-hover: $palette-5;
 
 //Icon Colors.
-	$icon-facebook-color: $palette-facebook;
+	$icon-facebook-color: darken($palette-9, 20%);
 	$icon-twitter-color: $palette-twitter;
 	$icon-google-color: $palette-google;
 	$icon-pinterest-color: $palette-pintrest;
 	$icon-rss-color: $palette-rss;
-	$icon-general-background:  $palette-5;
+	$icon-general-background: white; 
 
 //Containers
     //brand
