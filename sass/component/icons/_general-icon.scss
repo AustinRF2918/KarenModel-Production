@@ -3,7 +3,6 @@
 @mixin generateIconColors($bg, $cl, $bghv, $clhv)
 {
     svg{
-	border: 0px;
 	background: $bg;
 	fill: $cl;
 	color: $cl;
@@ -32,31 +31,14 @@
        margin-top: 5px;
        margin-bottom: 5px;
 
-       //Refactor at later point.
        border-radius: 100%;
-	    transition: background-color .25s, transform .5s ease-out;
+       @include STD-GenerateTransition-In(.5s);
 
        &:hover
        {
-	    //Refactor at later point.
-	    position: relative;
-	    -webkit-transform: scale(1.1) translateZ(0) scale(1.1, 1.1);
-
 	    border: 2px solid;
-	    transition: background-color .25s, transform .5s ease-out;
-
-
-	    //Refactor at later point.
+	    @include STD-GenerateScale(1.1);
+	    @include STD-GenerateTransition-In(.5s);
        }
     }
-}
-
-
-.icon-group
-{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    
 }

@@ -281,7 +281,7 @@ body {
     margin-top: 60px; } }
 
 .fast-facts-header-container h1 {
-  color: #d8d4cf; }
+  color: #0a7dc7; }
   @media screen and (max-width: 767px) {
     .fast-facts-header-container h1 {
       font-size: 4.55em; } }
@@ -296,7 +296,7 @@ body {
     margin-bottom: 15px;
     list-style: none; }
   .fast-facts-content-container p {
-    color: #d8d4cf;
+    color: white;
     text-transform: uppercase;
     font-weight: bold; }
     @media screen and (min-width: 768px) {
@@ -516,41 +516,34 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 100%;
-    transition: background-color .25s, transform .5s ease-out; }
+    transition: 0.5s ease-in;
+    -webkit-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    -ms-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in; }
     .general-icon svg:hover {
-      position: relative;
-      -webkit-transform: scale(1.1) translateZ(0) scale(1.1, 1.1);
       border: 2px solid;
-      transition: background-color .25s, transform .5s ease-out; }
-
-.icon-group {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%); }
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      transition: 0.5s ease-in;
+      -webkit-transition: 0.5s ease-in;
+      -o-transition: 0.5s ease-in;
+      -ms-transition: 0.5s ease-in;
+      -moz-transition: 0.5s ease-in; }
 
 .facebook svg {
-  border: 0px;
   background: transparent;
   fill: white;
   color: white; }
   .facebook svg:hover {
     background: white;
-    fill: transparent;
-    color: transparent; }
-
-.facebook-navbar svg {
-  border: 0px;
-  background: #98adf5;
-  fill: #0a7dc7;
-  color: #0a7dc7; }
-  .facebook-navbar svg:hover {
-    background: #98adf5;
-    fill: #3b64ec;
-    color: #3b64ec; }
+    fill: white;
+    color: white; }
 
 .google svg {
-  border: 0px;
   background: transparent;
   fill: white;
   color: white; }
@@ -560,7 +553,6 @@ body {
     color: transparent; }
 
 .google-navbar svg {
-  border: 0px;
   background: #98adf5;
   fill: #0a7dc7;
   color: #0a7dc7; }
@@ -570,7 +562,6 @@ body {
     color: #3b64ec; }
 
 .pintrest svg {
-  border: 0px;
   background: transparent;
   fill: white;
   color: white; }
@@ -580,7 +571,6 @@ body {
     color: transparent; }
 
 .pintrest-navbar svg {
-  border: 0px;
   background: #98adf5;
   fill: #0a7dc7;
   color: #0a7dc7; }
@@ -590,27 +580,15 @@ body {
     color: #3b64ec; }
 
 .wifi svg {
-  border: 0px;
   background: transparent;
   fill: white;
   color: white; }
   .wifi svg:hover {
     background: white;
-    fill: transparent;
-    color: transparent; }
-
-.wifi-navbar svg {
-  border: 0px;
-  background: #0a7dc7;
-  fill: #98adf5;
-  color: #98adf5; }
-  .wifi-navbar svg:hover {
-    background: #98adf5;
-    fill: #3b64ec;
-    color: #3b64ec; }
+    fill: white;
+    color: white; }
 
 .twitter svg {
-  border: 0px;
   background: transparent;
   fill: white;
   color: white; }
@@ -620,7 +598,6 @@ body {
     color: transparent; }
 
 .twitter-navbar svg {
-  border: 0px;
   background: #98adf5;
   fill: #0a7dc7;
   color: #0a7dc7; }

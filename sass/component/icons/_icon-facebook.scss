@@ -1,9 +1,4 @@
 .facebook
 {
-    @include generateIconColors($icon-facebook-color, $icon-general-background, $icon-general-background, $icon-facebook-color);
-}
-
-.facebook-navbar
-{
-    @include generateIconColors($navbar-background, $navbar-icons, $navbar-background, $navbar-icons-darker);
+    @include generateIconColors($icon-facebook-color, $icon-general-background, $icon-general-background, $icon-general-background);
 }

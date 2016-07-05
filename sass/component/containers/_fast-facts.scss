@@ -30,7 +30,7 @@
     }
 
     h1{
-	color: $fast-facts-color;
+	color: $fast-facts-color-header;
 
 	@media screen and (max-width: 767px)
 	{
@@ -56,7 +56,7 @@
     }
 
     p{
-	color: $fast-facts-color;
+	color: $fast-facts-color-content;
 	text-transform: uppercase;
 	font-weight: bold;
 

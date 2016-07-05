@@ -141,7 +141,8 @@ $palette-rss: $rss-blue;
 	//Introduction
 	    $introduction-container-background: $palette-7;
 	//Fast Facts
-	    $fast-facts-color: lighten(#c1bab3, 10%);
+	    $fast-facts-color-header: $palette-10;
+	    $fast-facts-color-content: $palette-8;
 
 	    
 //Model gallery
