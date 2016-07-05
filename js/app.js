@@ -108,6 +108,12 @@ $(document).ready(function(){
 	    return false;
     });
 
+    $('.btn-read').click(function(){
+	$('html,body').animate({scrollTop:la}, 300, function(){
+	});
+	    return false;
+    });
+
     lg = $($('.ig').attr('href')).offset().top - 50;
     $('.ig').click(function(){
 	$('html,body').animate({scrollTop:lg}, 300, function(){
