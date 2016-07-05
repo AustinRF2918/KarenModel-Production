@@ -8,25 +8,29 @@
     position: absolute;
     z-index: $introduction-text-container-z-index;
 
-        @media screen and (min-width: 768px)
+    @media screen and (min-width: 768px)
     {
 	position: absolute;
-	top: 250px;
+
 	left: 30%;
-	transform: translateX(-30%)
+	@include STD-GenerateX(-30%);
+
+	top: 250px;
     }
 
     @media screen and (max-width: 767px)
     {
 	position: absolute;
+
 	top: 250px;
-	transform: translateY(-33%);
+	@include STD-GenerateY(-33%);
+
 	left: 50%;
-	transform: translateX(-50%)
+	@include STD-GenerateX(-50%);
     }
 
     h1, h2{
-	color: lighten(#c1bab3, 10%);
+	color: white;
     }
 
     h1{

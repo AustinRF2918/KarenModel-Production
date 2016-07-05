@@ -179,18 +179,30 @@ body {
   @media screen and (min-width: 768px) {
     .introduction-text-container {
       position: absolute;
-      top: 250px;
       left: 30%;
-      transform: translateX(-30%); } }
+      transform: translateX(-30%);
+      -webkit-transform: translateX(-30%);
+      -o-transform: translateX(-30%);
+      -ms-transform: translateX(-30%);
+      -moz-transform: translateX(-30%);
+      top: 250px; } }
   @media screen and (max-width: 767px) {
     .introduction-text-container {
       position: absolute;
       top: 250px;
       transform: translateY(-33%);
+      -webkit-transform: translateY(-33%);
+      -o-transform: translateY(-33%);
+      -ms-transform: translateY(-33%);
+      -moz-transform: translateY(-33%);
       left: 50%;
-      transform: translateX(-50%); } }
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -moz-transform: translateX(-50%); } }
   .introduction-text-container h1, .introduction-text-container h2 {
-    color: #d8d4cf; }
+    color: white; }
   .introduction-text-container h1 {
     font-size: 6em; }
   .introduction-text-container h2 {
