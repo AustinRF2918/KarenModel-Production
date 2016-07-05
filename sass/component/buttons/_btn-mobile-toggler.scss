@@ -15,6 +15,12 @@
 
     &-toggled{
 	top: 25.5px;
+
+	.navbar-mobile-toggler-horizontal-bar
+	{
+	  background-color: white !important;
+	}
+
 	@include STD-GenerateTransition(.5s);
 	@include STD-GenerateRotation(90deg);
     }

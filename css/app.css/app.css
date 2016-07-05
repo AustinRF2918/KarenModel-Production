@@ -107,6 +107,8 @@ body {
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -moz-transform: rotate(90deg); }
+    .navbar-mobile-toggler-toggled .navbar-mobile-toggler-horizontal-bar {
+      background-color: white !important; }
   .navbar-mobile-toggler:hover .navbar-mobile-toggler-horizontal-bar {
     transition: background-color 0.5s ease;
     -webkit-transition: background-color 0.5s ease;
