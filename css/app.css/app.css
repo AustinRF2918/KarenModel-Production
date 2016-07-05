@@ -76,6 +76,7 @@ body {
   background: transparent;
   border: 0px solid transparent;
   border-radius: 4px;
+  outline: none !important;
   transition: color .5s; }
   .navbar-mobile-toggler:hover .navbar-mobile-toggler-horizontal-bar {
     transition: background .5s;
@@ -551,11 +552,13 @@ body {
     @media screen and (max-width: 767px) {
       .navbar-custom-brand {
         font-size: 5vw; } }
+    .navbar-custom-brand:active, .navbar-custom-brand:focus {
+      transition: color .5s;
+      color: white; }
     .navbar-custom-brand:hover {
       transition: color .5s;
-      color: #e6e6e6; }
+      color: #08050E; }
   .navbar-custom-icon-group {
-    height: 100%;
     height: 90px; }
   .navbar-custom-quick-nav {
     font-size: 26px; }

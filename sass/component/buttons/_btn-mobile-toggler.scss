@@ -10,18 +10,17 @@
     border: 0px solid transparent;
 
     border-radius: $btn-mobile-radius;
-
+    outline: none !important;
     transition: color .5s;
 
-       &:hover
-       {
-	   .navbar-mobile-toggler-horizontal-bar
-	   {
-	       transition: background .5s;
-	       background-color: darken($navbar-brand, 10%);
-	   }
-       }
-
+    &:hover
+    {
+	.navbar-mobile-toggler-horizontal-bar
+	{
+	    transition: background .5s;
+	    background-color: darken($navbar-brand, 10%);
+	}
+    }
 }
 
 //Probably would be useful to make this a reusible
