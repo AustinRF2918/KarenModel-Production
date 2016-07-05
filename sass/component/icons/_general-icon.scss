@@ -3,6 +3,7 @@
 @mixin generateIconColors($bg, $cl, $bghv, $clhv)
 {
     svg{
+	border: 0px;
 	background: $bg;
 	fill: $cl;
 	color: $cl;
@@ -22,7 +23,7 @@
 
     &:hover
     {
-	color: transparent;
+	text-decoration: none;
     }
 
     svg{

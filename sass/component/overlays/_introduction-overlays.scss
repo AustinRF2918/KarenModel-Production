@@ -12,7 +12,7 @@
 
 .introduction-overlay-left
 {
-    @include overlay-halve("../../img/gallery4.jpg");
+    @include overlay-halve("/img/Runway/asset-runway5.jpg");
 
     @media screen and (max-width: 767px)
     {
@@ -22,7 +22,7 @@
 
 .introduction-overlay-right
 {
-    @include overlay-halve("../../img/gallery3.jpg");
+    @include overlay-halve("/img/Runway/asset-runway7.jpg");
 
     @media screen and (max-width: 767px)
     {

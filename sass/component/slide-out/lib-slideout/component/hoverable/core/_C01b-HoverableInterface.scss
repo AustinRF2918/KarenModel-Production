@@ -28,7 +28,7 @@
 @mixin generateHoverableDefault($selector)
 {
     @include Core-Hoverable-Base($selector, 40px, 30px, 300%, 50px, 10px, -20px, 50%)
-    @include Core-Hoverable-Colors($selector, $hoverable-text, $hoverable-background);
+    @include Core-Hoverable-Colors($selector, darken($hoverable-background, 10%),  darken($hoverable-text, 10%));
 }
 
 @mixin generateHoverableCustom($selector, $list-left, $list-element-left, $width-rel-to-parent, $height-abs, $list-padding-top, $list-margin-top, $element-vertical-centering, $background, $foreground)

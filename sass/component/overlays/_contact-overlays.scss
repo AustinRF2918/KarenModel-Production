@@ -18,10 +18,10 @@
 
 .contact-overlay-picture-1
 {
-    @include overlay-fit("../../img/gallery2.jpg");
+    @include overlay-fit("/img/Print/asset-print8.jpg");
 }
 
 .contact-overlay-picture-2
 {
-    @include overlay-fit("../../img/gallery1.jpg");
+    @include overlay-fit("/img/Print/asset-print6.jpg");
 }
