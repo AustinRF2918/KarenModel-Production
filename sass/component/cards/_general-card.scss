@@ -1,7 +1,7 @@
 .card-img-overlay
 {
     text-align: center;
-    top: 5%;
+    top: 20px;
     @include STD-GenerateY(-5%);
     @include STD-GenerateTransition(.5s);
 }

@@ -97,7 +97,6 @@ $(document).ready(function(){
     var li = $($('.ii').attr('href')).offset().top - 50;
     $('.ii').click(function(){
 	$('html,body').animate({scrollTop:li}, 300, function(){
-	    window.location.href = $('.ii').attr('href');
 	});
 	    return false;
     });
@@ -105,7 +104,6 @@ $(document).ready(function(){
     la = $($('.ia').attr('href')).offset().top - 50;
     $('.ia').click(function(){
 	$('html,body').animate({scrollTop:la}, 300, function(){
-	    window.location.href = $('.ia').attr('href');
 	});
 	    return false;
     });
@@ -113,7 +111,6 @@ $(document).ready(function(){
     lg = $($('.ig').attr('href')).offset().top - 50;
     $('.ig').click(function(){
 	$('html,body').animate({scrollTop:lg}, 300, function(){
-	    window.location.href = $('.ig').attr('href');
 	});
 	    return false;
     });
@@ -121,7 +118,6 @@ $(document).ready(function(){
     lc = $($('.ic').attr('href')).offset().top - 50;
     $('.ic').click(function(){
 	$('html,body').animate({scrollTop:lc}, 300, function(){
-	    window.location.href = $('.ic').attr('href');
 	});
 	    return false;
     });

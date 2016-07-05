@@ -657,8 +657,8 @@ body {
   position: fixed;
   right: 0;
   left: 0;
-  z-index: 2000;
-  top: 0;
+  z-index: 100000;
+  top: 0px !important;
   border-width: 0 0 1px; }
 
 .mini-break {
@@ -671,7 +671,7 @@ body {
   background: transparent;
   color: rgba(255, 255, 255, 0.5);
   border: 0px black solid;
-  height: 35%;
+  height: 245px;
   width: 100%;
   overflow: hidden; }
   .modelGallery img {
@@ -711,7 +711,7 @@ body {
 
 .card-img-overlay {
   text-align: center;
-  top: 5%;
+  top: 20px;
   transform: translateY(-5%);
   -webkit-transform: translateY(-5%);
   -o-transform: translateY(-5%);
