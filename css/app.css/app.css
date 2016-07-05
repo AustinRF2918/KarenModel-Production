@@ -37,22 +37,24 @@ body {
   -o-transition: background-color 0.5s, transform 0.5s ease-out;
   -ms-transition: background-color 0.5s, transform 0.5s ease-out;
   -moz-transition: background-color 0.5s, transform 0.5s ease-out; }
-  .btn-learn:focus, .btn-learnactive {
+  .btn-learn:focus, .btn-learn:active {
     background: #08050E;
     color: white; }
-  .btn-learn:hover {
-    background: white;
-    color: #08050E;
-    transform: scale(1.25);
-    -webkit-transform: scale(1.25);
-    -o-transform: scale(1.25);
-    -ms-transform: scale(1.25);
-    -moz-transform: scale(1.25);
-    transition: background-color 0.25s, transform 0.25s ease-out;
-    -webkit-transition: background-color 0.25s, transform 0.25s ease-out;
-    -o-transition: background-color 0.25s, transform 0.25s ease-out;
-    -ms-transition: background-color 0.25s, transform 0.25s ease-out;
-    -moz-transition: background-color 0.25s, transform 0.25s ease-out; }
+  .btn-learn:hover, .btn-learn:active {
+    color: #08050E; }
+    @media screen and (min-width: 768px) {
+      .btn-learn:hover, .btn-learn:active {
+        background: white;
+        transform: scale(1.25);
+        -webkit-transform: scale(1.25);
+        -o-transform: scale(1.25);
+        -ms-transform: scale(1.25);
+        -moz-transform: scale(1.25);
+        transition: background-color 0.25s, transform 0.25s ease-out;
+        -webkit-transition: background-color 0.25s, transform 0.25s ease-out;
+        -o-transition: background-color 0.25s, transform 0.25s ease-out;
+        -ms-transition: background-color 0.25s, transform 0.25s ease-out;
+        -moz-transition: background-color 0.25s, transform 0.25s ease-out; } }
 
 .btn-read {
   background: #08050E;
@@ -65,22 +67,24 @@ body {
   -o-transition: background-color 0.5s, transform 0.5s ease-out;
   -ms-transition: background-color 0.5s, transform 0.5s ease-out;
   -moz-transition: background-color 0.5s, transform 0.5s ease-out; }
-  .btn-read:focus, .btn-readactive {
+  .btn-read:focus, .btn-read:active {
     background: #08050E;
     color: white; }
-  .btn-read:hover {
-    background: #A88CC1;
-    color: white;
-    transform: scale(1.25);
-    -webkit-transform: scale(1.25);
-    -o-transform: scale(1.25);
-    -ms-transform: scale(1.25);
-    -moz-transform: scale(1.25);
-    transition: background-color 0.25s, transform 0.25s ease-out;
-    -webkit-transition: background-color 0.25s, transform 0.25s ease-out;
-    -o-transition: background-color 0.25s, transform 0.25s ease-out;
-    -ms-transition: background-color 0.25s, transform 0.25s ease-out;
-    -moz-transition: background-color 0.25s, transform 0.25s ease-out; }
+  .btn-read:hover, .btn-read:active {
+    color: white; }
+    @media screen and (min-width: 768px) {
+      .btn-read:hover, .btn-read:active {
+        background: #A88CC1;
+        transform: scale(1.25);
+        -webkit-transform: scale(1.25);
+        -o-transform: scale(1.25);
+        -ms-transform: scale(1.25);
+        -moz-transform: scale(1.25);
+        transition: background-color 0.25s, transform 0.25s ease-out;
+        -webkit-transition: background-color 0.25s, transform 0.25s ease-out;
+        -o-transition: background-color 0.25s, transform 0.25s ease-out;
+        -ms-transition: background-color 0.25s, transform 0.25s ease-out;
+        -moz-transition: background-color 0.25s, transform 0.25s ease-out; } }
 
 .navbar-mobile-toggler {
   position: absolute;
@@ -116,6 +120,14 @@ body {
     -ms-transition: background-color 0.5s ease;
     -moz-transition: background-color 0.5s ease;
     background-color: #e6e6e6; }
+
+.learn-more-hovering {
+  transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  background-color: #e6e6e6; }
 
 .navbar-mobile-toggler-horizontal-bar {
   transition: background-color 0.5s ease;
@@ -728,7 +740,7 @@ body {
 
 .slide-out {
   position: fixed;
-  height: 100vh;
+  height: 200vh;
   z-index: 1999;
   top: 0px;
   right: 0px;

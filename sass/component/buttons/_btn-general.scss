@@ -9,18 +9,20 @@
 
     @include P01b-ButtonTransition(0.5s);
 
-    &:focus, &active{
+    &:focus, &:active{
 	background: $background;
 	color: $color;
     }
 
-    &:hover
+    &:hover, &:active
     {
-	background: $backgroundHover;
 	color: $colorHover;
-
-	@include STD-GenerateScale($button-scale);
-	@include P01b-ButtonTransition(0.25s);
+	@media screen and (min-width: 768px)
+	{
+	    background: $backgroundHover;
+	    @include STD-GenerateScale($button-scale);
+	    @include P01b-ButtonTransition(0.25s);
+	}
     }
 }
     

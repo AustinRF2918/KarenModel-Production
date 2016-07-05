@@ -35,6 +35,12 @@
     }
 }
 
+.learn-more-hovering
+{
+	@include STD-GenerateBackgroundTransition(.5s);
+	background-color: darken($navbar-brand, 10%);
+}
+
 //Probably would be useful to make this a reusible
 //mixin or something...
 .navbar-mobile-toggler-horizontal-bar
