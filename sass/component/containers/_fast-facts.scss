@@ -73,7 +73,8 @@
     @media screen and (min-width: 768px)
     {
 	@include STD-GenerateXY($fast-facts-content-container-x-desktop, $fast-facts-content-container-y-desktop);
-	margin-top: 50px;
+	margin-top: 40px;
+	@include STD-GenerateTransition-In(.2s);
 	width: $fast-facts-content-container-width-desktop;
     }
 
@@ -101,6 +102,7 @@
 .fast-facts-columns
 {
     @include STD-GenerateTransition-Out(.2s);
+    width: 100%;
 }
 
 .fast-facts-header-toggled
@@ -120,7 +122,7 @@
     {
 	position: absolute;
 	margin-left: -40%;
-	width: 100%;
+	width: $fast-facts-content-container-width-desktop;
 	@include STD-GenerateX(-30%);
 	@include STD-GenerateTransition-In(.2s);
     }
