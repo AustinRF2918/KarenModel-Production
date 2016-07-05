@@ -93,10 +93,37 @@ $(document).ready(function(){
 
     //If you click a link, we want it to scroll
     //downwards instead of just going immediately to the link.
-    $('.slide-down').click(function(){
-	$(document).scrollTo($($.attr(this, 'href')).offset().top - 50, 200);
-	//$(document).scrollTo(.top - 70, 200);
-	return false;
+
+    var li = $($('.ii').attr('href')).offset().top - 50;
+    $('.ii').click(function(){
+	$('html,body').animate({scrollTop:li}, 300, function(){
+	    window.location.href = $('.ii').attr('href');
+	});
+	    return false;
+    });
+
+    la = $($('.ia').attr('href')).offset().top - 50;
+    $('.ia').click(function(){
+	$('html,body').animate({scrollTop:la}, 300, function(){
+	    window.location.href = $('.ia').attr('href');
+	});
+	    return false;
+    });
+
+    lg = $($('.ig').attr('href')).offset().top - 50;
+    $('.ig').click(function(){
+	$('html,body').animate({scrollTop:lg}, 300, function(){
+	    window.location.href = $('.ig').attr('href');
+	});
+	    return false;
+    });
+
+    lc = $($('.ic').attr('href')).offset().top - 50;
+    $('.ic').click(function(){
+	$('html,body').animate({scrollTop:lc}, 300, function(){
+	    window.location.href = $('.ic').attr('href');
+	});
+	    return false;
     });
 
     var controller = new ScrollMagic.Controller();
