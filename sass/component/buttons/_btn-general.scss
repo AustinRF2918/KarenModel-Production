@@ -12,6 +12,11 @@
 
     @include P01b-ButtonTransition(0.5s);
 
+    &:focus, &active{
+	background: $background;
+	color: $color;
+    }
+
     &:hover
     {
 	background: $backgroundHover;

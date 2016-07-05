@@ -37,6 +37,9 @@ body {
   -o-transition: background-color 0.5s, transform 0.5s ease-out;
   -ms-transition: background-color 0.5s, transform 0.5s ease-out;
   -moz-transition: background-color 0.5s, transform 0.5s ease-out; }
+  .btn-learn:focus, .btn-learnactive {
+    background: #08050E;
+    color: white; }
   .btn-learn:hover {
     background: white;
     color: #08050E;
@@ -58,6 +61,9 @@ body {
   -o-transition: background-color 0.5s, transform 0.5s ease-out;
   -ms-transition: background-color 0.5s, transform 0.5s ease-out;
   -moz-transition: background-color 0.5s, transform 0.5s ease-out; }
+  .btn-read:focus, .btn-readactive {
+    background: #08050E;
+    color: white; }
   .btn-read:hover {
     background: #A88CC1;
     color: white;
@@ -71,13 +77,16 @@ body {
 .navbar-mobile-toggler {
   position: absolute;
   right: 10vw;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 25.5px;
   background: transparent;
   border: 0px solid transparent;
   border-radius: 4px;
   outline: none !important;
-  transition: color .5s; }
+  transition: .5s; }
+  .navbar-mobile-toggler-toggled {
+    top: 25.5px;
+    transition: .5s;
+    transform: rotate(90deg); }
   .navbar-mobile-toggler:hover .navbar-mobile-toggler-horizontal-bar {
     transition: background .5s;
     background-color: #e6e6e6; }

@@ -52,6 +52,7 @@ var switch_layout_width = switching_prototype(".page-layout-element", "shrunken"
 var switch_fast_facts_header = switching_prototype(".fast-facts-header-container", "fast-facts-header-toggled");
 var switch_fast_facts_content = switching_prototype(".fast-facts-columns", "fast-facts-content-toggled");
 var switch_intro_content = switching_prototype(".introduction-text-container", "introduction-text-toggled");
+var switch_mobile_toggler = switching_prototype(".navbar-mobile-toggler", "navbar-mobile-toggler-toggled")
 
 //Forcer Constructs
 //Note that some of these are additive and some area
@@ -75,6 +76,7 @@ $(document).ready(function(){
 	switch_fast_facts_header();
 	switch_fast_facts_content();
 	switch_intro_content();
+	switch_mobile_toggler();
     });
 
     //Functions as a force, basically means the user

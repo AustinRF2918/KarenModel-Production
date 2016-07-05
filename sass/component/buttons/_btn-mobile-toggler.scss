@@ -3,16 +3,20 @@
     position: absolute;
     right: 10vw;
 
-    top: 50%;
-    transform: translateY(-50%);
+    top: 25.5px;
 
     background: transparent;
     border: 0px solid transparent;
 
     border-radius: $btn-mobile-radius;
     outline: none !important;
-    transition: color .5s;
+    transition: .5s;
 
+    &-toggled{
+	top: 25.5px;
+	transition: .5s;
+	transform: rotate(90deg);
+    }
     &:hover
     {
 	.navbar-mobile-toggler-horizontal-bar
