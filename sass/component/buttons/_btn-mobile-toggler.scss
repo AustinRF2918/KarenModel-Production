@@ -25,12 +25,15 @@
 	@include STD-GenerateRotation(90deg);
     }
 
-    &:hover
-    {
+	&:hover 
+	{
 	.navbar-mobile-toggler-horizontal-bar
 	{
-	    @include STD-GenerateBackgroundTransition(.5s);
-	    background-color: darken($navbar-brand, 10%);
+	    @media screen and (min-width: 768px)
+	    {
+		@include STD-GenerateBackgroundTransition(.5s);
+		background-color: $navbar-brand;
+	    }
 	}
     }
 }

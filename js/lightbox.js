@@ -40,15 +40,15 @@ console.log("hi.");
   // Descriptions of all options available on the demo site:
   // http://lokeshdhakar.com/projects/lightbox2/index.html#options
   Lightbox.defaults = {
-    albumLabel: 'Image %1 of %2',
-    alwaysShowNavOnTouchDevices: false,
+    albumLabel: '',
+    alwaysShowNavOnTouchDevices: true,
     fadeDuration: 500,
     fitImagesInViewport: true,
-    // maxWidth: 800,
-    // maxHeight: 600,
-    positionFromTop: 50,
-    resizeDuration: 700,
-    showImageNumberLabel: true,
+    maxWidth: 800,
+    maxHeight: 600,
+    positionFromTop: 150,
+    resizeDuration: 400,
+    showImageNumberLabel: false,
     wrapAround: false,
     disableScrolling: false
   };
