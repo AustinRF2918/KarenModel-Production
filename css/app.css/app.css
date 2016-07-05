@@ -668,7 +668,7 @@ body {
   background: transparent;
   color: transparent;
   border: 0px black solid;
-  height: 25%;
+  height: 35%;
   width: 100%;
   overflow: hidden;
   -moz-transition: 0.8s all;
@@ -709,15 +709,15 @@ body {
 
 .card-img-overlay {
   text-align: center;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%); }
+  top: 57.5%;
+  transform: translateY(-57.5%);
+  -webkit-transform: translateY(-57.5%);
+  -o-transform: translateY(-57.5%);
+  -ms-transform: translateY(-57.5%);
+  -moz-transform: translateY(-57.5%); }
 
 .crop-top img {
-  height: 500px; }
+  height: 250%; }
 
 .slide-out {
   position: fixed;

@@ -1,12 +1,13 @@
 .card-img-overlay
 {
     text-align: center;
-    @include va-card-overlay;
+    top: 57.5%;
+    @include STD-GenerateY(-57.5%);
 }
 
 .crop-top
 {
     img{
-	height: $crop-top-height;
+	height: 250%;
     }
 }
