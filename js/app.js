@@ -97,8 +97,11 @@ $(document).ready(function(){
     var li = $($('.ii').attr('href')).offset().top - 50;
     $('.ii').click(function(){
 	$('html,body').animate({scrollTop:li}, 300, function(){
-	    if ($('html').offset().top != li)
+	    if (!(window.scrollY < li + 50 && window.scrollY > li - 50))
 	    {
+		console.log(window.scrollY);
+		console.log(li);
+
 		window.location.replace("#introduction");
 	    }
 	});
@@ -108,7 +111,7 @@ $(document).ready(function(){
     la = $($('.ia').attr('href')).offset().top - 50;
     $('.ia').click(function(){
 	$('html,body').animate({scrollTop:la}, 300, function(){
-	    if ($('html').offset().top != la)
+	    if (!(window.scrollY < la + 50 && window.scrollY > la - 50))
 	    {
 		window.location.replace("#about-divider");
 	    }
@@ -118,7 +121,7 @@ $(document).ready(function(){
 
     $('.btn-read').click(function(){
 	$('html,body').animate({scrollTop:la}, 300, function(){
-	    if ($('html').offset().top != la)
+	    if (!(window.scrollY < la + 50 && window.scrollY > la - 50))
 	    {
 		window.location.replace("#about-divider");
 	    }
@@ -129,7 +132,7 @@ $(document).ready(function(){
     lg = $($('.ig').attr('href')).offset().top - 50;
     $('.ig').click(function(){
 	$('html,body').animate({scrollTop:lg}, 300, function(){
-	    if ($('html').offset().top != lg)
+	    if (!(window.scrollY < lg + 50 && window.scrollY > lg - 50))
 	    {
 		window.location.replace("#gallery-divider");
 	    }
@@ -140,7 +143,7 @@ $(document).ready(function(){
     lc = $($('.ic').attr('href')).offset().top - 50;
     $('.ic').click(function(){
 	$('html,body').animate({scrollTop:lc}, 300, function(){
-	    if ($('html').offset().top != lc)
+	    if (!(window.scrollY < lc + 50 && window.scrollY > lc - 50))
 	    {
 		window.location.replace("#contact-divider");
 	    }
