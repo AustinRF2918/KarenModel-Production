@@ -112,7 +112,7 @@ body {
     -ms-transform: rotate(90deg);
     -moz-transform: rotate(90deg); }
     .navbar-mobile-toggler-toggled .navbar-mobile-toggler-horizontal-bar {
-      background-color: white !important; }
+      background-color: #B82601; }
   @media screen and (min-width: 768px) {
     .navbar-mobile-toggler:hover .navbar-mobile-toggler-horizontal-bar {
       transition: background-color 0.5s ease;
@@ -120,7 +120,7 @@ body {
       -o-transition: background-color 0.5s ease;
       -ms-transition: background-color 0.5s ease;
       -moz-transition: background-color 0.5s ease;
-      background-color: white; } }
+      background-color: #B82601; } }
 
 .learn-more-hovering {
   transition: background-color 0.5s ease;
@@ -128,7 +128,7 @@ body {
   -o-transition: background-color 0.5s ease;
   -ms-transition: background-color 0.5s ease;
   -moz-transition: background-color 0.5s ease;
-  background-color: #e6e6e6; }
+  background-color: #851c01; }
 
 .navbar-mobile-toggler-horizontal-bar {
   transition: background-color 0.5s ease;
@@ -609,7 +609,7 @@ body {
   height: 90px;
   padding-top: 20px; }
   .navbar-custom-brand {
-    color: white;
+    color: #fe4e21;
     transition: 0.5s ease-in-out;
     -webkit-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;

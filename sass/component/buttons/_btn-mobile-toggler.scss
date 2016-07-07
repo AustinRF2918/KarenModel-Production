@@ -18,7 +18,7 @@
 
 	.navbar-mobile-toggler-horizontal-bar
 	{
-	  background-color: white !important;
+	    background-color: $palette-14;
 	}
 
 	@include STD-GenerateTransition(.5s);
@@ -32,7 +32,7 @@
 	    @media screen and (min-width: 768px)
 	    {
 		@include STD-GenerateBackgroundTransition(.5s);
-		background-color: $navbar-brand;
+		background-color: $palette-14;
 	    }
 	}
     }
