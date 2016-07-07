@@ -1,0 +1,88 @@
+@mixin Core-Slideout-Base($selector, $width, $top-offset)
+{
+    #{$selector}
+    {
+	ul{
+	    list-style: none;
+	}
+
+	a{
+	    z-index: 100;
+	}
+
+	&-content
+	{
+	    margin-top: $top-offset;
+	}
+
+	position: fixed;
+	height: 100vh;
+
+	@media screen and (min-width: 768px)
+	{
+	    width: $width;
+	}
+
+	@media screen and (max-width: 767px)
+	{
+	    width: 30vw;
+	}
+
+	z-index: 1999;
+	top: 0px;
+	right: 0px;
+	@include STD-GenerateTransition-In(.2s);
+	@content
+
+	&-toggleOff
+	{
+	    @include STD-GenerateTransition-Out(.2s);
+	    right: 0 !important;
+	    width: 0vw;
+	    overflow: hidden;
+	    z-index: -100;
+	}
+    }
+
+}
+
+
+@mixin Core-Slideout-Colors($background, $color)
+{
+    color: $color;
+    background: $background;
+}
+
+@mixin Core-Slideout-Fonts($selector, $font-type, $font-size, $font-color, $top-margin)
+
+    #{$selector}
+    {
+	a, li
+	{
+	    &:hover
+	    {
+		text-decoration: none;
+		cursor: pointer;
+	    }
+
+	  color: $font-color;
+	  font-family: $font-type;
+	  font-size: $font-size;
+	  margin-top: $top-margin;
+	}
+    }
+}
+
+@mixin Core-Slideout-Fonts-Hover($selector, $font-color)
+{
+    #{$selector}
+    {
+	a, ul
+	{
+	    &:hover
+	    {
+		color: $font-color;
+	    }
+	}
+    }
+}

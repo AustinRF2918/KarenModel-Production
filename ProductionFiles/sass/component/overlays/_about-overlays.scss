@@ -1,0 +1,21 @@
+@mixin overlay-third($bg-img)
+{
+    padding: 0px;
+    margin: 0px;
+    width: 33%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-image: url($bg-img);
+    @include backgroundSizeCover;
+}
+
+.about-overlay-left
+{
+    @include overlay-third("/img/Runway/asset-runway3.jpg");
+
+    @media screen and (max-width: 768px)
+    {
+	z-index: -1000;
+	width: 100%;
+    }
+}

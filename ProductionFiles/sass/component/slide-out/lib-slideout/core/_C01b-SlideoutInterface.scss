@@ -1,0 +1,39 @@
+$default-width: 15%;
+$default-top: 100px;
+
+@mixin generateSlideout($selector, $width, $color, $background, $top)
+{
+    @include Core-Slideout-Base($selector, $width, $top)
+    {
+	@include Core-Slideout-Colors($background, $color);
+    }
+}
+
+@mixin generateSlideoutDefault($selector, $color, $background)
+{
+    @include Core-Slideout-Base($selector, $default-width, $default-top)
+    {
+	@include Core-Slideout-Colors($background, $color);
+    }
+}
+
+@mixin generateSlideoutFont($selector, $font-type, $font-size, $color, $top-margin)
+{
+    @include Core-Slideout-Fonts($selector, $font-type, $font-size, $color, $top-margin);
+}
+
+@mixin generateSlideoutHover($selector, $color)
+{
+    @include Core-Slideout-Fonts-Hover($selector, $color);
+}
+
+@include generateSlideoutDefault(".slide-out", white, black);
+@include generateSlideoutFont(".slide-out", $navbar-quick-nav-font-size, $primary-font-family, $palette-8, 25px);
+@include generateSlideoutHover(".slide-out", black); 
+
+.fast-facts, .fast-facts-container, html, body, fast-facts-header-container
+{
+    width: 100%;
+    overflow-x: hidden;
+}
+

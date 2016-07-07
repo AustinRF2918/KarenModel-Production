@@ -1,0 +1,32 @@
+$primary-font-family: 'Lato', sans-serif;
+$secondary-font-family: 'Roboto', sans-serif;
+
+h1, h2, h3, h4, h5{
+    font-family: $primary-font-family
+}
+
+p, li{
+    font-family: $secondary-font-family
+}
+
+//Fast facts fonts.
+    $fast-facts-header-size: 7em;
+    $fast-facts-paragraph-size: 1.25em;
+
+//Navbar fonts
+    $navbar-brand-font-size-desktop: 26px;
+    $navbar-brand-font-size-mobile: 5vw;
+    $navbar-quick-nav-font-size: 26px;
+
+//Container fonts.
+    //Introduction text
+	//Maybe change to relative for mobile/desktop??
+	$introduction-text-container-header-size: 6em;
+	$introduction-text-container-subheader-size: 3em;
+    
+    
+//Model gallery fonts
+    $model-gallery-text-size: 2.5em;
+
+//Footer font
+    $footer-font-size: .8em;

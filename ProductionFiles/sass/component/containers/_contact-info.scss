@@ -1,0 +1,14 @@
+.contact-info-container{
+
+    @media screen and (min-width: 768px)
+    {
+	top: $contact-info-container-top;
+	transform: translateY($contact-info-container-top);
+    }
+
+    @media screen and (max-width: 767px)
+    {
+	padding-top: $contact-info-container-padding-top;
+	padding-bottom: $contact-info-container-padding-bottom;
+    }
+}

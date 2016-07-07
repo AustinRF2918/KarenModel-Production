@@ -1,0 +1,7 @@
+@include P01b-GenerateIntroduction-Left("reveal-on-scroll-gallery-divider", "is-revealed", 200px, 0.5s)
+
+.gallery-divider
+{
+    @include generateDivider($gallery-divider-container-padding-top + $about-divider-container-padding-bottom, $about-divider-background, $about-divider-header-color, $about-divider-subheader-color);
+}
+

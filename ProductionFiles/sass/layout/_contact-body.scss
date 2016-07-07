@@ -1,0 +1,32 @@
+@include P01b-GenerateIntroduction-Top("reveal-on-scroll-contact-body", "is-revealed", 200px, 0.5s);
+
+.contact-body
+{
+    @include generateContainer($contact-body-background, $contact-body-container-padding-top, $contact-body-container-padding-bottom);
+
+    @media screen and (min-width: 768px)
+    {
+	height: $contact-body-height;
+    }
+
+    @media screen and (max-width: 767px)
+    {
+	height: auto 0;
+    }
+
+    h1{
+	color: $contact-body-text;
+    }
+
+    h5{
+	color: $contact-body-text-faded;
+    }
+}
+
+
+
+
+
+
+
+

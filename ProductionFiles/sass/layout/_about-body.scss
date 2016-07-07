@@ -1,0 +1,19 @@
+.about-body
+{
+    height: 800px;
+    background: $about-body-background;
+    @include generateContainer($about-body-background, $about-body-container-padding-top, $about-body-container-padding-bottom);
+
+    @media screen and (max-width: 767px)
+    {
+	padding-top: 50px;
+	padding-bottom: 50px;
+    }
+
+}
+
+
+
+
+
+

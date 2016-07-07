@@ -1,0 +1,12 @@
+.gallery-body
+{
+    @media screen and (min-width: 768px)
+    {
+	    @include generateContainer($gallery-body-container-background, $gallery-body-container-padding-top, $gallery-body-container-padding-bottom);
+    }
+
+    @media screen and (max-width: 767px)
+    {
+	    @include generateContainer($gallery-body-container-background, $gallery-body-container-padding-top-mobile, $gallery-body-container-padding-bottom-mobile);
+    }
+}

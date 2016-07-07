@@ -1,0 +1,66 @@
+.navbar-mobile-toggler
+{
+    position: absolute;
+    right: 10vw;
+
+    top: 25.5px;
+
+    background: transparent;
+    border: 0px solid transparent;
+
+    border-radius: $btn-mobile-radius;
+    outline: none !important;
+
+    @include STD-GenerateTransition(.5s);
+
+    &-toggled{
+	top: 25.5px;
+
+	.navbar-mobile-toggler-horizontal-bar
+	{
+	    background-color: $palette-14;
+	}
+
+	@include STD-GenerateTransition(.5s);
+	@include STD-GenerateRotation(90deg);
+    }
+
+	&:hover 
+	{
+	.navbar-mobile-toggler-horizontal-bar
+	{
+	    @media screen and (min-width: 768px)
+	    {
+		@include STD-GenerateBackgroundTransition(.5s);
+		background-color: $palette-14;
+	    }
+	}
+    }
+}
+
+.learn-more-hovering
+{
+	@include STD-GenerateBackgroundTransition(.5s);
+	background-color: darken($navbar-brand, 10%);
+}
+
+//Probably would be useful to make this a reusible
+//mixin or something...
+.navbar-mobile-toggler-horizontal-bar
+{
+
+    @include STD-GenerateBackgroundTransition(.5s);
+    display: block;
+    width: $btn-bar-width;
+    height: $btn-bar-height;
+    margin-top: $btn-bar-margin-top;
+    margin-bottom: $btn-bar-margin-bottom;
+
+    background-color: $navbar-text;
+    border-radius: $btn-bar-radius;
+}
+
+.mobile-toggler-group
+{
+    height: 90px;
+}

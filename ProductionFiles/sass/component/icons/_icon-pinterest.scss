@@ -1,0 +1,9 @@
+.pintrest
+{
+    @include generateIconColors($icon-pinterest-color, $icon-general-background, $icon-general-background, $icon-pinterest-color);
+}
+
+.pintrest-navbar
+{
+    @include generateIconColors($navbar-background, $navbar-icons, $navbar-background, $navbar-icons-darker);
+}

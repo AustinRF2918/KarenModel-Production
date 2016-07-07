@@ -1,0 +1,18 @@
+include ../../utility/bootstrap/_index.pug  
+
+//- We need to get this to be a bi-imagal section,
+//- Divided into two portions: No weird middle portion
+//- And then add overlaying text: This will be done via
+//- Pseudo elements.
+
+.m-t-3
++generateSection("introduction")
+  .row
+    .introduction-text-container.text-xs-center.text-md-left.reveal-on-scroll-introduction
+        h1 Karen Polzin
+        h2 Freelance Model
+        .m-t-2.text-xs-center.text-md-left
+          a(href="#about-divider" class=["btn", "btn-read", "slide-down"]) Learn More
+  .row
+    .col-xs-12.col-md-6.introduction-overlay-left
+    .col-xs-12.col-md-6.introduction-overlay-right

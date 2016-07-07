@@ -1,0 +1,64 @@
+@include P01b-GenerateIntroduction-Left("reveal-on-scroll-introduction", "is-revealed", 200px, 0.5s)
+
+.introduction-text-container
+{
+
+    @include STD-GenerateTransition-Out(.2s);
+
+    position: absolute;
+    z-index: $introduction-text-container-z-index;
+
+    @media screen and (min-width: 768px)
+    {
+	position: absolute;
+
+	left: 30%;
+	@include STD-GenerateX(-30%);
+
+	top: 250px;
+    }
+
+    @media screen and (max-width: 767px)
+    {
+	position: absolute;
+
+	top: 250px;
+	@include STD-GenerateY(-33%);
+
+	left: 50%;
+	@include STD-GenerateX(-50%);
+    }
+
+    h1, h2{
+	color: white;
+    }
+
+    h1{
+	font-size: $introduction-text-container-header-size;
+    }
+
+    h2{
+	font-size: $introduction-text-container-subheader-size;
+	@media screen and (max-width: 767px)
+	{
+	    display: none;
+	}
+    }
+
+    .btn-read
+    {
+	margin-top: 20px;
+    }
+
+
+}
+
+.introduction-text-toggled
+{
+    @media screen and (min-width: 768px)
+    {
+	position: absolute;
+	@include STD-GenerateX(-45%);
+	@include STD-GenerateTransition-In(.2s);
+    }
+}

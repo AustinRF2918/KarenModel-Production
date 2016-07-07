@@ -1,0 +1,54 @@
+$navbar-height: 90px;
+
+.navbar-custom
+{
+    background: $navbar-background !important;
+    height: $navbar-height;
+    padding-top: 20px;
+
+    &-brand
+    {
+	color: lighten($navbar-brand, 20%);
+	@media screen and (min-width: 768px)
+	{
+	    font-size: $navbar-brand-font-size-desktop;
+	}
+
+	@media screen and (max-width: 767px)
+	{
+	    font-size: $navbar-brand-font-size-mobile;
+	}
+
+	@include STD-GenerateTransition(.5s);
+
+	&:active, &:focus{
+	    @include STD-GenerateTransition(.5s);
+	    color: $palette-3;
+	}
+
+        &:hover
+        {
+	   @include STD-GenerateTransition(.5s);
+	   color: $palette-7;
+        }
+
+	height: $navbar-height;
+    }
+
+    &-icon-group
+    {
+	height: $navbar-height;
+    }
+
+    &-quick-nav
+    {
+	font-size: $navbar-quick-nav-font-size;
+    }
+
+    .general-icon{
+	@media screen and (max-width: 767px)
+	{
+	    display: none;
+	}
+    }
+}

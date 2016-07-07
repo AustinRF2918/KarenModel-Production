@@ -1,0 +1,28 @@
+@mixin generateButton($color, $background, $colorHover, $backgroundHover, $height, $width, $borderRadius)
+{
+    background: $background;
+    color: $color;
+
+    border-radius: $borderRadius;
+    line-height: $height;
+    width: $width;
+
+    @include P01b-ButtonTransition(0.5s);
+
+    &:focus, &:active{
+	background: $background;
+	color: $color;
+    }
+
+    &:hover, &:active
+    {
+	color: $colorHover;
+	@media screen and (min-width: 768px)
+	{
+	    background: $backgroundHover;
+	    @include STD-GenerateScale($button-scale);
+	    @include P01b-ButtonTransition(0.25s);
+	}
+    }
+}
+    

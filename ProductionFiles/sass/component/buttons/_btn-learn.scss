@@ -1,0 +1,4 @@
+.btn-learn
+{
+    @include generateButton($btn-learn-color, $btn-learn-background, $btn-learn-color-hover, $btn-learn-background-hover, $btn-learn-size-y, $btn-learn-size-x, $primary-border-radius);
+}

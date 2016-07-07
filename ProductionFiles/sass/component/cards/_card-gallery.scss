@@ -1,0 +1,48 @@
+.modelGallery{
+    position: relative;
+    cursor: pointer;
+
+    background: transparent;
+    color: transparentize($palette-5, 0.2);
+    border: 0px black solid;
+
+    height: 175px * 1.4;
+    width: $model-gallery-width;
+    overflow: hidden;
+
+
+    img{
+	@include img-full;
+	@include generateTransition(0.8s);
+    }
+
+    h4{
+	font-weight: bold;
+	font-size: $model-gallery-text-size * 1.4;
+    }
+
+    .card-img-overlay
+    {
+	position: absolute;
+    }
+    &:hover
+    {
+	position: relative;
+	color: lighten($palette-14, 15%);
+	font-weight: 900;
+
+
+	.card-img-overlay
+	{
+	    top: 55.5%;
+	    @include STD-GenerateY(-55.5%);
+	}
+
+	img{
+	    @include scaleTransform(1.25);
+	}
+    }
+}
+.modelGalleryInvisible{
+    display: none;
+}

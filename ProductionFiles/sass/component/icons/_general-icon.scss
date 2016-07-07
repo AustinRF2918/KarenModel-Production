@@ -1,0 +1,40 @@
+//Utility Mixin.
+//TODO: MAKE MORE EXPANDABLE AND REUSABLE
+@mixin generateIconColors($bg, $cl, $bghv, $clhv)
+{
+    svg{
+	background: $bg;
+	fill: $cl;
+	color: $cl;
+       &:hover{
+	   background: $cl;
+	   fill: $bg;
+	   color: $bg;
+       }
+    }
+}
+
+.general-icon
+{
+    height: 36px;
+    margin-left: 16px;
+    margin-right: 16px;
+
+    &:hover
+    {
+	text-decoration: none;
+    }
+
+    svg{
+       width: inherit;
+       height: inherit;
+       margin-top: 5px;
+       margin-bottom: 5px;
+
+       border-radius: 100%;
+
+       &:hover
+       {
+       }
+    }
+}

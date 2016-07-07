@@ -1,0 +1,8 @@
+@include P01b-GenerateIntroduction-Left("reveal-on-scroll-about-divider", "is-revealed", 200px, 0.5s)
+
+.about-divider
+{
+    @include generateDivider($about-divider-container-padding-top + $about-divider-container-padding-bottom, $about-divider-background, $about-divider-header-color, $about-divider-subheader-color);
+}
+
+

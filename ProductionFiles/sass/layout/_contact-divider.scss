@@ -1,0 +1,6 @@
+@include P01b-GenerateIntroduction-Left("reveal-on-scroll-contact-divider", "is-revealed", -200px, 0.5s)
+
+.contact-divider
+{
+    @include generateDivider($contact-divider-container-padding-top + $about-divider-container-padding-bottom, $about-divider-background, $about-divider-header-color, $about-divider-subheader-color);
+}

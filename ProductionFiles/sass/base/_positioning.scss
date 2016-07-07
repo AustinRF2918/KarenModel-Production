@@ -1,0 +1,147 @@
+html{
+    height: auto;
+}
+body{
+    height: auto;
+}
+
+//Global Variables
+    $primary-border-radius: 0px;
+    $icon-border-radius: 100%;
+
+//Layout margin positioning variables
+    //Introduction
+    $introduction-container-padding-top: 0px;
+    $introduction-container-padding-bottom: 0px;
+
+    //About Divider
+    $about-divider-container-padding-top: 50px;
+    $about-divider-container-padding-bottom: 50px;
+
+    //About Body
+    $about-body-container-padding-top: 0px;
+    $about-body-container-padding-bottom: 0px;
+
+    //Gallery Divider
+	//Desktop
+	    $gallery-divider-container-padding-top: 50px;
+	    $gallery-divider-container-padding-bottom: 50px;
+	//Mobile
+	    $gallery-divider-container-padding-top-mobile: 0px;
+	    $gallery-divider-container-padding-bottom-mobile: 0px;
+
+    //Gallery Body
+        //Desktop
+	    $gallery-body-container-padding-top: 100px;
+	    $gallery-body-container-padding-bottom: 100px;
+        //Mobile
+	    $gallery-body-container-padding-top-mobile: 25px;
+	    $gallery-body-container-padding-bottom-mobile: 25px;
+
+    //Contact Divider
+    $contact-divider-container-padding-top: 50px;
+    $contact-divider-container-padding-bottom: 100px;
+
+    //Contact Body
+    $contact-body-container-padding-top: 0px;
+    $contact-body-container-padding-bottom: 0px;
+	//Only on desktop
+	$contact-body-height: 800px;
+
+ //Component positioning (a bit complex)
+    $fast-facts-header-margin-top: 13.5%;
+    $fast-facts-header-margin-bottom: 13.5%;
+    $fast-facts-header-left: -35%; //try to fix minus
+    $fast-facts-content-margin-top: 40%;
+    $fast-facts-content-left: 15%;
+    $fast-facts-cover-index: 1000;
+    $fast-facts-height: 800px;
+    $fast-facts-width: 100%; 
+    //Cartesians
+	$fast-facts-container-x-desktop: 12.5%;
+	$fast-facts-container-y-desktop: 22.5%;
+
+	$fast-facts-header-container-x-desktop: 40%;
+	$fast-facts-header-container-y-desktop: 20%;
+
+	$fast-facts-header-container-x-mobile: 20%;
+	$fast-facts-header-container-left-mobile: 40%;
+	$fast-facts-header-container-top-mobile: 0px;
+	$fast-facts-header-container-y-mobile: 30%;
+
+	$fast-facts-content-container-width-desktop: 30vw;
+	$fast-facts-content-container-x-desktop: 43%;
+	$fast-facts-content-container-y-desktop: 30%;
+	$fast-facts-content-container-width-mobile: 100%;
+
+	$fast-facts-content-container-li-margin-top: 15px;
+
+						     
+
+//Navbar
+    $navbar-icon-group-padding-top: 5px;
+
+//Containers
+    //Brand
+    $brand-container-margin-top: -20px;
+    $brand-container-padding-top: 10px;
+    $brand-container-padding-bottom: 10px;
+    $brand-container-margin-left: -60px;
+    $brand-container-margin-right: -50px;
+    $brand-container-z-index: 1000;
+
+    //Introduction Text
+    $introduction-text-container-z-index: 1000;
+
+    $introduction-text-container-top-desktop: 300px;
+    $introduction-text-container-left-desktop: 22%;
+
+    $introduction-text-container-left-mobile: 0%;
+
+    //Introduction overlay
+    $introduction-overlay-width: 50%;
+    $introduction-overlay-height: 700px;
+
+    //Contact-Overlay
+    $contact-overlay-height: 800px;
+
+    //Contact-Info
+	//Mobile only.
+	$contact-info-container-padding-top: 50px;
+	$contact-info-container-padding-bottom: 50px;
+	//Desktop only.
+	$contact-info-container-top: 200%;
+
+    //Breaks sizing
+        $mini-break-width: 2.5vw;
+	$border-size: 2px;
+    
+   //Relative button sizing.
+	$button-scale: 1.25;
+
+   //General navbar
+	$navbar-btn-padding-top: 0px;
+
+    //Btn learn sizes
+	$btn-learn-size-x: 30px;
+	$btn-learn-size-y: 150px;
+
+    //Btn mobile toggler sizes.
+	$btn-mobile-radius: 4px;
+	    //Recursive horizontal bar.
+	     //!! NOTE BOTH OF THESE CHANGE HEIGHT OF ABOVE BUTTON!!!
+	    $btn-bar-width: 32px;
+	    $btn-bar-height: 5px;
+	    $btn-bar-margin-top: 5px;
+	    $btn-bar-margin-bottom: 3px;
+	    //Makes a more rounded bar.
+	    $btn-bar-radius: 1px;
+	
+    //Btn learn sizes
+	$btn-learn-size-x: 50px;
+	$btn-learn-size-y: 250px;
+
+//Overlay stuff.
+    //Croptop
+	$crop-top-height: 500px;
+

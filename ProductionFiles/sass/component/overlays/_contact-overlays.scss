@@ -1,0 +1,27 @@
+@mixin overlay-fit($bg-img)
+{
+    padding: 0px;
+    margin: 0px;
+    height: $contact-overlay-height;
+    background-repeat: no-repeat;
+    background-image: url($bg-img);
+    @include backgroundSizeCover;
+}
+
+.contact-overlay
+{
+    @media screen and (max-width: 767px)
+    {
+	display: none;
+    }
+}
+
+.contact-overlay-picture-1
+{
+    @include overlay-fit("/img/Print/asset-print8.jpg");
+}
+
+.contact-overlay-picture-2
+{
+    @include overlay-fit("/img/Print/asset-print6.jpg");
+}

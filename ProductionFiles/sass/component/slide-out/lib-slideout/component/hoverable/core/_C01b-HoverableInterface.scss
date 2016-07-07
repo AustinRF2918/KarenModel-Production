@@ -1,0 +1,45 @@
+//Hoverable Mixin.
+
+// DESCRIPTION:
+// A hoverable is an item which fills out a certain space and lights up, usually to
+// signify some sort of user interactibility. They can be placed on the general page,
+// navbars, sidebars, or anywhere. really.
+
+// PUG:
+//.slide-out
+//  .slide-out-content
+//    ul.slide-out-item-wrapper
+//      li.slide-out-item
+//        a.slide-down(href="#introduction") Home
+//      li.slide-out-item
+//        a.slide-down(href="#about-divider") About
+//      li.slide-out-item
+//        a.slide-down(href="#gallery-divider") Gallery
+//      li.slide-out-item
+//        a.slide-down(href="#contact-divider") Contact
+
+// Look at line 11, line 12, and line 13 for a basic schema on how to use this.
+// Not that SLIDE DOWN does not relative to this, and nor does slide-out or
+// slide-out-content, those are just for code beauty in the actually production.
+
+// Notes: A good place to start is the default mixin, it has been tested with
+// the sidebar above and works quite well.
+
+@mixin generateHoverableDefault($selector)
+{
+    @include Core-Hoverable-Base($selector, 40px, 30px, 300%, 50px, 10px, -20px, 50%)
+    @include Core-Hoverable-Colors($selector, darken($hoverable-background, 10%),  darken($hoverable-text, 10%));
+}
+
+@mixin generateHoverableCustom($selector, $list-left, $list-element-left, $width-rel-to-parent, $height-abs, $list-padding-top, $list-margin-top, $element-vertical-centering, $background, $foreground)
+{
+    @include Core-Hoverable-Base($selector, $list-left, $list-element-left, $width-rel-to-parent, $height-abs, $list-padding-top, $list-margin-top, $element-vertical-centering)
+    @include Core-Hoverable-Colors($selector, $background, $foreground);
+}
+
+.slide-out-item-active
+{
+    background: $hoverable-background;
+    color: white !important;
+}
+@include generateHoverableDefault(".slide-out-item");

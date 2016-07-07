@@ -1,0 +1,30 @@
+include ../../utility/bootstrap/_index.pug  
+
++generateSection("about-body")
+  +generateRow("about-body")
+    .fast-facts
+      .fast-facts-container
+        .fast-facts-header-container
+            h1 Fast Facts
+        .fast-facts-content-container
+            .col-xs-7
+              p(class="m-b-2") Height: 
+              p(class="m-b-2") Shoe size: 
+              p(class="m-b-2") Measurements: 
+              p(class="m-b-2") Hair color: 
+              p(class="m-b-2") Hair length: 
+              p(class="m-b-2") Eye color: 
+              p(class="m-b-2") Ethicity: 
+              p(class="m-b-2") Skin color: 
+            .col-xs-5.text-xs-left
+              p(class="m-b-2") 5'9
+              p(class="m-b-2") 9.5
+              p(class="m-b-2") 34-25-36
+              p(class="m-b-2") Brown
+              p(class="m-b-2") Long
+              p(class="m-b-2") Hazel
+              p(class="m-b-2") Caucasian
+              p(class="m-b-2") Fair
+    .col-sm-4.about-overlay-left
+    .col-sm-8.p-x-0.m-x-0
+  //
