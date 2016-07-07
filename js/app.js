@@ -97,6 +97,10 @@ $(document).ready(function(){
     var li = $($('.ii').attr('href')).offset().top - 50;
     $('.ii').click(function(){
 	$('html,body').animate({scrollTop:li}, 300, function(){
+	    if ($('html').offset().top != li)
+	    {
+		window.location.replace("#introduction");
+	    }
 	});
 	    return false;
     });
@@ -104,12 +108,20 @@ $(document).ready(function(){
     la = $($('.ia').attr('href')).offset().top - 50;
     $('.ia').click(function(){
 	$('html,body').animate({scrollTop:la}, 300, function(){
+	    if ($('html').offset().top != la)
+	    {
+		window.location.replace("#about-divider");
+	    }
 	});
 	    return false;
     });
 
     $('.btn-read').click(function(){
 	$('html,body').animate({scrollTop:la}, 300, function(){
+	    if ($('html').offset().top != la)
+	    {
+		window.location.replace("#about-divider");
+	    }
 	});
 	    return false;
     });
@@ -117,6 +129,10 @@ $(document).ready(function(){
     lg = $($('.ig').attr('href')).offset().top - 50;
     $('.ig').click(function(){
 	$('html,body').animate({scrollTop:lg}, 300, function(){
+	    if ($('html').offset().top != lg)
+	    {
+		window.location.replace("#gallery-divider");
+	    }
 	});
 	    return false;
     });
@@ -124,6 +140,10 @@ $(document).ready(function(){
     lc = $($('.ic').attr('href')).offset().top - 50;
     $('.ic').click(function(){
 	$('html,body').animate({scrollTop:lc}, 300, function(){
+	    if ($('html').offset().top != lc)
+	    {
+		window.location.replace("#contact-divider");
+	    }
 	});
 	    return false;
     });
