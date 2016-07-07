@@ -3,7 +3,7 @@
     cursor: pointer;
 
     background: transparent;
-    color: transparentize($palette-5, 0.5);
+    color: transparentize($palette-5, 0.2);
     border: 0px black solid;
 
     height: 175px * 1.4;
@@ -28,7 +28,7 @@
     &:hover
     {
 	position: relative;
-	color: lighten($palette-10, 15%);
+	color: lighten($palette-14, 15%);
 	font-weight: 900;
 
 

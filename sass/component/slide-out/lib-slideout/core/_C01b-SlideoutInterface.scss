@@ -27,9 +27,9 @@ $default-top: 100px;
     @include Core-Slideout-Fonts-Hover($selector, $color);
 }
 
-@include generateSlideoutDefault(".slide-out", $navbar-text, $navbar-background);
-@include generateSlideoutFont(".slide-out", $navbar-quick-nav-font-size, $primary-font-family, $navbar-icons, 25px);
-@include generateSlideoutHover(".slide-out", darken($navbar-icons, 20%)); 
+@include generateSlideoutDefault(".slide-out", white, black);
+@include generateSlideoutFont(".slide-out", $navbar-quick-nav-font-size, $primary-font-family, $palette-8, 25px);
+@include generateSlideoutHover(".slide-out", black); 
 
 .fast-facts, .fast-facts-container, html, body, fast-facts-header-container
 {
