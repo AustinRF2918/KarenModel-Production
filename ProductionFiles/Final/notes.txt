@@ -1,0 +1,1 @@
+Changes color of brand to be white as well as the right side. It needs repetition or else it doesn't look very good!
